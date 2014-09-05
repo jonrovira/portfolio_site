@@ -10,6 +10,24 @@ label, table, caption {
 
 html {
   font-family: "ProximaNova-light", Arial, Helvetica, sans-serif; }
+  html body main section {
+    margin: 0 auto 80px auto;
+    width: 80%; }
+    html body main section h1.section-header {
+      margin: 20px 0;
+      font-size: 45px;
+      text-align: left; }
+  html body main hr {
+    width: 80%;
+    border: 1px solid #eee;
+    border-style: solid none none none; }
+  html h1, html h2, html h3, html h4, html h5, html h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    color: #222; }
+  html p {
+    font-size: 14px;
+    line-height: 20px; }
 
 /* Header */
 header {
@@ -37,3 +55,102 @@ header {
       padding: 20px 0; }
       header > nav nav.header-social i {
         font-size: 19px; }
+
+/* Welcome */
+section#welcome {
+  padding: 240px 0 320px;
+  text-align: center; }
+  section#welcome h1 {
+    font-size: 60px; }
+  section#welcome h2 {
+    font-size: 30px; }
+
+/* Portfolio */
+section#portfolio {
+  text-align: center; }
+  section#portfolio ul#portfolio-items {
+    list-style: none; }
+    section#portfolio ul#portfolio-items li.portfolio-item {
+      display: inline-block;
+      margin-right: 40px;
+      width: 254px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      text-align: left; }
+      section#portfolio ul#portfolio-items li.portfolio-item a img.portfolio-item-image {
+        width: 100%;
+        background-color: #000;
+        border-radius: 3px 3px 0 0; }
+      section#portfolio ul#portfolio-items li.portfolio-item a div.portfolio-item-info {
+        padding: 10px; }
+        section#portfolio ul#portfolio-items li.portfolio-item a div.portfolio-item-info h2 {
+          font-size: 17px;
+          color: #555; }
+        section#portfolio ul#portfolio-items li.portfolio-item a div.portfolio-item-info span {
+          font-size: 13px;
+          color: #888; }
+    section#portfolio ul#portfolio-items li:nth-child(n+4) {
+      margin-top: 40px; }
+    section#portfolio ul#portfolio-items li:nth-child(4), section#portfolio ul#portfolio-items li:nth-child(8) {
+      margin-right: 0; }
+
+/* About */
+section#about {
+  overflow: auto; }
+  section#about div#about-left {
+    float: left;
+    width: 50%; }
+    section#about div#about-left p {
+      margin-bottom: 10px; }
+    section#about div#about-left h3 {
+      margin: 20px 0 10px 0;
+      font-size: 15px;
+      font-weight: 700; }
+    section#about div#about-left ul#quick-details {
+      padding-left: 15px;
+      font-size: 14px;
+      list-style: none; }
+      section#about div#about-left ul#quick-details li {
+        margin-bottom: 5px; }
+  section#about div#about-right {
+    float: right;
+    width: 40%; }
+    section#about div#about-right img {
+      width: 100%; }
+
+/* Contact */
+section#contact form {
+  margin-top: 40px; }
+  section#contact form input {
+    display: block;
+    margin-bottom: 30px;
+    width: 300px;
+    font-family: "ProximaNova-light", Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #222;
+    border-style: none none solid none; }
+  section#contact form textarea {
+    margin-bottom: 15px;
+    width: 500px;
+    min-height: 150px;
+    font-family: "ProximaNova-light", Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #222;
+    border-radius: 3px; }
+  section#contact form input::-webkit-input-placeholder, section#contact form textarea::-webkit-input-placeholder {
+    color: #333; }
+  section#contact form input:-moz-placeholder, section#contact form textarea:-moz-placeholder {
+    color: #333; }
+  section#contact form input::-moz-placeholder, section#contact form textarea::-moz-placeholder {
+    color: #333; }
+  section#contact form input:-ms-input-placeholder, section#contact form textarea:-ms-input-placeholder {
+    color: #333; }
+  section#contact form input#input-submit {
+    padding: 6px 10px;
+    width: auto;
+    color: #fff;
+    background-color: #09c;
+    border: 1px solid #09c;
+    border-radius: 3px; }
