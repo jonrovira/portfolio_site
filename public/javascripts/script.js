@@ -35,13 +35,13 @@ $(document).ready(function() {
 			if( rightPosition <= rightBoundary ) {
 				if( $(this).hasClass('portfolio-item-blurred') ) {
 					$(this).removeClass('portfolio-item-blurred');
-					$(this).fadeTo("fast", 1.0);
+					$(this).fadeTo(400, 1.0);
 				}
 			}
 			else {
 				if( !$(this).hasClass('portfolio-item-blurred') ) {
 					$(this).addClass('portfolio-item-blurred');
-					$(this).fadeTo("fast", 0.5);
+					$(this).fadeTo(400, 0.5);
 				}
 			}
 		});

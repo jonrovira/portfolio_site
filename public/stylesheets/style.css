@@ -78,45 +78,26 @@ section#portfolio div.section-content {
       list-style: none;
       position: relative; }
       section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item {
-        position: relative;
         display: inline-block;
         margin-right: 40px;
+        margin-bottom: 20px;
         width: 400px;
-        height: 400px;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
         border-radius: 3px;
         cursor: pointer; }
         section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a img.portfolio-item-image {
-          position: absolute;
           width: 100%;
-          border-radius: 3px; }
+          border-radius: 3px 3px 0 0; }
         section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
-          display: none;
-          position: absolute;
-          text-align: center; }
+          padding: 10px;
+          text-align: left;
+          border-radius: 0 0 3px 3px; }
           section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
-            width: 400px;
-            font-size: 30px;
-            color: #fff;
-            line-height: 400px;
-            vertical-align: middle;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.2); }
+            font-size: 19px;
+            color: #555; }
           section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
             font-size: 13px;
             color: #888; }
-  section#portfolio div.section-content i {
-    position: absolute;
-    top: 50%;
-    font-size: 90px;
-    color: #555;
-    cursor: pointer; }
-  section#portfolio div.section-content i#portfolio-prev {
-    left: 20px; }
-  section#portfolio div.section-content i#portfolio-next {
-    right: calc(10% + 20px); }
-  section#portfolio div.section-content i:hover {
-    color: #222; }
 
 /* About */
 section#about div.section-content {
