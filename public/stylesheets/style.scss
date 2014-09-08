@@ -129,65 +129,63 @@ section#welcome {
 section#portfolio {
 
 	div.section-content {
-		position: relative;
 		margin-left: $portfolio-section-content-margin-left;
 		width: $portfolio-section-content-width;
-		overflow-x: hidden;
 
-		ul#portfolio-items-wrapper {
-			list-style: none;
+		div#portfolio-items-wrapper {
 			position: relative;
+			overflow-x: scroll;
 
-			li.portfolio-item {
+
+			ul#portfolio-gallery {
+				list-style: none;
 				position: relative;
-				display: inline-block;
-				margin-right: $portfolio-item-spacing;
-				width: $portfolio-item-width;
-				height: $portfolio-item-width;
-				box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
-				border-radius: 3px;
-				cursor: pointer;
 
-				a {
+				li.portfolio-item {
+					position: relative;
+					display: inline-block;
+					margin-right: $portfolio-item-spacing;
+					width: $portfolio-item-width;
+					height: $portfolio-item-width;
+					box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+					border-radius: 3px;
+					cursor: pointer;
 
-					img.portfolio-item-image {
-						position: absolute;
-						width: 100%;
-						border-radius: 3px;
+					a {
 
-					}
-					div.portfolio-item-info {
-						display: none;
-						position: absolute;
-						text-align: center;
-
-						h2 {
-							width: $portfolio-item-width;
-							font-size: 30px;
-							color: #fff;
-							line-height: $portfolio-item-width;
-							vertical-align: middle;
-							text-align: center;
-							background-color: rgba(0, 0, 0, 0.2);
+						img.portfolio-item-image {
+							position: absolute;
+							width: 100%;
+							border-radius: 3px;
 
 						}
-						span {
-							font-size: 13px;
-							color: #888;
+						div.portfolio-item-info {
+							display: none;
+							position: absolute;
+							text-align: center;
+
+							h2 {
+								width: $portfolio-item-width;
+								font-size: 30px;
+								color: #fff;
+								line-height: $portfolio-item-width;
+								vertical-align: middle;
+								text-align: center;
+								background-color: rgba(0, 0, 0, 0.2);
+
+							}
+							span {
+								font-size: 13px;
+								color: #888;
+							}
 						}
 					}
 				}
-			}
-			li.portfolio-item.portfolio-item-blurred {
-				opacity: 0.5;
-			}
-			li.portfolio-item:last-child {
-				margin-right: 0;
-			}
-			li.portfolio-item:hover:not(.portfolio-item-blurred) {
+				li.portfolio-item:hover:not(.portfolio-item-blurred) {
 
-				div.portfolio-item-info {
-					display: block;
+					div.portfolio-item-info {
+						// display: block;
+					}
 				}
 			}
 		}

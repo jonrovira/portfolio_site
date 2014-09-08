@@ -69,47 +69,42 @@ section#welcome div.section-content {
 
 /* Portfolio */
 section#portfolio div.section-content {
-  position: relative;
   margin-left: 10%;
-  width: 90%;
-  overflow-x: hidden; }
-  section#portfolio div.section-content ul#portfolio-items-wrapper {
-    list-style: none;
-    position: relative; }
-    section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item {
-      position: relative;
-      display: inline-block;
-      margin-right: 40px;
-      width: 400px;
-      height: 400px;
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-      border-radius: 3px;
-      cursor: pointer; }
-      section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item a img.portfolio-item-image {
-        position: absolute;
-        width: 100%;
-        border-radius: 3px; }
-      section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item a div.portfolio-item-info {
-        display: none;
-        position: absolute;
-        text-align: center; }
-        section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item a div.portfolio-item-info h2 {
-          width: 400px;
-          font-size: 30px;
-          color: #fff;
-          line-height: 400px;
-          vertical-align: middle;
-          text-align: center;
-          background-color: rgba(0, 0, 0, 0.2); }
-        section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item a div.portfolio-item-info span {
-          font-size: 13px;
-          color: #888; }
-    section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item.portfolio-item-blurred {
-      opacity: 0.5; }
-    section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item:last-child {
-      margin-right: 0; }
-    section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item:hover:not(.portfolio-item-blurred) div.portfolio-item-info {
-      display: block; }
+  width: 90%; }
+  section#portfolio div.section-content div#portfolio-items-wrapper {
+    position: relative;
+    overflow-x: scroll; }
+    section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery {
+      list-style: none;
+      position: relative; }
+      section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item {
+        position: relative;
+        display: inline-block;
+        margin-right: 40px;
+        width: 400px;
+        height: 400px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        cursor: pointer; }
+        section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a img.portfolio-item-image {
+          position: absolute;
+          width: 100%;
+          border-radius: 3px; }
+        section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
+          display: none;
+          position: absolute;
+          text-align: center; }
+          section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
+            width: 400px;
+            font-size: 30px;
+            color: #fff;
+            line-height: 400px;
+            vertical-align: middle;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.2); }
+          section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
+            font-size: 13px;
+            color: #888; }
   section#portfolio div.section-content i {
     position: absolute;
     top: 50%;
