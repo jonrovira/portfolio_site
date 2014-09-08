@@ -145,6 +145,7 @@ section#portfolio {
 					display: inline-block;
 					margin-right: $portfolio-item-spacing;
 					margin-bottom: 20px;
+					margin-left: 5px;
 					width: $portfolio-item-width;
 					box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
 					border-radius: 3px;
@@ -211,8 +212,99 @@ section#about {
 			float: right;
 			width: 40%;
 
-			img {
-				width: 100%;
+			div#about-face {
+				position: relative;
+
+				div#about-face-head {
+					position: absolute;
+					width: 260px;
+					height: 330px;
+					background-color: #E1B899;
+					border-radius: 45%;
+
+					div.about-face-eye {
+						position: absolute;
+						top: 120px;
+						width: 50px;
+						height: 25px;
+						background-color: #fff;
+						border-radius: 53%;
+					}
+					div#about-face-eye-left {
+						left: 50px;
+					}
+					div#about-face-eye-right {
+						right: 50px;
+					}
+				}
+				div.about-face-hair {
+					position: absolute;
+					transform: rotate(45deg);
+					top: -7px;
+					width: 35px;
+					height: 40px;
+					border-radius: 50%;
+					box-shadow: inset -8px 0 0 0 #1a1a1a;
+				}
+				div#about-face-hair-1 {
+					left: 130px;
+					box-shadow: inset -8px 0 0 0 #1a1a1a;
+				}
+				div#about-face-hair-2 {
+					left: 128px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #252525;
+				}
+				div#about-face-hair-3 {
+					left: 126px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #000;
+				}
+				div#about-face-hair-4 {
+					left: 124px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #1a1a1a;
+				}
+				div#about-face-hair-5 {
+					left: 122px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #252525;
+				}
+				div#about-face-hair-6 {
+					left: 120px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #000;
+				}
+				div#about-face-hair-7 {
+					left: 118px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #1a1a1a;
+				}
+				div#about-face-hair-8 {
+					left: 116px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #252525;
+				}
+				div#about-face-hair-9 {
+					left: 114px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #000;
+				}
+				div#about-face-hair-10 {
+					left: 112px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #1a1a1a;
+				}
+				div#about-face-hair-11 {
+					left: 110px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #252525;
+				}
+				div#about-face-hair-12 {
+					left: 108px;
+					transform: rotate(60deg);
+					box-shadow: inset -8px 0 0 0 #000;
+				}
 			}
 		}
 	}
