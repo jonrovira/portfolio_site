@@ -11,12 +11,14 @@ label, table, caption {
 html {
   font-family: "ProximaNova-light", Arial, Helvetica, sans-serif; }
   html body main section {
-    margin: 0 auto 80px auto;
-    width: 80%; }
-    html body main section h1.section-header {
-      margin: 20px 0;
-      font-size: 45px;
-      text-align: left; }
+    width: 100%; }
+    html body main section div.section-content {
+      margin: 0 auto 80px auto;
+      width: 80%; }
+      html body main section div.section-content h1.section-header {
+        margin: 20px 0;
+        font-size: 45px;
+        text-align: left; }
   html body main hr {
     width: 80%;
     border: 1px solid #eee;
@@ -57,71 +59,98 @@ header {
         font-size: 19px; }
 
 /* Welcome */
-section#welcome {
-  padding: 240px 0 320px;
+section#welcome div.section-content {
+  padding: 240px 0 230px;
   text-align: center; }
-  section#welcome h1 {
+  section#welcome div.section-content h1 {
     font-size: 60px; }
-  section#welcome h2 {
+  section#welcome div.section-content h2 {
     font-size: 30px; }
 
 /* Portfolio */
-section#portfolio {
-  text-align: center; }
-  section#portfolio ul#portfolio-items {
-    list-style: none; }
-    section#portfolio ul#portfolio-items li.portfolio-item {
+section#portfolio div.section-content {
+  position: relative;
+  margin-left: 10%;
+  width: 90%;
+  overflow-x: hidden; }
+  section#portfolio div.section-content ul#portfolio-items-wrapper {
+    list-style: none;
+    position: relative; }
+    section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item {
+      position: relative;
       display: inline-block;
       margin-right: 40px;
-      width: 254px;
+      width: 400px;
+      height: 400px;
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
       border-radius: 3px;
-      text-align: left; }
-      section#portfolio ul#portfolio-items li.portfolio-item a img.portfolio-item-image {
+      cursor: pointer; }
+      section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item a img.portfolio-item-image {
+        position: absolute;
         width: 100%;
-        background-color: #000;
-        border-radius: 3px 3px 0 0; }
-      section#portfolio ul#portfolio-items li.portfolio-item a div.portfolio-item-info {
-        padding: 10px; }
-        section#portfolio ul#portfolio-items li.portfolio-item a div.portfolio-item-info h2 {
-          font-size: 17px;
-          color: #555; }
-        section#portfolio ul#portfolio-items li.portfolio-item a div.portfolio-item-info span {
+        border-radius: 3px; }
+      section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item a div.portfolio-item-info {
+        display: none;
+        position: absolute;
+        text-align: center; }
+        section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item a div.portfolio-item-info h2 {
+          width: 400px;
+          font-size: 30px;
+          color: #fff;
+          line-height: 400px;
+          vertical-align: middle;
+          text-align: center;
+          background-color: rgba(0, 0, 0, 0.2); }
+        section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item a div.portfolio-item-info span {
           font-size: 13px;
           color: #888; }
-    section#portfolio ul#portfolio-items li:nth-child(n+4) {
-      margin-top: 40px; }
-    section#portfolio ul#portfolio-items li:nth-child(4), section#portfolio ul#portfolio-items li:nth-child(8) {
+    section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item.portfolio-item-blurred {
+      opacity: 0.5; }
+    section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item:last-child {
       margin-right: 0; }
+    section#portfolio div.section-content ul#portfolio-items-wrapper li.portfolio-item:hover:not(.portfolio-item-blurred) div.portfolio-item-info {
+      display: block; }
+  section#portfolio div.section-content i {
+    position: absolute;
+    top: 50%;
+    font-size: 90px;
+    color: #555;
+    cursor: pointer; }
+  section#portfolio div.section-content i#portfolio-prev {
+    left: 20px; }
+  section#portfolio div.section-content i#portfolio-next {
+    right: calc(10% + 20px); }
+  section#portfolio div.section-content i:hover {
+    color: #222; }
 
 /* About */
-section#about {
+section#about div.section-content {
   overflow: auto; }
-  section#about div#about-left {
+  section#about div.section-content div#about-left {
     float: left;
     width: 50%; }
-    section#about div#about-left p {
+    section#about div.section-content div#about-left p {
       margin-bottom: 10px; }
-    section#about div#about-left h3 {
+    section#about div.section-content div#about-left h3 {
       margin: 20px 0 10px 0;
       font-size: 15px;
       font-weight: 700; }
-    section#about div#about-left ul#quick-details {
+    section#about div.section-content div#about-left ul#quick-details {
       padding-left: 15px;
       font-size: 14px;
       list-style: none; }
-      section#about div#about-left ul#quick-details li {
+      section#about div.section-content div#about-left ul#quick-details li {
         margin-bottom: 5px; }
-  section#about div#about-right {
+  section#about div.section-content div#about-right {
     float: right;
     width: 40%; }
-    section#about div#about-right img {
+    section#about div.section-content div#about-right img {
       width: 100%; }
 
 /* Contact */
-section#contact form {
+section#contact div.section-content form {
   margin-top: 40px; }
-  section#contact form input {
+  section#contact div.section-content form input {
     display: block;
     margin-bottom: 30px;
     width: 300px;
@@ -130,7 +159,7 @@ section#contact form {
     font-size: 14px;
     border: 1px solid #222;
     border-style: none none solid none; }
-  section#contact form textarea {
+  section#contact div.section-content form textarea {
     margin-bottom: 15px;
     width: 500px;
     min-height: 150px;
@@ -139,15 +168,15 @@ section#contact form {
     font-size: 14px;
     border: 1px solid #222;
     border-radius: 3px; }
-  section#contact form input::-webkit-input-placeholder, section#contact form textarea::-webkit-input-placeholder {
+  section#contact div.section-content form input::-webkit-input-placeholder, section#contact div.section-content form textarea::-webkit-input-placeholder {
     color: #333; }
-  section#contact form input:-moz-placeholder, section#contact form textarea:-moz-placeholder {
+  section#contact div.section-content form input:-moz-placeholder, section#contact div.section-content form textarea:-moz-placeholder {
     color: #333; }
-  section#contact form input::-moz-placeholder, section#contact form textarea::-moz-placeholder {
+  section#contact div.section-content form input::-moz-placeholder, section#contact div.section-content form textarea::-moz-placeholder {
     color: #333; }
-  section#contact form input:-ms-input-placeholder, section#contact form textarea:-ms-input-placeholder {
+  section#contact div.section-content form input:-ms-input-placeholder, section#contact div.section-content form textarea:-ms-input-placeholder {
     color: #333; }
-  section#contact form input#input-submit {
+  section#contact div.section-content form input#input-submit {
     padding: 6px 10px;
     width: auto;
     color: #fff;
