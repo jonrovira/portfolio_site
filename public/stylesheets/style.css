@@ -121,80 +121,80 @@ section#about div.section-content {
   section#about div.section-content div#about-right {
     float: right;
     width: 40%; }
-    section#about div.section-content div#about-right div#about-face {
+    section#about div.section-content div#about-right div#face {
       position: relative; }
-      section#about div.section-content div#about-right div#about-face div#about-face-head {
+      section#about div.section-content div#about-right div#face div#head {
+        z-index: 1;
         position: absolute;
         width: 260px;
         height: 330px;
         background-color: #E1B899;
         border-radius: 45%; }
-        section#about div.section-content div#about-right div#about-face div#about-face-head div.about-face-eye {
+        section#about div.section-content div#about-right div#face div#head div.eye {
           position: absolute;
           top: 120px;
           width: 50px;
           height: 25px;
           background-color: #fff;
           border-radius: 53%; }
-        section#about div.section-content div#about-right div#about-face div#about-face-head div#about-face-eye-left {
+        section#about div.section-content div#about-right div#face div#head div#eye-left {
           left: 50px; }
-        section#about div.section-content div#about-right div#about-face div#about-face-head div#about-face-eye-right {
+        section#about div.section-content div#about-right div#face div#head div#eye-right {
           right: 50px; }
-      section#about div.section-content div#about-right div#about-face div.about-face-hair {
+      section#about div.section-content div#about-right div#face div#hair {
         position: absolute;
-        transform: rotate(45deg);
-        top: -7px;
-        width: 35px;
-        height: 40px;
-        border-radius: 50%;
-        box-shadow: inset -8px 0 0 0 #1a1a1a; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-1 {
-        left: 130px;
-        box-shadow: inset -8px 0 0 0 #1a1a1a; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-2 {
-        left: 128px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #252525; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-3 {
-        left: 126px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #000; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-4 {
-        left: 124px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #1a1a1a; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-5 {
-        left: 122px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #252525; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-6 {
-        left: 120px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #000; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-7 {
-        left: 118px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #1a1a1a; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-8 {
-        left: 116px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #252525; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-9 {
-        left: 114px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #000; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-10 {
-        left: 112px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #1a1a1a; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-11 {
-        left: 110px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #252525; }
-      section#about div.section-content div#about-right div#about-face div#about-face-hair-12 {
-        left: 108px;
-        transform: rotate(60deg);
-        box-shadow: inset -8px 0 0 0 #000; }
+        z-index: 2; }
+        section#about div.section-content div#about-right div#face div#hair div.clump {
+          position: absolute;
+          top: -12px; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.hair-1 {
+            position: absolute;
+            left: 5px;
+            width: 45px;
+            height: 50px;
+            border-radius: 50%; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.hair-2 {
+            position: absolute;
+            left: 10px;
+            width: 45px;
+            height: 50px;
+            border-radius: 50%; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.hair-3 {
+            position: absolute;
+            left: 15px;
+            width: 45px;
+            height: 50px;
+            border-radius: 50%; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.hair-4 {
+            position: absolute;
+            left: 20px;
+            width: 45px;
+            height: 50px;
+            border-radius: 50%; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.t1 {
+            transform: rotate(55deg); }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.t2 {
+            transform: rotate(65deg); }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.t3 {
+            transform: rotate(75deg); }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.bs1 {
+            box-shadow: inset -8px 0 0 0 #1a1a1a; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.bs2 {
+            box-shadow: inset -8px 0 0 0 #252525; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.bs3 {
+            box-shadow: inset -8px 0 0 0 #000; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-1 {
+          left: 40px; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-2 {
+          left: 60px; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-3 {
+          left: 80px; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-4 {
+          left: 100px; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-5 {
+          left: 120px; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-6 {
+          left: 140px; }
 
 /* Contact */
 section#contact div.section-content form {

@@ -212,17 +212,18 @@ section#about {
 			float: right;
 			width: 40%;
 
-			div#about-face {
+			div#face {
 				position: relative;
 
-				div#about-face-head {
+				div#head {
+					z-index: 1;
 					position: absolute;
 					width: 260px;
 					height: 330px;
 					background-color: #E1B899;
 					border-radius: 45%;
 
-					div.about-face-eye {
+					div.eye {
 						position: absolute;
 						top: 120px;
 						width: 50px;
@@ -230,80 +231,86 @@ section#about {
 						background-color: #fff;
 						border-radius: 53%;
 					}
-					div#about-face-eye-left {
+					div#eye-left {
 						left: 50px;
 					}
-					div#about-face-eye-right {
+					div#eye-right {
 						right: 50px;
 					}
 				}
-				div.about-face-hair {
+				div#hair {
 					position: absolute;
-					transform: rotate(45deg);
-					top: -7px;
-					width: 35px;
-					height: 40px;
-					border-radius: 50%;
-					box-shadow: inset -8px 0 0 0 #1a1a1a;
-				}
-				div#about-face-hair-1 {
-					left: 130px;
-					box-shadow: inset -8px 0 0 0 #1a1a1a;
-				}
-				div#about-face-hair-2 {
-					left: 128px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #252525;
-				}
-				div#about-face-hair-3 {
-					left: 126px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #000;
-				}
-				div#about-face-hair-4 {
-					left: 124px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #1a1a1a;
-				}
-				div#about-face-hair-5 {
-					left: 122px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #252525;
-				}
-				div#about-face-hair-6 {
-					left: 120px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #000;
-				}
-				div#about-face-hair-7 {
-					left: 118px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #1a1a1a;
-				}
-				div#about-face-hair-8 {
-					left: 116px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #252525;
-				}
-				div#about-face-hair-9 {
-					left: 114px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #000;
-				}
-				div#about-face-hair-10 {
-					left: 112px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #1a1a1a;
-				}
-				div#about-face-hair-11 {
-					left: 110px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #252525;
-				}
-				div#about-face-hair-12 {
-					left: 108px;
-					transform: rotate(60deg);
-					box-shadow: inset -8px 0 0 0 #000;
+					z-index: 2;
+
+					div.clump {
+						position: absolute;
+						top: -12px;
+
+						div.hair-1 {
+							position: absolute;
+							left: 5px;
+							width: 45px;
+							height: 50px;
+							border-radius: 50%;
+						}
+						div.hair-2 {
+							position: absolute;
+							left: 10px;
+							width: 45px;
+							height: 50px;
+							border-radius: 50%;
+						}
+						div.hair-3 {
+							position: absolute;
+							left: 15px;
+							width: 45px;
+							height: 50px;
+							border-radius: 50%;
+						}
+						div.hair-4 {
+							position: absolute;
+							left: 20px;
+							width: 45px;
+							height: 50px;
+							border-radius: 50%;
+						}
+						div.t1 {
+							transform: rotate(55deg);
+						}
+						div.t2 {
+							transform: rotate(65deg);
+						}
+						div.t3 {
+							transform: rotate(75deg);
+						}
+						div.bs1 {
+							box-shadow: inset -8px 0 0 0 #1a1a1a;
+						}
+						div.bs2 {
+							box-shadow: inset -8px 0 0 0 #252525;
+						}
+						div.bs3 {
+							box-shadow: inset -8px 0 0 0 #000;
+						}
+					}
+					div#clump-1 {
+						left: 40px;
+					}
+					div#clump-2 {
+						left: 60px;
+					}
+					div#clump-3 {
+						left: 80px;
+					}
+					div#clump-4 {
+						left: 100px;
+					}
+					div#clump-5 {
+						left: 120px;
+					}
+					div#clump-6 {
+						left: 140px;
+					}
 				}
 			}
 		}
