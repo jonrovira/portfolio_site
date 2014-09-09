@@ -120,81 +120,378 @@ section#about div.section-content {
         margin-bottom: 5px; }
   section#about div.section-content div#about-right {
     float: right;
-    width: 40%; }
+    width: 40%;
+    height: 420px; }
     section#about div.section-content div#about-right div#face {
-      position: relative; }
+      position: relative;
+      width: 250px;
+      height: 380px; }
+      section#about div.section-content div#about-right div#face div#hair {
+        position: relative;
+        z-index: 2; }
+        section#about div.section-content div#about-right div#face div#hair div.clump {
+          position: absolute; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.bs1 {
+            box-shadow: inset -11px 0 0 0 #1a1a1a; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.bs2 {
+            box-shadow: inset -11px 0 0 0 #252525; }
+          section#about div.section-content div#about-right div#face div#hair div.clump div.bs3 {
+            box-shadow: inset -11px 0 0 0 #000; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-left {
+          left: 0; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair {
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            border-radius: 50%;
+            transform: rotate(200deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-1 {
+            top: 35px;
+            left: 19px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-2 {
+            top: 35px;
+            left: 27px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-3 {
+            top: 55px;
+            left: 10px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-4 {
+            top: 55px;
+            left: 20px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-5 {
+            top: 75px;
+            left: 5px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-6 {
+            top: 75px;
+            left: 15px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-7 {
+            top: 95px;
+            left: 0px;
+            transform: rotate(195deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-8 {
+            top: 105px;
+            left: -2px;
+            transform: rotate(192deg); }
+        section#about div.section-content div#about-right div#face div#hair div#clump-right {
+          right: 0; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair {
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            border-radius: 50%;
+            transform: rotate(-20deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-1 {
+            top: 35px;
+            left: -34px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-2 {
+            top: 35px;
+            left: -44px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-3 {
+            top: 55px;
+            left: -27px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-4 {
+            top: 55px;
+            left: -37px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-5 {
+            top: 75px;
+            left: -22px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-6 {
+            top: 75px;
+            left: -32px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-7 {
+            top: 95px;
+            left: -17px;
+            transform: rotate(-15deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-8 {
+            top: 105px;
+            left: -15px;
+            transform: rotate(-12deg); }
+        section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy {
+          top: -36px;
+          left: 75px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair {
+            position: absolute;
+            width: 65px;
+            height: 70px;
+            border-radius: 50%; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t1 {
+            transform: rotate(60deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t2 {
+            transform: rotate(70deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t3 {
+            transform: rotate(80deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-1 {
+            left: 15px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-2 {
+            left: 20px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-3 {
+            left: 25px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-4 {
+            left: 30px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-5 {
+            left: 35px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-6 {
+            left: 40px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-7 {
+            left: 45px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-8 {
+            left: 50px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-9 {
+            left: 55px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-10 {
+            left: 60px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-11 {
+            left: 65px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-12 {
+            left: 70px; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left {
+          left: 20px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            border-radius: 50%; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t1 {
+            transform: rotate(220deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t2 {
+            transform: rotate(230deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t3 {
+            transform: rotate(240deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-1 {
+            top: 10px;
+            left: 17px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-2 {
+            top: 8px;
+            left: 26px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-3 {
+            top: -2px;
+            left: 35px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-4 {
+            top: -6px;
+            left: 45px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-5 {
+            top: -8px;
+            left: 55px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-6 {
+            top: -12px;
+            left: 65px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-7 {
+            top: -10px;
+            left: 75px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-8 {
+            top: -10px;
+            left: 85px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-9 {
+            top: -10px;
+            left: 95px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-10 {
+            top: 28px;
+            left: 19px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-11 {
+            top: 15px;
+            left: 33px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-12 {
+            top: 0;
+            left: 55px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-13 {
+            top: -5px;
+            left: 100px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-14 {
+            top: 5px;
+            left: 63px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-15 {
+            top: 5px;
+            left: 67px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-16 {
+            top: 0px;
+            left: 105px; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right {
+          right: 62px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            border-radius: 50%; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t1 {
+            transform: rotate(310deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t2 {
+            transform: rotate(320deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t3 {
+            transform: rotate(330deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-1 {
+            top: 10px;
+            left: 0; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-2 {
+            top: 21px;
+            left: -2px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-3 {
+            top: 40px;
+            left: 8px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-4 {
+            top: 50px;
+            left: 16px; }
+        section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under {
+          left: 30px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            border-radius: 50%; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t1 {
+            transform: rotate(270deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t2 {
+            transform: rotate(280deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t3 {
+            transform: rotate(290deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-1 {
+            top: 30px;
+            left: 10px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-2 {
+            top: 36px;
+            left: 30px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-3 {
+            top: 33px;
+            left: 50px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-4 {
+            top: 30px;
+            left: 70px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-5 {
+            top: 36px;
+            left: 90px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-6 {
+            top: 33px;
+            left: 110px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-7 {
+            top: 30px;
+            left: 130px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-8 {
+            top: 36px;
+            left: 150px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-9 {
+            top: 25px;
+            left: 30px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-10 {
+            top: 22px;
+            left: 50px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-11 {
+            top: 28px;
+            left: 70px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-12 {
+            top: 25px;
+            left: 90px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-13 {
+            top: 22px;
+            left: 110px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-14 {
+            top: 28px;
+            left: 130px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-15 {
+            top: 25px;
+            left: 150px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-16 {
+            top: 14px;
+            left: 30px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-17 {
+            top: 18px;
+            left: 30px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-18 {
+            top: 27px;
+            left: 30px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-19 {
+            top: 18px;
+            left: 60px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-20 {
+            top: 27px;
+            left: 80px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-21 {
+            top: 20px;
+            left: 132px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-22 {
+            top: 33px;
+            left: 128px; }
+          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-23 {
+            top: 37px;
+            left: 13px; }
       section#about div.section-content div#about-right div#face div#head {
         z-index: 1;
         position: absolute;
-        width: 260px;
-        height: 330px;
+        width: 250px;
+        height: 380px;
         background-color: #E1B899;
-        border-radius: 45%; }
-        section#about div.section-content div#about-right div#face div#head div.eye {
+        border-radius: 45% 45% 55% 55%; }
+        section#about div.section-content div#about-right div#face div#head div#eyebrows div.eyebrow {
           position: absolute;
-          top: 120px;
+          top: 110px;
+          width: 35px;
+          height: 60px;
+          box-shadow: inset -10px 0 0 0 #000; }
+        section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-left {
+          left: 52px;
+          transform: rotate(-80deg);
+          border-radius: 10% 55% 10% 75%; }
+        section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-right {
+          right: 52px;
+          transform: rotate(-99deg);
+          border-radius: 55% 10% 75% 10%; }
+        section#about div.section-content div#about-right div#face div#head div#eyes div.eye {
+          position: absolute;
+          top: 140px;
           width: 50px;
           height: 25px;
-          background-color: #fff;
-          border-radius: 53%; }
-        section#about div.section-content div#about-right div#face div#head div#eye-left {
-          left: 50px; }
-        section#about div.section-content div#about-right div#face div#head div#eye-right {
-          right: 50px; }
-      section#about div.section-content div#about-right div#face div#hair {
-        position: absolute;
-        z-index: 2; }
-        section#about div.section-content div#about-right div#face div#hair div.clump {
-          position: absolute;
-          top: -12px; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.hair-1 {
+          background-color: #f8f8f8;
+          overflow: hidden; }
+          section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 {
+            z-index: 0;
             position: absolute;
-            left: 5px;
-            width: 45px;
-            height: 50px;
-            border-radius: 50%; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.hair-2 {
-            position: absolute;
+            top: -2px;
             left: 10px;
-            width: 45px;
-            height: 50px;
-            border-radius: 50%; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.hair-3 {
+            width: 30px;
+            height: 30px;
+            background-color: #78542F;
+            border-radius: 50%;
+            box-shadow: inset 0px 6px 8px -1px rgba(84, 59, 33, 0.9); }
+            section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 div.eye-pupil {
+              z-index: 2;
+              position: absolute;
+              top: 8px;
+              left: 8px;
+              width: 14px;
+              height: 14px;
+              background-color: #111;
+              border-radius: 50%;
+              box-shadow: 0 0 10px 0 #a1703f; }
+        section#about div.section-content div#about-right div#face div#head div#eyes div#eye-left {
+          left: 50px;
+          transform: rotate(3deg);
+          border-radius: 75% 75% 55% 75%; }
+        section#about div.section-content div#about-right div#face div#head div#eyes div#eye-right {
+          right: 50px;
+          transform: rotate(-3deg);
+          border-radius: 55% 75% 75% 75%; }
+        section#about div.section-content div#about-right div#face div#head div#nose {
+          position: absolute;
+          top: 170px;
+          left: 112px; }
+          section#about div.section-content div#about-right div#face div#head div#nose div#nose-main {
+            width: 30px;
+            height: 80px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0px 6px 4px -2px rgba(196, 136, 89, 0.68); }
+          section#about div.section-content div#about-right div#face div#head div#nose div.nostril {
             position: absolute;
-            left: 15px;
-            width: 45px;
-            height: 50px;
-            border-radius: 50%; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.hair-4 {
-            position: absolute;
-            left: 20px;
-            width: 45px;
-            height: 50px;
-            border-radius: 50%; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.t1 {
-            transform: rotate(55deg); }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.t2 {
-            transform: rotate(65deg); }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.t3 {
-            transform: rotate(75deg); }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.bs1 {
-            box-shadow: inset -8px 0 0 0 #1a1a1a; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.bs2 {
-            box-shadow: inset -8px 0 0 0 #252525; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.bs3 {
-            box-shadow: inset -8px 0 0 0 #000; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-1 {
-          left: 40px; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-2 {
-          left: 60px; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-3 {
-          left: 80px; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-4 {
-          left: 100px; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-5 {
-          left: 120px; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-6 {
-          left: 140px; }
+            top: 55px;
+            width: 20px;
+            height: 20px;
+            border-radius: 0 0 20px 20px; }
+          section#about div.section-content div#about-right div#face div#head div#nose div#nose-left {
+            left: -10px;
+            box-shadow: -1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+            -webkit-transform: rotate(33deg);
+            transform: rotate(45deg); }
+          section#about div.section-content div#about-right div#face div#head div#nose div#nose-right {
+            right: -10px;
+            box-shadow: 1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+            -webkit-transform: rotate(-33deg);
+            transform: rotate(-45deg); }
 
 /* Contact */
 section#contact div.section-content form {

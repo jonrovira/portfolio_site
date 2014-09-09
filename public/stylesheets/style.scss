@@ -11,6 +11,8 @@ $portfolio-item-width: 400px;
 $portfolio-section-content-margin-left: 10%; // 100% - $portfolio-section-content-width
 $portfolio-section-content-width: 90%; // (100% - $desktop-inner-width) / 2
 $portfolio-item-spacing: 40px;
+$about-face-width: 250px;
+$about-face-height: 380px;
 $p-font-size: 14px;
 $p-line-height: 20px;
 
@@ -211,105 +213,279 @@ section#about {
 		div#about-right {
 			float: right;
 			width: 40%;
+			height: 420px;
 
 			div#face {
 				position: relative;
+				width: $about-face-width;
+				height: $about-face-height;
 
-				div#head {
-					z-index: 1;
-					position: absolute;
-					width: 260px;
-					height: 330px;
-					background-color: #E1B899;
-					border-radius: 45%;
-
-					div.eye {
-						position: absolute;
-						top: 120px;
-						width: 50px;
-						height: 25px;
-						background-color: #fff;
-						border-radius: 53%;
-					}
-					div#eye-left {
-						left: 50px;
-					}
-					div#eye-right {
-						right: 50px;
-					}
-				}
 				div#hair {
-					position: absolute;
+					position: relative;
 					z-index: 2;
 
 					div.clump {
 						position: absolute;
-						top: -12px;
 
-						div.hair-1 {
-							position: absolute;
-							left: 5px;
-							width: 45px;
-							height: 50px;
-							border-radius: 50%;
-						}
-						div.hair-2 {
-							position: absolute;
-							left: 10px;
-							width: 45px;
-							height: 50px;
-							border-radius: 50%;
-						}
-						div.hair-3 {
-							position: absolute;
-							left: 15px;
-							width: 45px;
-							height: 50px;
-							border-radius: 50%;
-						}
-						div.hair-4 {
-							position: absolute;
-							left: 20px;
-							width: 45px;
-							height: 50px;
-							border-radius: 50%;
-						}
-						div.t1 {
-							transform: rotate(55deg);
-						}
-						div.t2 {
-							transform: rotate(65deg);
-						}
-						div.t3 {
-							transform: rotate(75deg);
-						}
 						div.bs1 {
-							box-shadow: inset -8px 0 0 0 #1a1a1a;
+							box-shadow: inset -11px 0 0 0 #1a1a1a;
 						}
 						div.bs2 {
-							box-shadow: inset -8px 0 0 0 #252525;
+							box-shadow: inset -11px 0 0 0 #252525;
 						}
 						div.bs3 {
-							box-shadow: inset -8px 0 0 0 #000;
+							box-shadow: inset -11px 0 0 0 #000;
 						}
 					}
-					div#clump-1 {
-						left: 40px;
+					div#clump-left {
+						left: 0;
+
+						div.hair {
+							position: absolute;
+							width: 20px;
+							height: 40px;
+							border-radius: 50%;
+							transform: rotate(200deg);
+						}
+						div.hair-1 { top: 35px; left: 19px; }
+						div.hair-2 { top: 35px; left: 27px; }
+						div.hair-3 { top: 55px; left: 10px; }
+						div.hair-4 { top: 55px; left: 20px; }
+						div.hair-5 { top: 75px; left: 5px; }
+						div.hair-6 { top: 75px; left: 15px; }
+						div.hair-7 { top: 95px; left: 0px; transform: rotate(195deg); }
+						div.hair-8 { top: 105px; left: -2px; transform: rotate(192deg); }
 					}
-					div#clump-2 {
-						left: 60px;
+					div#clump-right {
+						right: 0;
+
+						div.hair {
+							position: absolute;
+							width: 20px;
+							height: 40px;
+							border-radius: 50%;
+							transform: rotate(-20deg);
+						}
+						div.hair-1 { top: 35px; left: -34px; }
+						div.hair-2 { top: 35px; left: -44px; }
+						div.hair-3 { top: 55px; left: -27px; }
+						div.hair-4 { top: 55px; left: -37px; }
+						div.hair-5 { top: 75px; left: -22px; }
+						div.hair-6 { top: 75px; left: -32px; }
+						div.hair-7 { top: 95px; left: -17px; transform: rotate(-15deg); }
+						div.hair-8 { top: 105px; left: -15px; transform: rotate(-12deg); }
 					}
-					div#clump-3 {
-						left: 80px;
+					div#clump-top-pointy {
+						top: -36px;
+						left: 75px;
+
+						div.hair {
+							position: absolute;
+							width: 65px;
+							height: 70px;
+							border-radius: 50%;
+						}
+						div.t1 { transform: rotate(60deg); }
+						div.t2 { transform: rotate(70deg); }
+						div.t3 { transform: rotate(80deg); }
+						div.hair-1  { left: 15px; }
+						div.hair-2  { left: 20px; }
+						div.hair-3  { left: 25px; }
+						div.hair-4  { left: 30px; }
+						div.hair-5  { left: 35px; }
+						div.hair-6  { left: 40px; }
+						div.hair-7 { left: 45px; }
+						div.hair-8 { left: 50px; }
+						div.hair-9 { left: 55px; }
+						div.hair-10 { left: 60px; }
+						div.hair-11 { left: 65px; }
+						div.hair-12 { left: 70px; }
 					}
-					div#clump-4 {
-						left: 100px;
+					div#clump-top-normal-left {
+						left: 20px;
+
+						div.hair {
+							position: absolute;
+							width: 30px;
+							height: 40px;
+							border-radius: 50%;
+						}
+						div.t1 { transform: rotate(220deg); }
+						div.t2 { transform: rotate(230deg); }
+						div.t3 { transform: rotate(240deg); }
+						div.hair-1  { top: 10px; left: 17px; }
+						div.hair-2  { top: 8px; left: 26px; }
+						div.hair-3  { top: -2px; left: 35px; }
+						div.hair-4  { top: -6px; left: 45px; }
+						div.hair-5  { top: -8px; left: 55px; }
+						div.hair-6  { top: -12px; left: 65px; }
+						div.hair-7  { top: -10px; left: 75px; }
+						div.hair-8  { top: -10px; left: 85px; }
+						div.hair-9  { top: -10px; left: 95px; }
+						div.hair-10 { top: 28px; left: 19px; }
+						div.hair-11 { top: 15px; left: 33px; }
+						div.hair-12 { top: 0; left: 55px; }
+						div.hair-13 { top: -5px; left: 100px; }
+						div.hair-14 { top: 5px; left: 63px; }
+						div.hair-15 { top: 5px; left: 67px; }
+						div.hair-16 { top: 0px; left: 105px; }
 					}
-					div#clump-5 {
-						left: 120px;
+					div#clump-top-normal-right {
+						right: 62px;
+
+						div.hair {
+							position: absolute;
+							width: 30px;
+							height: 40px;
+							border-radius: 50%;
+						}
+						div.t1 { transform: rotate(310deg); }
+						div.t2 { transform: rotate(320deg); }
+						div.t3 { transform: rotate(330deg); }
+						div.hair-1  { top: 10px; left: 0; }
+						div.hair-2  { top: 21px; left: -2px; }
+						div.hair-3  { top: 40px; left: 8px; }
+						div.hair-4  { top: 50px; left: 16px; }
 					}
-					div#clump-6 {
-						left: 140px;
+					div#clump-top-normal-under {
+						left: 30px;
+
+						div.hair {
+							position: absolute;
+							width: 30px;
+							height: 40px;
+							border-radius: 50%;
+						}
+						div.t1 { transform: rotate(270deg); }
+						div.t2 { transform: rotate(280deg); }
+						div.t3 { transform: rotate(290deg); }
+						div.hair-1  { top: 30px; left: 10px; }
+						div.hair-2  { top: 36px; left: 30px; }
+						div.hair-3  { top: 33px; left: 50px; }
+						div.hair-4  { top: 30px; left: 70px; }
+						div.hair-5  { top: 36px; left: 90px; }
+						div.hair-6  { top: 33px; left: 110px; }
+						div.hair-7  { top: 30px; left: 130px; }
+						div.hair-8  { top: 36px; left: 150px; }
+						div.hair-9  { top: 25px; left: 30px; }
+						div.hair-10  { top: 22px; left: 50px; }
+						div.hair-11  { top: 28px; left: 70px; }
+						div.hair-12  { top: 25px; left: 90px; }
+						div.hair-13  { top: 22px; left: 110px; }
+						div.hair-14  { top: 28px; left: 130px; }
+						div.hair-15 { top: 25px; left: 150px; }
+						div.hair-16 { top: 14px; left: 30px; }
+						div.hair-17 { top: 18px; left: 30px; }
+						div.hair-18 { top: 27px; left: 30px; }
+						div.hair-19 { top: 18px; left: 60px; }
+						div.hair-20 { top: 27px; left: 80px; }
+						div.hair-21 { top: 20px; left: 132px; }
+						div.hair-22 { top: 33px; left: 128px; }
+						div.hair-23 { top: 37px; left: 13px; }
+					}
+				}
+				div#head {
+					z-index: 1;
+					position: absolute;
+					width: $about-face-width;
+					height: $about-face-height;
+					background-color: #E1B899;
+					border-radius: 45% 45% 55% 55%;
+
+					div#eyebrows {
+
+						div.eyebrow {
+							position: absolute;
+							top: 110px;
+							width: 35px;
+							height: 60px;
+							box-shadow: inset -10px 0 0 0 #000;
+						}
+						div#eyebrow-left {
+							left: 52px;
+							transform: rotate(-80deg);
+							border-radius: 10% 55% 10% 75%;
+						}
+						div#eyebrow-right {
+							right: 52px;
+							transform: rotate(-99deg);
+							border-radius: 55% 10% 75% 10%;
+						}
+					}
+					div#eyes {
+						div.eye {
+							position: absolute;
+							top: 140px;
+							width: 50px;
+							height: 25px;
+							background-color: #f8f8f8;
+							overflow: hidden;
+
+							div.eye-color-1 {
+								z-index: 0;
+								position: absolute;
+								top: -2px;
+								left: 10px;
+								width: 30px;
+								height: 30px;
+								background-color: #78542F;
+								border-radius: 50%;
+								box-shadow: inset 0px 6px 8px -1px rgba(84, 59, 33, 0.9);
+
+								div.eye-pupil {
+									z-index: 2;
+									position: absolute;
+									top: 8px;
+									left: 8px;
+									width: 14px;
+									height: 14px;
+									background-color: #111;
+									border-radius: 50%;
+									box-shadow: 0 0 10px 0 rgb(161, 112, 63);
+								}
+							}
+						}
+						div#eye-left {
+							left: 50px;
+							transform: rotate(3deg);
+							border-radius: 75% 75% 55% 75%;
+						}
+						div#eye-right {
+							right: 50px;
+							transform: rotate(-3deg);
+							border-radius: 55% 75% 75% 75%;
+						}
+					}
+					div#nose {
+						position: absolute;
+						top: 170px;
+						left: 112px;
+
+						div#nose-main {
+							width: 30px;
+							height: 80px;
+							border-radius: 0 0 15px 15px;
+							box-shadow: 0px 6px 4px -2px rgba(196, 136, 89, 0.68);
+						}
+						div.nostril {
+							position: absolute;
+							top: 55px;
+							width: 20px;
+							height: 20px;
+							border-radius: 0 0 20px 20px;
+						}
+						div#nose-left {
+							left: -10px;
+							box-shadow: -1px 4px 4px -2px rgba(196, 136, 89, 1), inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+							-webkit-transform: rotate(33deg);
+							transform: rotate(45deg);
+						}
+						div#nose-right {
+							right: -10px;
+							box-shadow: 1px 4px 4px -2px rgba(196, 136, 89, 1), inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+							-webkit-transform: rotate(-33deg);
+							transform: rotate(-45deg);
+						}
 					}
 				}
 			}
