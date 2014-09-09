@@ -171,6 +171,14 @@ section#about div.section-content {
             top: 105px;
             left: -2px;
             transform: rotate(192deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-9 {
+            top: 112px;
+            left: -2px;
+            transform: rotate(192deg); }
+          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-10 {
+            top: 120px;
+            left: -2px;
+            transform: rotate(192deg); }
         section#about div.section-content div#about-right div#face div#hair div#clump-right {
           right: 0; }
           section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair {
@@ -420,7 +428,7 @@ section#about div.section-content {
         border-radius: 45% 45% 55% 55%; }
         section#about div.section-content div#about-right div#face div#head div#eyebrows div.eyebrow {
           position: absolute;
-          top: 110px;
+          top: 120px;
           width: 35px;
           height: 60px;
           box-shadow: inset -10px 0 0 0 #000; }
@@ -434,9 +442,9 @@ section#about div.section-content {
           border-radius: 55% 10% 75% 10%; }
         section#about div.section-content div#about-right div#face div#head div#eyes div.eye {
           position: absolute;
-          top: 140px;
+          top: 150px;
           width: 50px;
-          height: 25px;
+          height: 23px;
           background-color: #f8f8f8;
           overflow: hidden; }
           section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 {
@@ -462,11 +470,11 @@ section#about div.section-content {
         section#about div.section-content div#about-right div#face div#head div#eyes div#eye-left {
           left: 50px;
           transform: rotate(3deg);
-          border-radius: 75% 75% 55% 75%; }
+          border-radius: 100px 100px 25% 15%; }
         section#about div.section-content div#about-right div#face div#head div#eyes div#eye-right {
           right: 50px;
           transform: rotate(-3deg);
-          border-radius: 55% 75% 75% 75%; }
+          border-radius: 100px 100px 15% 25%; }
         section#about div.section-content div#about-right div#face div#head div#nose {
           position: absolute;
           top: 170px;

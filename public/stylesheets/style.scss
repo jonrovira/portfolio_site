@@ -255,6 +255,8 @@ section#about {
 						div.hair-6 { top: 75px; left: 15px; }
 						div.hair-7 { top: 95px; left: 0px; transform: rotate(195deg); }
 						div.hair-8 { top: 105px; left: -2px; transform: rotate(192deg); }
+						div.hair-9 { top: 112px; left: -2px; transform: rotate(192deg); }
+						div.hair-10 { top: 120px; left: -2px; transform: rotate(192deg); }
 					}
 					div#clump-right {
 						right: 0;
@@ -396,7 +398,7 @@ section#about {
 
 						div.eyebrow {
 							position: absolute;
-							top: 110px;
+							top: 120px;
 							width: 35px;
 							height: 60px;
 							box-shadow: inset -10px 0 0 0 #000;
@@ -415,9 +417,9 @@ section#about {
 					div#eyes {
 						div.eye {
 							position: absolute;
-							top: 140px;
+							top: 150px;
 							width: 50px;
-							height: 25px;
+							height: 23px;
 							background-color: #f8f8f8;
 							overflow: hidden;
 
@@ -448,12 +450,12 @@ section#about {
 						div#eye-left {
 							left: 50px;
 							transform: rotate(3deg);
-							border-radius: 75% 75% 55% 75%;
+							border-radius: 100px 100px 25% 15%;
 						}
 						div#eye-right {
 							right: 50px;
 							transform: rotate(-3deg);
-							border-radius: 55% 75% 75% 75%;
+							border-radius: 100px 100px 15% 25%;
 						}
 					}
 					div#nose {
