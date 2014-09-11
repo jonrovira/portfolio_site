@@ -428,42 +428,42 @@ section#about div.section-content {
         border-radius: 45% 45% 55% 55%; }
         section#about div.section-content div#about-right div#face div#head div#eyebrows div.eyebrow {
           position: absolute;
-          top: 120px;
+          top: 135px;
           width: 35px;
           height: 60px;
           box-shadow: inset -10px 0 0 0 #000; }
         section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-left {
           left: 52px;
-          transform: rotate(-80deg);
-          border-radius: 10% 55% 10% 75%; }
+          transform: rotate(-83deg);
+          border-radius: 75% 55% 8% 60%; }
         section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-right {
           right: 52px;
-          transform: rotate(-99deg);
-          border-radius: 55% 10% 75% 10%; }
+          transform: rotate(-96deg);
+          border-radius: 55% 8% 60% 75%; }
         section#about div.section-content div#about-right div#face div#head div#eyes div.eye {
           position: absolute;
-          top: 150px;
+          top: 165px;
           width: 50px;
-          height: 23px;
+          height: 18px;
           background-color: #f8f8f8;
           overflow: hidden; }
           section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 {
             z-index: 0;
             position: absolute;
             top: -2px;
-            left: 10px;
-            width: 30px;
-            height: 30px;
+            left: 12px;
+            width: 25px;
+            height: 25px;
             background-color: #78542F;
             border-radius: 50%;
             box-shadow: inset 0px 6px 8px -1px rgba(84, 59, 33, 0.9); }
             section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 div.eye-pupil {
               z-index: 2;
               position: absolute;
-              top: 8px;
-              left: 8px;
-              width: 14px;
-              height: 14px;
+              top: 7px;
+              left: 7px;
+              width: 12px;
+              height: 12px;
               background-color: #111;
               border-radius: 50%;
               box-shadow: 0 0 10px 0 #a1703f; }
@@ -477,7 +477,7 @@ section#about div.section-content {
           border-radius: 100px 100px 15% 25%; }
         section#about div.section-content div#about-right div#face div#head div#nose {
           position: absolute;
-          top: 170px;
+          top: 185px;
           left: 112px; }
           section#about div.section-content div#about-right div#face div#head div#nose div#nose-main {
             width: 30px;
@@ -500,6 +500,28 @@ section#about div.section-content {
             box-shadow: 1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
             -webkit-transform: rotate(-33deg);
             transform: rotate(-45deg); }
+        section#about div.section-content div#about-right div#face div#head div#mouth {
+          position: relative;
+          top: 285px;
+          left: 80px; }
+          section#about div.section-content div#about-right div#face div#head div#mouth div.lip {
+            background-color: #DE8877; }
+          section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-upper-lip {
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 10px;
+            border-radius: 50% / 100%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0; }
+          section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-lower-lip {
+            position: absolute;
+            top: 12px;
+            width: 100px;
+            height: 10px;
+            border-radius: 50% / 100%;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0; }
 
 /* Contact */
 section#contact div.section-content form {

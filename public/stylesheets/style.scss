@@ -398,28 +398,28 @@ section#about {
 
 						div.eyebrow {
 							position: absolute;
-							top: 120px;
+							top: 135px;
 							width: 35px;
 							height: 60px;
 							box-shadow: inset -10px 0 0 0 #000;
 						}
 						div#eyebrow-left {
 							left: 52px;
-							transform: rotate(-80deg);
-							border-radius: 10% 55% 10% 75%;
+							transform: rotate(-83deg);
+							border-radius: 75% 55% 8% 60%;
 						}
 						div#eyebrow-right {
 							right: 52px;
-							transform: rotate(-99deg);
-							border-radius: 55% 10% 75% 10%;
+							transform: rotate(-96deg);
+							border-radius: 55% 8% 60% 75%;
 						}
 					}
 					div#eyes {
 						div.eye {
 							position: absolute;
-							top: 150px;
+							top: 165px;
 							width: 50px;
-							height: 23px;
+							height: 18px;
 							background-color: #f8f8f8;
 							overflow: hidden;
 
@@ -427,9 +427,9 @@ section#about {
 								z-index: 0;
 								position: absolute;
 								top: -2px;
-								left: 10px;
-								width: 30px;
-								height: 30px;
+								left: 12px;
+								width: 25px;
+								height: 25px;
 								background-color: #78542F;
 								border-radius: 50%;
 								box-shadow: inset 0px 6px 8px -1px rgba(84, 59, 33, 0.9);
@@ -437,10 +437,10 @@ section#about {
 								div.eye-pupil {
 									z-index: 2;
 									position: absolute;
-									top: 8px;
-									left: 8px;
-									width: 14px;
-									height: 14px;
+									top: 7px;
+									left: 7px;
+									width: 12px;
+									height: 12px;
 									background-color: #111;
 									border-radius: 50%;
 									box-shadow: 0 0 10px 0 rgb(161, 112, 63);
@@ -460,7 +460,7 @@ section#about {
 					}
 					div#nose {
 						position: absolute;
-						top: 170px;
+						top: 185px;
 						left: 112px;
 
 						div#nose-main {
@@ -487,6 +487,34 @@ section#about {
 							box-shadow: 1px 4px 4px -2px rgba(196, 136, 89, 1), inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
 							-webkit-transform: rotate(-33deg);
 							transform: rotate(-45deg);
+						}
+					}
+					div#mouth {
+						position: relative;
+						top: 285px;
+						left: 80px;
+
+						div.lip {
+							background-color: #DE8877;
+						}
+						div#mouth-upper-lip {
+							position: absolute;
+							top: 0;
+							width: 100px;
+							height: 10px;
+							border-radius: 50% / 100%;
+							border-bottom-left-radius: 0;
+							border-bottom-right-radius: 0;
+
+						}
+						div#mouth-lower-lip {
+							position: absolute;
+							top: 12px;
+							width: 100px;
+							height: 10px;
+							border-radius: 50% / 100%;
+							border-top-left-radius: 0;
+							border-top-right-radius: 0;
 						}
 					}
 				}
