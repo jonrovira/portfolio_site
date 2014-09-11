@@ -421,6 +421,7 @@ section#about {
 							width: 50px;
 							height: 18px;
 							background-color: #f8f8f8;
+							box-shadow: 0 3px 0px 1px #C7A387;
 							overflow: hidden;
 
 							div.eye-color-1 {
@@ -450,12 +451,12 @@ section#about {
 						div#eye-left {
 							left: 50px;
 							transform: rotate(3deg);
-							border-radius: 100px 100px 25% 15%;
+							border-radius: 50px 50px 10px 10px;
 						}
 						div#eye-right {
 							right: 50px;
 							transform: rotate(-3deg);
-							border-radius: 100px 100px 15% 25%;
+							border-radius: 50px 50px 10px 10px;
 						}
 					}
 					div#nose {
