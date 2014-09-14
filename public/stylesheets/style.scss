@@ -401,7 +401,7 @@ section#about {
 							top: 135px;
 							width: 35px;
 							height: 60px;
-							box-shadow: inset -10px 0 0 0 #000;
+							box-shadow: inset -10px 0 0 0 #000, 0 2px 0 0 #C7A387;
 						}
 						div#eyebrow-left {
 							left: 52px;
@@ -491,6 +491,7 @@ section#about {
 						}
 					}
 					div#mouth {
+						display: none;
 						position: relative;
 						top: 285px;
 						left: 80px;

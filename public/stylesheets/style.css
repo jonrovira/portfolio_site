@@ -431,7 +431,7 @@ section#about div.section-content {
           top: 135px;
           width: 35px;
           height: 60px;
-          box-shadow: inset -10px 0 0 0 #000; }
+          box-shadow: inset -10px 0 0 0 #000, 0 2px 0 0 #C7A387; }
         section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-left {
           left: 52px;
           transform: rotate(-83deg);
@@ -502,6 +502,7 @@ section#about div.section-content {
             -webkit-transform: rotate(-33deg);
             transform: rotate(-45deg); }
         section#about div.section-content div#about-right div#face div#head div#mouth {
+          display: none;
           position: relative;
           top: 285px;
           left: 80px; }
