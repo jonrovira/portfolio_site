@@ -28,6 +28,49 @@ html {
 
 	body {
 
+		header {
+			width: 100%;
+			background-color: #222;
+
+			> nav {
+				margin: 0 auto;
+				padding: 5px 0;
+				width: $desktop-inner-width;
+				text-align: center;
+
+				img.header-img {
+					float: left;
+				}
+				nav {
+
+					ul {
+
+						li {
+							display: inline-block;
+
+							a {
+								padding: 15px;
+								color: #fff;
+								font-size: 14px;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+				nav.header-menu {
+					display: inline-block;
+					padding: 22px 0;
+				}
+				nav.header-social {
+					float: right;
+					padding: 20px 0;
+
+					i {
+						font-size: 19px;
+					}
+				}
+			}
+		}
 		main {
 
 			section {
@@ -44,536 +87,512 @@ html {
 					}
 				}
 			}
+			/* Welcome */
+			section#welcome {
+
+				div.section-content {
+					padding: 240px 0 230px;
+					text-align: center;
+
+					h1 {
+						font-size: 60px;
+					}
+					h2 {
+						font-size: 30px;
+					}
+				}
+			}
+			/* Portfolio */
+			section#portfolio {
+
+				div.section-content {
+					margin-left: $portfolio-section-content-margin-left;
+					width: $portfolio-section-content-width;
+
+					div#portfolio-items-wrapper {
+						position: relative;
+						overflow-x: scroll;
+
+
+						ul#portfolio-gallery {
+							list-style: none;
+							position: relative;
+
+							li.portfolio-item {
+								display: inline-block;
+								margin-right: $portfolio-item-spacing;
+								margin-bottom: 20px;
+								margin-left: 5px;
+								width: $portfolio-item-width;
+								box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+								border-radius: 3px;
+								cursor: pointer;
+
+								a {
+
+									img.portfolio-item-image {
+										width: 100%;
+										border-radius: 3px 3px 0 0;
+
+									}
+									div.portfolio-item-info {
+										padding: 10px;
+										text-align: left;
+										border-radius: 0 0 3px 3px;
+
+										h2 {
+											font-size: 19px;
+											color: #555;
+										}
+										span {
+											font-size: 13px;
+											color: #888;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			/* Skills */
+			section#skills {
+
+				div.section-content {
+
+					ul#skills-graph {
+						list-style: none;
+						height: 450px;
+
+						li {
+							display: inline-block;
+							vertical-align: top;
+						}
+						li#y-axis {
+
+							span {
+								display: block;
+							}
+							span:not(:last-child) {
+								margin-bottom: 50px;
+							}
+						}
+						li.skill {
+							margin-left: 20px;
+							width: 90px;
+							height: 100%;
+							background-color: blue;
+						}
+					}
+				}
+			}
+			/* About */
+			section#about {
+
+				div.section-content {
+					overflow: auto;
+
+					div#about-left {
+						float: left;
+						width: 50%;
+
+						p {
+							margin-bottom: 10px;
+						}
+						h3 {
+							margin: 20px 0 10px 0;
+							font-size: 15px;
+							font-weight: 700;
+						}
+						ul#quick-details {
+							padding-left: 15px;
+							font-size: $p-font-size;
+							list-style: none;
+
+							li {
+								margin-bottom: 5px;
+							}
+						}
+					}
+					div#about-right {
+						float: right;
+						width: 40%;
+						height: 420px;
+
+						div#face {
+							position: relative;
+							width: $about-face-width;
+							height: $about-face-height;
+
+							div#hair {
+								position: relative;
+								z-index: 2;
+
+								div.clump {
+									position: absolute;
+
+									div.bs1 {
+										box-shadow: inset -11px 0 0 0 #1a1a1a;
+									}
+									div.bs2 {
+										box-shadow: inset -11px 0 0 0 #252525;
+									}
+									div.bs3 {
+										box-shadow: inset -11px 0 0 0 #000;
+									}
+								}
+								div#clump-left {
+									left: 0;
+
+									div.hair {
+										position: absolute;
+										width: 20px;
+										height: 40px;
+										border-radius: 50%;
+										transform: rotate(200deg);
+									}
+									div.hair-1 { top: 35px; left: 19px; }
+									div.hair-2 { top: 35px; left: 27px; }
+									div.hair-3 { top: 55px; left: 10px; }
+									div.hair-4 { top: 55px; left: 20px; }
+									div.hair-5 { top: 75px; left: 5px; }
+									div.hair-6 { top: 75px; left: 15px; }
+									div.hair-7 { top: 95px; left: 0px; transform: rotate(195deg); }
+									div.hair-8 { top: 105px; left: -2px; transform: rotate(192deg); }
+									div.hair-9 { top: 112px; left: -2px; transform: rotate(192deg); }
+									div.hair-10 { top: 120px; left: -2px; transform: rotate(192deg); }
+								}
+								div#clump-right {
+									right: 0;
+
+									div.hair {
+										position: absolute;
+										width: 20px;
+										height: 40px;
+										border-radius: 50%;
+										transform: rotate(-20deg);
+									}
+									div.hair-1 { top: 35px; left: -34px; }
+									div.hair-2 { top: 35px; left: -44px; }
+									div.hair-3 { top: 55px; left: -27px; }
+									div.hair-4 { top: 55px; left: -37px; }
+									div.hair-5 { top: 75px; left: -22px; }
+									div.hair-6 { top: 75px; left: -32px; }
+									div.hair-7 { top: 95px; left: -17px; transform: rotate(-15deg); }
+									div.hair-8 { top: 105px; left: -15px; transform: rotate(-12deg); }
+								}
+								div#clump-top-pointy {
+									top: -36px;
+									left: 75px;
+
+									div.hair {
+										position: absolute;
+										width: 65px;
+										height: 70px;
+										border-radius: 50%;
+									}
+									div.t1 { transform: rotate(60deg); }
+									div.t2 { transform: rotate(70deg); }
+									div.t3 { transform: rotate(80deg); }
+									div.hair-1  { left: 15px; }
+									div.hair-2  { left: 20px; }
+									div.hair-3  { left: 25px; }
+									div.hair-4  { left: 30px; }
+									div.hair-5  { left: 35px; }
+									div.hair-6  { left: 40px; }
+									div.hair-7 { left: 45px; }
+									div.hair-8 { left: 50px; }
+									div.hair-9 { left: 55px; }
+									div.hair-10 { left: 60px; }
+									div.hair-11 { left: 65px; }
+									div.hair-12 { left: 70px; }
+								}
+								div#clump-top-normal-left {
+									left: 20px;
+
+									div.hair {
+										position: absolute;
+										width: 30px;
+										height: 40px;
+										border-radius: 50%;
+									}
+									div.t1 { transform: rotate(220deg); }
+									div.t2 { transform: rotate(230deg); }
+									div.t3 { transform: rotate(240deg); }
+									div.hair-1  { top: 10px; left: 17px; }
+									div.hair-2  { top: 8px; left: 26px; }
+									div.hair-3  { top: -2px; left: 35px; }
+									div.hair-4  { top: -6px; left: 45px; }
+									div.hair-5  { top: -8px; left: 55px; }
+									div.hair-6  { top: -12px; left: 65px; }
+									div.hair-7  { top: -10px; left: 75px; }
+									div.hair-8  { top: -10px; left: 85px; }
+									div.hair-9  { top: -10px; left: 95px; }
+									div.hair-10 { top: 28px; left: 19px; }
+									div.hair-11 { top: 15px; left: 33px; }
+									div.hair-12 { top: 0; left: 55px; }
+									div.hair-13 { top: -5px; left: 100px; }
+									div.hair-14 { top: 5px; left: 63px; }
+									div.hair-15 { top: 5px; left: 67px; }
+									div.hair-16 { top: 0px; left: 105px; }
+								}
+								div#clump-top-normal-right {
+									right: 62px;
+
+									div.hair {
+										position: absolute;
+										width: 30px;
+										height: 40px;
+										border-radius: 50%;
+									}
+									div.t1 { transform: rotate(310deg); }
+									div.t2 { transform: rotate(320deg); }
+									div.t3 { transform: rotate(330deg); }
+									div.hair-1  { top: 10px; left: 0; }
+									div.hair-2  { top: 21px; left: -2px; }
+									div.hair-3  { top: 40px; left: 8px; }
+									div.hair-4  { top: 50px; left: 16px; }
+								}
+								div#clump-top-normal-under {
+									left: 30px;
+
+									div.hair {
+										position: absolute;
+										width: 30px;
+										height: 40px;
+										border-radius: 50%;
+									}
+									div.t1 { transform: rotate(270deg); }
+									div.t2 { transform: rotate(280deg); }
+									div.t3 { transform: rotate(290deg); }
+									div.hair-1  { top: 30px; left: 10px; }
+									div.hair-2  { top: 36px; left: 30px; }
+									div.hair-3  { top: 33px; left: 50px; }
+									div.hair-4  { top: 30px; left: 70px; }
+									div.hair-5  { top: 36px; left: 90px; }
+									div.hair-6  { top: 33px; left: 110px; }
+									div.hair-7  { top: 30px; left: 130px; }
+									div.hair-8  { top: 36px; left: 150px; }
+									div.hair-9  { top: 25px; left: 30px; }
+									div.hair-10  { top: 22px; left: 50px; }
+									div.hair-11  { top: 28px; left: 70px; }
+									div.hair-12  { top: 25px; left: 90px; }
+									div.hair-13  { top: 22px; left: 110px; }
+									div.hair-14  { top: 28px; left: 130px; }
+									div.hair-15 { top: 25px; left: 150px; }
+									div.hair-16 { top: 14px; left: 30px; }
+									div.hair-17 { top: 18px; left: 30px; }
+									div.hair-18 { top: 27px; left: 30px; }
+									div.hair-19 { top: 18px; left: 60px; }
+									div.hair-20 { top: 27px; left: 80px; }
+									div.hair-21 { top: 20px; left: 132px; }
+									div.hair-22 { top: 33px; left: 128px; }
+									div.hair-23 { top: 37px; left: 13px; }
+								}
+							}
+							div#head {
+								z-index: 1;
+								position: absolute;
+								width: $about-face-width;
+								height: $about-face-height;
+								background-color: #E1B899;
+								border-radius: 45% 45% 55% 55%;
+
+								div#eyebrows {
+
+									div.eyebrow {
+										position: absolute;
+										top: 135px;
+										width: 35px;
+										height: 60px;
+										box-shadow: inset -10px 0 0 0 #000, 0 2px 0 0 #C7A387;
+									}
+									div#eyebrow-left {
+										left: 52px;
+										transform: rotate(-83deg);
+										border-radius: 75% 55% 8% 60%;
+									}
+									div#eyebrow-right {
+										right: 52px;
+										transform: rotate(-96deg);
+										border-radius: 55% 8% 60% 75%;
+									}
+								}
+								div#eyes {
+									div.eye {
+										position: absolute;
+										top: 165px;
+										width: 50px;
+										height: 18px;
+										background-color: #f8f8f8;
+										box-shadow: 0 3px 0px 1px #C7A387;
+										overflow: hidden;
+
+										div.eye-color-1 {
+											z-index: 0;
+											position: absolute;
+											top: -2px;
+											left: 12px;
+											width: 25px;
+											height: 25px;
+											background-color: #78542F;
+											border-radius: 50%;
+											box-shadow: inset 0px 6px 8px -1px rgba(84, 59, 33, 0.9);
+
+											div.eye-pupil {
+												z-index: 2;
+												position: absolute;
+												top: 7px;
+												left: 7px;
+												width: 12px;
+												height: 12px;
+												background-color: #111;
+												border-radius: 50%;
+												box-shadow: 0 0 10px 0 rgb(161, 112, 63);
+											}
+										}
+									}
+									div#eye-left {
+										left: 50px;
+										transform: rotate(3deg);
+										border-radius: 50px 50px 10px 10px;
+									}
+									div#eye-right {
+										right: 50px;
+										transform: rotate(-3deg);
+										border-radius: 50px 50px 10px 10px;
+									}
+								}
+								div#nose {
+									position: absolute;
+									top: 185px;
+									left: 112px;
+
+									div#nose-main {
+										width: 30px;
+										height: 80px;
+										border-radius: 0 0 15px 15px;
+										box-shadow: 0px 6px 4px -2px rgba(196, 136, 89, 0.68);
+									}
+									div.nostril {
+										position: absolute;
+										top: 55px;
+										width: 20px;
+										height: 20px;
+										border-radius: 0 0 20px 20px;
+									}
+									div#nose-left {
+										left: -10px;
+										box-shadow: -1px 4px 4px -2px rgba(196, 136, 89, 1), inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+										-webkit-transform: rotate(33deg);
+										transform: rotate(45deg);
+									}
+									div#nose-right {
+										right: -10px;
+										box-shadow: 1px 4px 4px -2px rgba(196, 136, 89, 1), inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+										-webkit-transform: rotate(-33deg);
+										transform: rotate(-45deg);
+									}
+								}
+								div#mouth {
+									display: none;
+									position: relative;
+									top: 285px;
+									left: 80px;
+
+									div.lip {
+										background-color: #DE8877;
+									}
+									div#mouth-upper-lip {
+										position: absolute;
+										top: 0;
+										width: 100px;
+										height: 10px;
+										border-radius: 50% / 100%;
+										border-bottom-left-radius: 0;
+										border-bottom-right-radius: 0;
+
+									}
+									div#mouth-lower-lip {
+										position: absolute;
+										top: 12px;
+										width: 100px;
+										height: 10px;
+										border-radius: 50% / 100%;
+										border-top-left-radius: 0;
+										border-top-right-radius: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			/* Contact */
+			section#contact {
+
+				div.section-content {
+
+					form {
+						margin-top: 40px;
+
+						input {
+							display: block;
+							margin-bottom: 30px;
+							width: 300px;
+							font-family: $font-stack;
+							color: #333;
+							font-size: 14px;
+							border: 1px solid #222;
+							border-style: none none solid none;
+						}
+						textarea {
+							margin-bottom: 15px;
+							width: 500px;
+							min-height: 150px;
+							font-family: $font-stack;
+							color: #333;
+							font-size: 14px;
+							border: 1px solid #222;
+							border-radius: 3px;
+						}
+						input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+						    color:    #333;
+						}
+						input:-moz-placeholder, textarea:-moz-placeholder {
+						    color:    #333;
+						}
+						input::-moz-placeholder, textarea::-moz-placeholder {
+						    color:    #333;
+						}
+						input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+						    color:    #333;
+						}
+						input#input-submit {
+							padding: 6px 10px;
+							width: auto;
+							color: #fff;
+							background-color: #09c;
+							border: 1px solid #09c;
+							border-radius: 3px;
+						}
+					}
+				}
+			}
 			hr {
 				width: $desktop-inner-width;
 				border: 1px solid #eee;
 				border-style: solid none none none;
 			}
 		}
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		font-weight: 500;
-		line-height: 1.1;
-		color: #222;
-	}
-	p {
-		font-size: $p-font-size;
-		line-height: $p-line-height;
-	}
-}
-
-
-/* Header */
-header {
-	width: 100%;
-	background-color: #222;
-
-	> nav {
-		margin: 0 auto;
-		padding: 5px 0;
-		width: $desktop-inner-width;
-		text-align: center;
-
-		img.header-img {
-			float: left;
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: 500;
+			line-height: 1.1;
+			color: #222;
 		}
-		nav {
-
-			ul {
-
-				li {
-					display: inline-block;
-
-					a {
-						padding: 15px;
-						color: #fff;
-						font-size: 14px;
-						text-decoration: none;
-					}
-				}
-			}
-		}
-		nav.header-menu {
-			display: inline-block;
-			padding: 22px 0;
-		}
-		nav.header-social {
-			float: right;
-			padding: 20px 0;
-
-			i {
-				font-size: 19px;
-			}
-		}
-	}
-}
-
-
-/* Welcome */
-section#welcome {
-
-	div.section-content {
-		padding: 240px 0 230px;
-		text-align: center;
-
-		h1 {
-			font-size: 60px;
-		}
-		h2 {
-			font-size: 30px;
-		}
-	}
-}
-
-
-/* Portfolio */
-section#portfolio {
-
-	div.section-content {
-		margin-left: $portfolio-section-content-margin-left;
-		width: $portfolio-section-content-width;
-
-		div#portfolio-items-wrapper {
-			position: relative;
-			overflow-x: scroll;
-
-
-			ul#portfolio-gallery {
-				list-style: none;
-				position: relative;
-
-				li.portfolio-item {
-					display: inline-block;
-					margin-right: $portfolio-item-spacing;
-					margin-bottom: 20px;
-					margin-left: 5px;
-					width: $portfolio-item-width;
-					box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
-					border-radius: 3px;
-					cursor: pointer;
-
-					a {
-
-						img.portfolio-item-image {
-							width: 100%;
-							border-radius: 3px 3px 0 0;
-
-						}
-						div.portfolio-item-info {
-							padding: 10px;
-							text-align: left;
-							border-radius: 0 0 3px 3px;
-
-							h2 {
-								font-size: 19px;
-								color: #555;
-							}
-							span {
-								font-size: 13px;
-								color: #888;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-
-/* About */
-section#about {
-
-	div.section-content {
-		overflow: auto;
-
-		div#about-left {
-			float: left;
-			width: 50%;
-
-			p {
-				margin-bottom: 10px;
-			}
-			h3 {
-				margin: 20px 0 10px 0;
-				font-size: 15px;
-				font-weight: 700;
-			}
-			ul#quick-details {
-				padding-left: 15px;
-				font-size: $p-font-size;
-				list-style: none;
-
-				li {
-					margin-bottom: 5px;
-				}
-			}
-		}
-		div#about-right {
-			float: right;
-			width: 40%;
-			height: 420px;
-
-			div#face {
-				position: relative;
-				width: $about-face-width;
-				height: $about-face-height;
-
-				div#hair {
-					position: relative;
-					z-index: 2;
-
-					div.clump {
-						position: absolute;
-
-						div.bs1 {
-							box-shadow: inset -11px 0 0 0 #1a1a1a;
-						}
-						div.bs2 {
-							box-shadow: inset -11px 0 0 0 #252525;
-						}
-						div.bs3 {
-							box-shadow: inset -11px 0 0 0 #000;
-						}
-					}
-					div#clump-left {
-						left: 0;
-
-						div.hair {
-							position: absolute;
-							width: 20px;
-							height: 40px;
-							border-radius: 50%;
-							transform: rotate(200deg);
-						}
-						div.hair-1 { top: 35px; left: 19px; }
-						div.hair-2 { top: 35px; left: 27px; }
-						div.hair-3 { top: 55px; left: 10px; }
-						div.hair-4 { top: 55px; left: 20px; }
-						div.hair-5 { top: 75px; left: 5px; }
-						div.hair-6 { top: 75px; left: 15px; }
-						div.hair-7 { top: 95px; left: 0px; transform: rotate(195deg); }
-						div.hair-8 { top: 105px; left: -2px; transform: rotate(192deg); }
-						div.hair-9 { top: 112px; left: -2px; transform: rotate(192deg); }
-						div.hair-10 { top: 120px; left: -2px; transform: rotate(192deg); }
-					}
-					div#clump-right {
-						right: 0;
-
-						div.hair {
-							position: absolute;
-							width: 20px;
-							height: 40px;
-							border-radius: 50%;
-							transform: rotate(-20deg);
-						}
-						div.hair-1 { top: 35px; left: -34px; }
-						div.hair-2 { top: 35px; left: -44px; }
-						div.hair-3 { top: 55px; left: -27px; }
-						div.hair-4 { top: 55px; left: -37px; }
-						div.hair-5 { top: 75px; left: -22px; }
-						div.hair-6 { top: 75px; left: -32px; }
-						div.hair-7 { top: 95px; left: -17px; transform: rotate(-15deg); }
-						div.hair-8 { top: 105px; left: -15px; transform: rotate(-12deg); }
-					}
-					div#clump-top-pointy {
-						top: -36px;
-						left: 75px;
-
-						div.hair {
-							position: absolute;
-							width: 65px;
-							height: 70px;
-							border-radius: 50%;
-						}
-						div.t1 { transform: rotate(60deg); }
-						div.t2 { transform: rotate(70deg); }
-						div.t3 { transform: rotate(80deg); }
-						div.hair-1  { left: 15px; }
-						div.hair-2  { left: 20px; }
-						div.hair-3  { left: 25px; }
-						div.hair-4  { left: 30px; }
-						div.hair-5  { left: 35px; }
-						div.hair-6  { left: 40px; }
-						div.hair-7 { left: 45px; }
-						div.hair-8 { left: 50px; }
-						div.hair-9 { left: 55px; }
-						div.hair-10 { left: 60px; }
-						div.hair-11 { left: 65px; }
-						div.hair-12 { left: 70px; }
-					}
-					div#clump-top-normal-left {
-						left: 20px;
-
-						div.hair {
-							position: absolute;
-							width: 30px;
-							height: 40px;
-							border-radius: 50%;
-						}
-						div.t1 { transform: rotate(220deg); }
-						div.t2 { transform: rotate(230deg); }
-						div.t3 { transform: rotate(240deg); }
-						div.hair-1  { top: 10px; left: 17px; }
-						div.hair-2  { top: 8px; left: 26px; }
-						div.hair-3  { top: -2px; left: 35px; }
-						div.hair-4  { top: -6px; left: 45px; }
-						div.hair-5  { top: -8px; left: 55px; }
-						div.hair-6  { top: -12px; left: 65px; }
-						div.hair-7  { top: -10px; left: 75px; }
-						div.hair-8  { top: -10px; left: 85px; }
-						div.hair-9  { top: -10px; left: 95px; }
-						div.hair-10 { top: 28px; left: 19px; }
-						div.hair-11 { top: 15px; left: 33px; }
-						div.hair-12 { top: 0; left: 55px; }
-						div.hair-13 { top: -5px; left: 100px; }
-						div.hair-14 { top: 5px; left: 63px; }
-						div.hair-15 { top: 5px; left: 67px; }
-						div.hair-16 { top: 0px; left: 105px; }
-					}
-					div#clump-top-normal-right {
-						right: 62px;
-
-						div.hair {
-							position: absolute;
-							width: 30px;
-							height: 40px;
-							border-radius: 50%;
-						}
-						div.t1 { transform: rotate(310deg); }
-						div.t2 { transform: rotate(320deg); }
-						div.t3 { transform: rotate(330deg); }
-						div.hair-1  { top: 10px; left: 0; }
-						div.hair-2  { top: 21px; left: -2px; }
-						div.hair-3  { top: 40px; left: 8px; }
-						div.hair-4  { top: 50px; left: 16px; }
-					}
-					div#clump-top-normal-under {
-						left: 30px;
-
-						div.hair {
-							position: absolute;
-							width: 30px;
-							height: 40px;
-							border-radius: 50%;
-						}
-						div.t1 { transform: rotate(270deg); }
-						div.t2 { transform: rotate(280deg); }
-						div.t3 { transform: rotate(290deg); }
-						div.hair-1  { top: 30px; left: 10px; }
-						div.hair-2  { top: 36px; left: 30px; }
-						div.hair-3  { top: 33px; left: 50px; }
-						div.hair-4  { top: 30px; left: 70px; }
-						div.hair-5  { top: 36px; left: 90px; }
-						div.hair-6  { top: 33px; left: 110px; }
-						div.hair-7  { top: 30px; left: 130px; }
-						div.hair-8  { top: 36px; left: 150px; }
-						div.hair-9  { top: 25px; left: 30px; }
-						div.hair-10  { top: 22px; left: 50px; }
-						div.hair-11  { top: 28px; left: 70px; }
-						div.hair-12  { top: 25px; left: 90px; }
-						div.hair-13  { top: 22px; left: 110px; }
-						div.hair-14  { top: 28px; left: 130px; }
-						div.hair-15 { top: 25px; left: 150px; }
-						div.hair-16 { top: 14px; left: 30px; }
-						div.hair-17 { top: 18px; left: 30px; }
-						div.hair-18 { top: 27px; left: 30px; }
-						div.hair-19 { top: 18px; left: 60px; }
-						div.hair-20 { top: 27px; left: 80px; }
-						div.hair-21 { top: 20px; left: 132px; }
-						div.hair-22 { top: 33px; left: 128px; }
-						div.hair-23 { top: 37px; left: 13px; }
-					}
-				}
-				div#head {
-					z-index: 1;
-					position: absolute;
-					width: $about-face-width;
-					height: $about-face-height;
-					background-color: #E1B899;
-					border-radius: 45% 45% 55% 55%;
-
-					div#eyebrows {
-
-						div.eyebrow {
-							position: absolute;
-							top: 135px;
-							width: 35px;
-							height: 60px;
-							box-shadow: inset -10px 0 0 0 #000, 0 2px 0 0 #C7A387;
-						}
-						div#eyebrow-left {
-							left: 52px;
-							transform: rotate(-83deg);
-							border-radius: 75% 55% 8% 60%;
-						}
-						div#eyebrow-right {
-							right: 52px;
-							transform: rotate(-96deg);
-							border-radius: 55% 8% 60% 75%;
-						}
-					}
-					div#eyes {
-						div.eye {
-							position: absolute;
-							top: 165px;
-							width: 50px;
-							height: 18px;
-							background-color: #f8f8f8;
-							box-shadow: 0 3px 0px 1px #C7A387;
-							overflow: hidden;
-
-							div.eye-color-1 {
-								z-index: 0;
-								position: absolute;
-								top: -2px;
-								left: 12px;
-								width: 25px;
-								height: 25px;
-								background-color: #78542F;
-								border-radius: 50%;
-								box-shadow: inset 0px 6px 8px -1px rgba(84, 59, 33, 0.9);
-
-								div.eye-pupil {
-									z-index: 2;
-									position: absolute;
-									top: 7px;
-									left: 7px;
-									width: 12px;
-									height: 12px;
-									background-color: #111;
-									border-radius: 50%;
-									box-shadow: 0 0 10px 0 rgb(161, 112, 63);
-								}
-							}
-						}
-						div#eye-left {
-							left: 50px;
-							transform: rotate(3deg);
-							border-radius: 50px 50px 10px 10px;
-						}
-						div#eye-right {
-							right: 50px;
-							transform: rotate(-3deg);
-							border-radius: 50px 50px 10px 10px;
-						}
-					}
-					div#nose {
-						position: absolute;
-						top: 185px;
-						left: 112px;
-
-						div#nose-main {
-							width: 30px;
-							height: 80px;
-							border-radius: 0 0 15px 15px;
-							box-shadow: 0px 6px 4px -2px rgba(196, 136, 89, 0.68);
-						}
-						div.nostril {
-							position: absolute;
-							top: 55px;
-							width: 20px;
-							height: 20px;
-							border-radius: 0 0 20px 20px;
-						}
-						div#nose-left {
-							left: -10px;
-							box-shadow: -1px 4px 4px -2px rgba(196, 136, 89, 1), inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
-							-webkit-transform: rotate(33deg);
-							transform: rotate(45deg);
-						}
-						div#nose-right {
-							right: -10px;
-							box-shadow: 1px 4px 4px -2px rgba(196, 136, 89, 1), inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
-							-webkit-transform: rotate(-33deg);
-							transform: rotate(-45deg);
-						}
-					}
-					div#mouth {
-						display: none;
-						position: relative;
-						top: 285px;
-						left: 80px;
-
-						div.lip {
-							background-color: #DE8877;
-						}
-						div#mouth-upper-lip {
-							position: absolute;
-							top: 0;
-							width: 100px;
-							height: 10px;
-							border-radius: 50% / 100%;
-							border-bottom-left-radius: 0;
-							border-bottom-right-radius: 0;
-
-						}
-						div#mouth-lower-lip {
-							position: absolute;
-							top: 12px;
-							width: 100px;
-							height: 10px;
-							border-radius: 50% / 100%;
-							border-top-left-radius: 0;
-							border-top-right-radius: 0;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-
-/* Contact */
-section#contact {
-
-	div.section-content {
-
-		form {
-			margin-top: 40px;
-
-			input {
-				display: block;
-				margin-bottom: 30px;
-				width: 300px;
-				font-family: $font-stack;
-				color: #333;
-				font-size: 14px;
-				border: 1px solid #222;
-				border-style: none none solid none;
-			}
-			textarea {
-				margin-bottom: 15px;
-				width: 500px;
-				min-height: 150px;
-				font-family: $font-stack;
-				color: #333;
-				font-size: 14px;
-				border: 1px solid #222;
-				border-radius: 3px;
-			}
-			input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-			    color:    #333;
-			}
-			input:-moz-placeholder, textarea:-moz-placeholder {
-			    color:    #333;
-			}
-			input::-moz-placeholder, textarea::-moz-placeholder {
-			    color:    #333;
-			}
-			input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-			    color:    #333;
-			}
-			input#input-submit {
-				padding: 6px 10px;
-				width: auto;
-				color: #fff;
-				background-color: #09c;
-				border: 1px solid #09c;
-				border-radius: 3px;
-			}
+		p {
+			font-size: $p-font-size;
+			line-height: $p-line-height;
 		}
 	}
 }

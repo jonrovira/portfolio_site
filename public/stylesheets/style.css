@@ -10,554 +10,565 @@ label, table, caption {
 
 html {
   font-family: "ProximaNova-light", Arial, Helvetica, sans-serif; }
-  html body main section {
-    width: 100%; }
-    html body main section div.section-content {
-      margin: 0 auto 80px auto;
-      width: 80%; }
-      html body main section div.section-content h1.section-header {
-        margin: 20px 0;
-        font-size: 45px;
-        text-align: left; }
-  html body main hr {
-    width: 80%;
-    border: 1px solid #eee;
-    border-style: solid none none none; }
-  html h1, html h2, html h3, html h4, html h5, html h6 {
+  html body header {
+    width: 100%;
+    background-color: #222; }
+    html body header > nav {
+      margin: 0 auto;
+      padding: 5px 0;
+      width: 80%;
+      text-align: center; }
+      html body header > nav img.header-img {
+        float: left; }
+      html body header > nav nav ul li {
+        display: inline-block; }
+        html body header > nav nav ul li a {
+          padding: 15px;
+          color: #fff;
+          font-size: 14px;
+          text-decoration: none; }
+      html body header > nav nav.header-menu {
+        display: inline-block;
+        padding: 22px 0; }
+      html body header > nav nav.header-social {
+        float: right;
+        padding: 20px 0; }
+        html body header > nav nav.header-social i {
+          font-size: 19px; }
+  html body main {
+    /* Welcome */
+    /* Portfolio */
+    /* Skills */
+    /* About */
+    /* Contact */ }
+    html body main section {
+      width: 100%; }
+      html body main section div.section-content {
+        margin: 0 auto 80px auto;
+        width: 80%; }
+        html body main section div.section-content h1.section-header {
+          margin: 20px 0;
+          font-size: 45px;
+          text-align: left; }
+    html body main section#welcome div.section-content {
+      padding: 240px 0 230px;
+      text-align: center; }
+      html body main section#welcome div.section-content h1 {
+        font-size: 60px; }
+      html body main section#welcome div.section-content h2 {
+        font-size: 30px; }
+    html body main section#portfolio div.section-content {
+      margin-left: 10%;
+      width: 90%; }
+      html body main section#portfolio div.section-content div#portfolio-items-wrapper {
+        position: relative;
+        overflow-x: scroll; }
+        html body main section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery {
+          list-style: none;
+          position: relative; }
+          html body main section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item {
+            display: inline-block;
+            margin-right: 40px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+            width: 400px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            cursor: pointer; }
+            html body main section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a img.portfolio-item-image {
+              width: 100%;
+              border-radius: 3px 3px 0 0; }
+            html body main section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
+              padding: 10px;
+              text-align: left;
+              border-radius: 0 0 3px 3px; }
+              html body main section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
+                font-size: 19px;
+                color: #555; }
+              html body main section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
+                font-size: 13px;
+                color: #888; }
+    html body main section#skills div.section-content ul#skills-graph {
+      list-style: none;
+      height: 450px; }
+      html body main section#skills div.section-content ul#skills-graph li {
+        display: inline-block;
+        vertical-align: top; }
+      html body main section#skills div.section-content ul#skills-graph li#y-axis span {
+        display: block; }
+      html body main section#skills div.section-content ul#skills-graph li#y-axis span:not(:last-child) {
+        margin-bottom: 50px; }
+      html body main section#skills div.section-content ul#skills-graph li.skill {
+        margin-left: 20px;
+        width: 90px;
+        height: 100%;
+        background-color: blue; }
+    html body main section#about div.section-content {
+      overflow: auto; }
+      html body main section#about div.section-content div#about-left {
+        float: left;
+        width: 50%; }
+        html body main section#about div.section-content div#about-left p {
+          margin-bottom: 10px; }
+        html body main section#about div.section-content div#about-left h3 {
+          margin: 20px 0 10px 0;
+          font-size: 15px;
+          font-weight: 700; }
+        html body main section#about div.section-content div#about-left ul#quick-details {
+          padding-left: 15px;
+          font-size: 14px;
+          list-style: none; }
+          html body main section#about div.section-content div#about-left ul#quick-details li {
+            margin-bottom: 5px; }
+      html body main section#about div.section-content div#about-right {
+        float: right;
+        width: 40%;
+        height: 420px; }
+        html body main section#about div.section-content div#about-right div#face {
+          position: relative;
+          width: 250px;
+          height: 380px; }
+          html body main section#about div.section-content div#about-right div#face div#hair {
+            position: relative;
+            z-index: 2; }
+            html body main section#about div.section-content div#about-right div#face div#hair div.clump {
+              position: absolute; }
+              html body main section#about div.section-content div#about-right div#face div#hair div.clump div.bs1 {
+                box-shadow: inset -11px 0 0 0 #1a1a1a; }
+              html body main section#about div.section-content div#about-right div#face div#hair div.clump div.bs2 {
+                box-shadow: inset -11px 0 0 0 #252525; }
+              html body main section#about div.section-content div#about-right div#face div#hair div.clump div.bs3 {
+                box-shadow: inset -11px 0 0 0 #000; }
+            html body main section#about div.section-content div#about-right div#face div#hair div#clump-left {
+              left: 0; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair {
+                position: absolute;
+                width: 20px;
+                height: 40px;
+                border-radius: 50%;
+                transform: rotate(200deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-1 {
+                top: 35px;
+                left: 19px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-2 {
+                top: 35px;
+                left: 27px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-3 {
+                top: 55px;
+                left: 10px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-4 {
+                top: 55px;
+                left: 20px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-5 {
+                top: 75px;
+                left: 5px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-6 {
+                top: 75px;
+                left: 15px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-7 {
+                top: 95px;
+                left: 0px;
+                transform: rotate(195deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-8 {
+                top: 105px;
+                left: -2px;
+                transform: rotate(192deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-9 {
+                top: 112px;
+                left: -2px;
+                transform: rotate(192deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-10 {
+                top: 120px;
+                left: -2px;
+                transform: rotate(192deg); }
+            html body main section#about div.section-content div#about-right div#face div#hair div#clump-right {
+              right: 0; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair {
+                position: absolute;
+                width: 20px;
+                height: 40px;
+                border-radius: 50%;
+                transform: rotate(-20deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-1 {
+                top: 35px;
+                left: -34px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-2 {
+                top: 35px;
+                left: -44px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-3 {
+                top: 55px;
+                left: -27px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-4 {
+                top: 55px;
+                left: -37px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-5 {
+                top: 75px;
+                left: -22px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-6 {
+                top: 75px;
+                left: -32px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-7 {
+                top: 95px;
+                left: -17px;
+                transform: rotate(-15deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-8 {
+                top: 105px;
+                left: -15px;
+                transform: rotate(-12deg); }
+            html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy {
+              top: -36px;
+              left: 75px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair {
+                position: absolute;
+                width: 65px;
+                height: 70px;
+                border-radius: 50%; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t1 {
+                transform: rotate(60deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t2 {
+                transform: rotate(70deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t3 {
+                transform: rotate(80deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-1 {
+                left: 15px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-2 {
+                left: 20px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-3 {
+                left: 25px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-4 {
+                left: 30px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-5 {
+                left: 35px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-6 {
+                left: 40px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-7 {
+                left: 45px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-8 {
+                left: 50px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-9 {
+                left: 55px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-10 {
+                left: 60px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-11 {
+                left: 65px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-12 {
+                left: 70px; }
+            html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left {
+              left: 20px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair {
+                position: absolute;
+                width: 30px;
+                height: 40px;
+                border-radius: 50%; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t1 {
+                transform: rotate(220deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t2 {
+                transform: rotate(230deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t3 {
+                transform: rotate(240deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-1 {
+                top: 10px;
+                left: 17px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-2 {
+                top: 8px;
+                left: 26px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-3 {
+                top: -2px;
+                left: 35px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-4 {
+                top: -6px;
+                left: 45px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-5 {
+                top: -8px;
+                left: 55px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-6 {
+                top: -12px;
+                left: 65px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-7 {
+                top: -10px;
+                left: 75px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-8 {
+                top: -10px;
+                left: 85px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-9 {
+                top: -10px;
+                left: 95px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-10 {
+                top: 28px;
+                left: 19px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-11 {
+                top: 15px;
+                left: 33px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-12 {
+                top: 0;
+                left: 55px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-13 {
+                top: -5px;
+                left: 100px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-14 {
+                top: 5px;
+                left: 63px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-15 {
+                top: 5px;
+                left: 67px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-16 {
+                top: 0px;
+                left: 105px; }
+            html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right {
+              right: 62px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair {
+                position: absolute;
+                width: 30px;
+                height: 40px;
+                border-radius: 50%; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t1 {
+                transform: rotate(310deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t2 {
+                transform: rotate(320deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t3 {
+                transform: rotate(330deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-1 {
+                top: 10px;
+                left: 0; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-2 {
+                top: 21px;
+                left: -2px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-3 {
+                top: 40px;
+                left: 8px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-4 {
+                top: 50px;
+                left: 16px; }
+            html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under {
+              left: 30px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair {
+                position: absolute;
+                width: 30px;
+                height: 40px;
+                border-radius: 50%; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t1 {
+                transform: rotate(270deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t2 {
+                transform: rotate(280deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t3 {
+                transform: rotate(290deg); }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-1 {
+                top: 30px;
+                left: 10px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-2 {
+                top: 36px;
+                left: 30px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-3 {
+                top: 33px;
+                left: 50px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-4 {
+                top: 30px;
+                left: 70px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-5 {
+                top: 36px;
+                left: 90px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-6 {
+                top: 33px;
+                left: 110px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-7 {
+                top: 30px;
+                left: 130px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-8 {
+                top: 36px;
+                left: 150px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-9 {
+                top: 25px;
+                left: 30px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-10 {
+                top: 22px;
+                left: 50px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-11 {
+                top: 28px;
+                left: 70px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-12 {
+                top: 25px;
+                left: 90px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-13 {
+                top: 22px;
+                left: 110px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-14 {
+                top: 28px;
+                left: 130px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-15 {
+                top: 25px;
+                left: 150px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-16 {
+                top: 14px;
+                left: 30px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-17 {
+                top: 18px;
+                left: 30px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-18 {
+                top: 27px;
+                left: 30px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-19 {
+                top: 18px;
+                left: 60px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-20 {
+                top: 27px;
+                left: 80px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-21 {
+                top: 20px;
+                left: 132px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-22 {
+                top: 33px;
+                left: 128px; }
+              html body main section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-23 {
+                top: 37px;
+                left: 13px; }
+          html body main section#about div.section-content div#about-right div#face div#head {
+            z-index: 1;
+            position: absolute;
+            width: 250px;
+            height: 380px;
+            background-color: #E1B899;
+            border-radius: 45% 45% 55% 55%; }
+            html body main section#about div.section-content div#about-right div#face div#head div#eyebrows div.eyebrow {
+              position: absolute;
+              top: 135px;
+              width: 35px;
+              height: 60px;
+              box-shadow: inset -10px 0 0 0 #000, 0 2px 0 0 #C7A387; }
+            html body main section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-left {
+              left: 52px;
+              transform: rotate(-83deg);
+              border-radius: 75% 55% 8% 60%; }
+            html body main section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-right {
+              right: 52px;
+              transform: rotate(-96deg);
+              border-radius: 55% 8% 60% 75%; }
+            html body main section#about div.section-content div#about-right div#face div#head div#eyes div.eye {
+              position: absolute;
+              top: 165px;
+              width: 50px;
+              height: 18px;
+              background-color: #f8f8f8;
+              box-shadow: 0 3px 0px 1px #C7A387;
+              overflow: hidden; }
+              html body main section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 {
+                z-index: 0;
+                position: absolute;
+                top: -2px;
+                left: 12px;
+                width: 25px;
+                height: 25px;
+                background-color: #78542F;
+                border-radius: 50%;
+                box-shadow: inset 0px 6px 8px -1px rgba(84, 59, 33, 0.9); }
+                html body main section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 div.eye-pupil {
+                  z-index: 2;
+                  position: absolute;
+                  top: 7px;
+                  left: 7px;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #111;
+                  border-radius: 50%;
+                  box-shadow: 0 0 10px 0 #a1703f; }
+            html body main section#about div.section-content div#about-right div#face div#head div#eyes div#eye-left {
+              left: 50px;
+              transform: rotate(3deg);
+              border-radius: 50px 50px 10px 10px; }
+            html body main section#about div.section-content div#about-right div#face div#head div#eyes div#eye-right {
+              right: 50px;
+              transform: rotate(-3deg);
+              border-radius: 50px 50px 10px 10px; }
+            html body main section#about div.section-content div#about-right div#face div#head div#nose {
+              position: absolute;
+              top: 185px;
+              left: 112px; }
+              html body main section#about div.section-content div#about-right div#face div#head div#nose div#nose-main {
+                width: 30px;
+                height: 80px;
+                border-radius: 0 0 15px 15px;
+                box-shadow: 0px 6px 4px -2px rgba(196, 136, 89, 0.68); }
+              html body main section#about div.section-content div#about-right div#face div#head div#nose div.nostril {
+                position: absolute;
+                top: 55px;
+                width: 20px;
+                height: 20px;
+                border-radius: 0 0 20px 20px; }
+              html body main section#about div.section-content div#about-right div#face div#head div#nose div#nose-left {
+                left: -10px;
+                box-shadow: -1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+                -webkit-transform: rotate(33deg);
+                transform: rotate(45deg); }
+              html body main section#about div.section-content div#about-right div#face div#head div#nose div#nose-right {
+                right: -10px;
+                box-shadow: 1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+                -webkit-transform: rotate(-33deg);
+                transform: rotate(-45deg); }
+            html body main section#about div.section-content div#about-right div#face div#head div#mouth {
+              display: none;
+              position: relative;
+              top: 285px;
+              left: 80px; }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div.lip {
+                background-color: #DE8877; }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-upper-lip {
+                position: absolute;
+                top: 0;
+                width: 100px;
+                height: 10px;
+                border-radius: 50% / 100%;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0; }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-lower-lip {
+                position: absolute;
+                top: 12px;
+                width: 100px;
+                height: 10px;
+                border-radius: 50% / 100%;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0; }
+    html body main section#contact div.section-content form {
+      margin-top: 40px; }
+      html body main section#contact div.section-content form input {
+        display: block;
+        margin-bottom: 30px;
+        width: 300px;
+        font-family: "ProximaNova-light", Arial, Helvetica, sans-serif;
+        color: #333;
+        font-size: 14px;
+        border: 1px solid #222;
+        border-style: none none solid none; }
+      html body main section#contact div.section-content form textarea {
+        margin-bottom: 15px;
+        width: 500px;
+        min-height: 150px;
+        font-family: "ProximaNova-light", Arial, Helvetica, sans-serif;
+        color: #333;
+        font-size: 14px;
+        border: 1px solid #222;
+        border-radius: 3px; }
+      html body main section#contact div.section-content form input::-webkit-input-placeholder, html body main section#contact div.section-content form textarea::-webkit-input-placeholder {
+        color: #333; }
+      html body main section#contact div.section-content form input:-moz-placeholder, html body main section#contact div.section-content form textarea:-moz-placeholder {
+        color: #333; }
+      html body main section#contact div.section-content form input::-moz-placeholder, html body main section#contact div.section-content form textarea::-moz-placeholder {
+        color: #333; }
+      html body main section#contact div.section-content form input:-ms-input-placeholder, html body main section#contact div.section-content form textarea:-ms-input-placeholder {
+        color: #333; }
+      html body main section#contact div.section-content form input#input-submit {
+        padding: 6px 10px;
+        width: auto;
+        color: #fff;
+        background-color: #09c;
+        border: 1px solid #09c;
+        border-radius: 3px; }
+    html body main hr {
+      width: 80%;
+      border: 1px solid #eee;
+      border-style: solid none none none; }
+  html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
     font-weight: 500;
     line-height: 1.1;
     color: #222; }
-  html p {
+  html body p {
     font-size: 14px;
     line-height: 20px; }
-
-/* Header */
-header {
-  width: 100%;
-  background-color: #222; }
-  header > nav {
-    margin: 0 auto;
-    padding: 5px 0;
-    width: 80%;
-    text-align: center; }
-    header > nav img.header-img {
-      float: left; }
-    header > nav nav ul li {
-      display: inline-block; }
-      header > nav nav ul li a {
-        padding: 15px;
-        color: #fff;
-        font-size: 14px;
-        text-decoration: none; }
-    header > nav nav.header-menu {
-      display: inline-block;
-      padding: 22px 0; }
-    header > nav nav.header-social {
-      float: right;
-      padding: 20px 0; }
-      header > nav nav.header-social i {
-        font-size: 19px; }
-
-/* Welcome */
-section#welcome div.section-content {
-  padding: 240px 0 230px;
-  text-align: center; }
-  section#welcome div.section-content h1 {
-    font-size: 60px; }
-  section#welcome div.section-content h2 {
-    font-size: 30px; }
-
-/* Portfolio */
-section#portfolio div.section-content {
-  margin-left: 10%;
-  width: 90%; }
-  section#portfolio div.section-content div#portfolio-items-wrapper {
-    position: relative;
-    overflow-x: scroll; }
-    section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery {
-      list-style: none;
-      position: relative; }
-      section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item {
-        display: inline-block;
-        margin-right: 40px;
-        margin-bottom: 20px;
-        margin-left: 5px;
-        width: 400px;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-        cursor: pointer; }
-        section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a img.portfolio-item-image {
-          width: 100%;
-          border-radius: 3px 3px 0 0; }
-        section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
-          padding: 10px;
-          text-align: left;
-          border-radius: 0 0 3px 3px; }
-          section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
-            font-size: 19px;
-            color: #555; }
-          section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
-            font-size: 13px;
-            color: #888; }
-
-/* About */
-section#about div.section-content {
-  overflow: auto; }
-  section#about div.section-content div#about-left {
-    float: left;
-    width: 50%; }
-    section#about div.section-content div#about-left p {
-      margin-bottom: 10px; }
-    section#about div.section-content div#about-left h3 {
-      margin: 20px 0 10px 0;
-      font-size: 15px;
-      font-weight: 700; }
-    section#about div.section-content div#about-left ul#quick-details {
-      padding-left: 15px;
-      font-size: 14px;
-      list-style: none; }
-      section#about div.section-content div#about-left ul#quick-details li {
-        margin-bottom: 5px; }
-  section#about div.section-content div#about-right {
-    float: right;
-    width: 40%;
-    height: 420px; }
-    section#about div.section-content div#about-right div#face {
-      position: relative;
-      width: 250px;
-      height: 380px; }
-      section#about div.section-content div#about-right div#face div#hair {
-        position: relative;
-        z-index: 2; }
-        section#about div.section-content div#about-right div#face div#hair div.clump {
-          position: absolute; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.bs1 {
-            box-shadow: inset -11px 0 0 0 #1a1a1a; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.bs2 {
-            box-shadow: inset -11px 0 0 0 #252525; }
-          section#about div.section-content div#about-right div#face div#hair div.clump div.bs3 {
-            box-shadow: inset -11px 0 0 0 #000; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-left {
-          left: 0; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair {
-            position: absolute;
-            width: 20px;
-            height: 40px;
-            border-radius: 50%;
-            transform: rotate(200deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-1 {
-            top: 35px;
-            left: 19px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-2 {
-            top: 35px;
-            left: 27px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-3 {
-            top: 55px;
-            left: 10px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-4 {
-            top: 55px;
-            left: 20px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-5 {
-            top: 75px;
-            left: 5px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-6 {
-            top: 75px;
-            left: 15px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-7 {
-            top: 95px;
-            left: 0px;
-            transform: rotate(195deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-8 {
-            top: 105px;
-            left: -2px;
-            transform: rotate(192deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-9 {
-            top: 112px;
-            left: -2px;
-            transform: rotate(192deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-10 {
-            top: 120px;
-            left: -2px;
-            transform: rotate(192deg); }
-        section#about div.section-content div#about-right div#face div#hair div#clump-right {
-          right: 0; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair {
-            position: absolute;
-            width: 20px;
-            height: 40px;
-            border-radius: 50%;
-            transform: rotate(-20deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-1 {
-            top: 35px;
-            left: -34px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-2 {
-            top: 35px;
-            left: -44px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-3 {
-            top: 55px;
-            left: -27px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-4 {
-            top: 55px;
-            left: -37px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-5 {
-            top: 75px;
-            left: -22px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-6 {
-            top: 75px;
-            left: -32px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-7 {
-            top: 95px;
-            left: -17px;
-            transform: rotate(-15deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-8 {
-            top: 105px;
-            left: -15px;
-            transform: rotate(-12deg); }
-        section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy {
-          top: -36px;
-          left: 75px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair {
-            position: absolute;
-            width: 65px;
-            height: 70px;
-            border-radius: 50%; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t1 {
-            transform: rotate(60deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t2 {
-            transform: rotate(70deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t3 {
-            transform: rotate(80deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-1 {
-            left: 15px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-2 {
-            left: 20px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-3 {
-            left: 25px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-4 {
-            left: 30px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-5 {
-            left: 35px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-6 {
-            left: 40px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-7 {
-            left: 45px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-8 {
-            left: 50px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-9 {
-            left: 55px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-10 {
-            left: 60px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-11 {
-            left: 65px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-12 {
-            left: 70px; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left {
-          left: 20px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair {
-            position: absolute;
-            width: 30px;
-            height: 40px;
-            border-radius: 50%; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t1 {
-            transform: rotate(220deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t2 {
-            transform: rotate(230deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t3 {
-            transform: rotate(240deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-1 {
-            top: 10px;
-            left: 17px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-2 {
-            top: 8px;
-            left: 26px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-3 {
-            top: -2px;
-            left: 35px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-4 {
-            top: -6px;
-            left: 45px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-5 {
-            top: -8px;
-            left: 55px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-6 {
-            top: -12px;
-            left: 65px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-7 {
-            top: -10px;
-            left: 75px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-8 {
-            top: -10px;
-            left: 85px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-9 {
-            top: -10px;
-            left: 95px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-10 {
-            top: 28px;
-            left: 19px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-11 {
-            top: 15px;
-            left: 33px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-12 {
-            top: 0;
-            left: 55px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-13 {
-            top: -5px;
-            left: 100px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-14 {
-            top: 5px;
-            left: 63px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-15 {
-            top: 5px;
-            left: 67px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-16 {
-            top: 0px;
-            left: 105px; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right {
-          right: 62px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair {
-            position: absolute;
-            width: 30px;
-            height: 40px;
-            border-radius: 50%; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t1 {
-            transform: rotate(310deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t2 {
-            transform: rotate(320deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t3 {
-            transform: rotate(330deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-1 {
-            top: 10px;
-            left: 0; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-2 {
-            top: 21px;
-            left: -2px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-3 {
-            top: 40px;
-            left: 8px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-4 {
-            top: 50px;
-            left: 16px; }
-        section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under {
-          left: 30px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair {
-            position: absolute;
-            width: 30px;
-            height: 40px;
-            border-radius: 50%; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t1 {
-            transform: rotate(270deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t2 {
-            transform: rotate(280deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t3 {
-            transform: rotate(290deg); }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-1 {
-            top: 30px;
-            left: 10px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-2 {
-            top: 36px;
-            left: 30px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-3 {
-            top: 33px;
-            left: 50px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-4 {
-            top: 30px;
-            left: 70px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-5 {
-            top: 36px;
-            left: 90px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-6 {
-            top: 33px;
-            left: 110px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-7 {
-            top: 30px;
-            left: 130px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-8 {
-            top: 36px;
-            left: 150px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-9 {
-            top: 25px;
-            left: 30px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-10 {
-            top: 22px;
-            left: 50px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-11 {
-            top: 28px;
-            left: 70px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-12 {
-            top: 25px;
-            left: 90px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-13 {
-            top: 22px;
-            left: 110px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-14 {
-            top: 28px;
-            left: 130px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-15 {
-            top: 25px;
-            left: 150px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-16 {
-            top: 14px;
-            left: 30px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-17 {
-            top: 18px;
-            left: 30px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-18 {
-            top: 27px;
-            left: 30px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-19 {
-            top: 18px;
-            left: 60px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-20 {
-            top: 27px;
-            left: 80px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-21 {
-            top: 20px;
-            left: 132px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-22 {
-            top: 33px;
-            left: 128px; }
-          section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-23 {
-            top: 37px;
-            left: 13px; }
-      section#about div.section-content div#about-right div#face div#head {
-        z-index: 1;
-        position: absolute;
-        width: 250px;
-        height: 380px;
-        background-color: #E1B899;
-        border-radius: 45% 45% 55% 55%; }
-        section#about div.section-content div#about-right div#face div#head div#eyebrows div.eyebrow {
-          position: absolute;
-          top: 135px;
-          width: 35px;
-          height: 60px;
-          box-shadow: inset -10px 0 0 0 #000, 0 2px 0 0 #C7A387; }
-        section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-left {
-          left: 52px;
-          transform: rotate(-83deg);
-          border-radius: 75% 55% 8% 60%; }
-        section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-right {
-          right: 52px;
-          transform: rotate(-96deg);
-          border-radius: 55% 8% 60% 75%; }
-        section#about div.section-content div#about-right div#face div#head div#eyes div.eye {
-          position: absolute;
-          top: 165px;
-          width: 50px;
-          height: 18px;
-          background-color: #f8f8f8;
-          box-shadow: 0 3px 0px 1px #C7A387;
-          overflow: hidden; }
-          section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 {
-            z-index: 0;
-            position: absolute;
-            top: -2px;
-            left: 12px;
-            width: 25px;
-            height: 25px;
-            background-color: #78542F;
-            border-radius: 50%;
-            box-shadow: inset 0px 6px 8px -1px rgba(84, 59, 33, 0.9); }
-            section#about div.section-content div#about-right div#face div#head div#eyes div.eye div.eye-color-1 div.eye-pupil {
-              z-index: 2;
-              position: absolute;
-              top: 7px;
-              left: 7px;
-              width: 12px;
-              height: 12px;
-              background-color: #111;
-              border-radius: 50%;
-              box-shadow: 0 0 10px 0 #a1703f; }
-        section#about div.section-content div#about-right div#face div#head div#eyes div#eye-left {
-          left: 50px;
-          transform: rotate(3deg);
-          border-radius: 50px 50px 10px 10px; }
-        section#about div.section-content div#about-right div#face div#head div#eyes div#eye-right {
-          right: 50px;
-          transform: rotate(-3deg);
-          border-radius: 50px 50px 10px 10px; }
-        section#about div.section-content div#about-right div#face div#head div#nose {
-          position: absolute;
-          top: 185px;
-          left: 112px; }
-          section#about div.section-content div#about-right div#face div#head div#nose div#nose-main {
-            width: 30px;
-            height: 80px;
-            border-radius: 0 0 15px 15px;
-            box-shadow: 0px 6px 4px -2px rgba(196, 136, 89, 0.68); }
-          section#about div.section-content div#about-right div#face div#head div#nose div.nostril {
-            position: absolute;
-            top: 55px;
-            width: 20px;
-            height: 20px;
-            border-radius: 0 0 20px 20px; }
-          section#about div.section-content div#about-right div#face div#head div#nose div#nose-left {
-            left: -10px;
-            box-shadow: -1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
-            -webkit-transform: rotate(33deg);
-            transform: rotate(45deg); }
-          section#about div.section-content div#about-right div#face div#head div#nose div#nose-right {
-            right: -10px;
-            box-shadow: 1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
-            -webkit-transform: rotate(-33deg);
-            transform: rotate(-45deg); }
-        section#about div.section-content div#about-right div#face div#head div#mouth {
-          display: none;
-          position: relative;
-          top: 285px;
-          left: 80px; }
-          section#about div.section-content div#about-right div#face div#head div#mouth div.lip {
-            background-color: #DE8877; }
-          section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-upper-lip {
-            position: absolute;
-            top: 0;
-            width: 100px;
-            height: 10px;
-            border-radius: 50% / 100%;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0; }
-          section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-lower-lip {
-            position: absolute;
-            top: 12px;
-            width: 100px;
-            height: 10px;
-            border-radius: 50% / 100%;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0; }
-
-/* Contact */
-section#contact div.section-content form {
-  margin-top: 40px; }
-  section#contact div.section-content form input {
-    display: block;
-    margin-bottom: 30px;
-    width: 300px;
-    font-family: "ProximaNova-light", Arial, Helvetica, sans-serif;
-    color: #333;
-    font-size: 14px;
-    border: 1px solid #222;
-    border-style: none none solid none; }
-  section#contact div.section-content form textarea {
-    margin-bottom: 15px;
-    width: 500px;
-    min-height: 150px;
-    font-family: "ProximaNova-light", Arial, Helvetica, sans-serif;
-    color: #333;
-    font-size: 14px;
-    border: 1px solid #222;
-    border-radius: 3px; }
-  section#contact div.section-content form input::-webkit-input-placeholder, section#contact div.section-content form textarea::-webkit-input-placeholder {
-    color: #333; }
-  section#contact div.section-content form input:-moz-placeholder, section#contact div.section-content form textarea:-moz-placeholder {
-    color: #333; }
-  section#contact div.section-content form input::-moz-placeholder, section#contact div.section-content form textarea::-moz-placeholder {
-    color: #333; }
-  section#contact div.section-content form input:-ms-input-placeholder, section#contact div.section-content form textarea:-ms-input-placeholder {
-    color: #333; }
-  section#contact div.section-content form input#input-submit {
-    padding: 6px 10px;
-    width: auto;
-    color: #fff;
-    background-color: #09c;
-    border: 1px solid #09c;
-    border-radius: 3px; }
