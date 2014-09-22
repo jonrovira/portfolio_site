@@ -59,8 +59,8 @@ html {
       html body main section#welcome div.section-content h2 {
         font-size: 30px; }
     html body main section#portfolio div.section-content {
-      margin-left: 10%;
-      width: 90%; }
+      margin-right: auto;
+      margin-left: auto; }
       html body main section#portfolio div.section-content div#portfolio-items-wrapper {
         position: relative;
         overflow-x: scroll; }

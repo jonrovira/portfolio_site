@@ -11,8 +11,6 @@ $p-font-size: 14px;
 $p-line-height: 20px;
 
 $portfolio-item-width: 400px;
-$portfolio-section-content-margin-left: 10%; // 100% - $portfolio-section-content-width
-$portfolio-section-content-width: 90%; // (100% - $desktop-inner-width) / 2
 $portfolio-item-spacing: 40px;
 
 $skills-graph-height: 450px;
@@ -112,8 +110,8 @@ html {
 			section#portfolio {
 
 				div.section-content {
-					margin-left: $portfolio-section-content-margin-left;
-					width: $portfolio-section-content-width;
+					margin-right: auto;
+					margin-left: auto;
 
 					div#portfolio-items-wrapper {
 						position: relative;
