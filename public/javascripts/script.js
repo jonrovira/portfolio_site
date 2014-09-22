@@ -49,28 +49,44 @@ $(document).ready(function() {
 	// Follow the mouse with eyes in about section
 	var followMouseWithEyes = function(e) {
 
-		var $eye = $('div.eye-color-1');
-		var eyeTop = $eye.offset().top;
-		var eyeLeft = $eye.offset().left;
-
+		// get mouse position
 		var mouseTop = e.pageY;
 		var mouseLeft = e.pageX;
 
-		// goes with normal x, y conventions
-		dTop = eyeTop - mouseTop;
-		dLeft = mouseLeft - eyeLeft;
+		// get left eye position
+		var $leftEye = $('div#eye-left div.eye-color-1');
+		var leftEyeTop = $leftEye.offset().top;
+		var leftEyeLeft = $leftEye.offset().left;
+
+		// get right eye position
+		var $rightEye = $('div#eye-right div.eye-color-1');
+		var rightEyeTop = $rightEye.offset().top;
+		var rightEyeLeft = $rightEye.offset().left;
+
+		// left eye difference in position (normal x, y coordinate conventions)
+		leftDTop = leftEyeTop - mouseTop;
+		leftDLeft = mouseLeft - leftEyeLeft;
+
+		// right eye difference in position
+		rightDTop = rightEyeTop - mouseTop;
+		rightDLeft = mouseLeft - rightEyeLeft;
 
 		// Pixel positions for eye center
 		var eyeCenter = [12, -2];
 
 		// get requested eye position
-		var eyePositionRequest = getEyePosition(dLeft, dTop);
+		var leftEyePositionRequest = getEyePosition(leftDLeft, leftDTop);
+		var rightEyePositionRequest = getEyePosition(rightDLeft, rightDTop);
 
-		var eyePositionX = eyeCenter[0] + eyePositionRequest[0];
-		var eyePositionY = eyeCenter[1] - eyePositionRequest[1];
+		var leftEyePositionX = eyeCenter[0] + leftEyePositionRequest[0];
+		var leftEyePositionY = eyeCenter[1] - leftEyePositionRequest[1];
+		var rightEyePositionX = eyeCenter[0] + rightEyePositionRequest[0];
+		var rightEyePositionY = eyeCenter[1] - rightEyePositionRequest[1];
 
-		$('div.eye-color-1').css('left', eyePositionX);
-		$('div.eye-color-1').css('top', eyePositionY);
+		$leftEye.css('left', leftEyePositionX);
+		$leftEye.css('top', leftEyePositionY);
+		$rightEye.css('left', rightEyePositionX);
+		$rightEye.css('top', rightEyePositionY);
 	}
 	// Returns quadrant of x, y coordinates
 	var getQuadrant = function(x, y) {
