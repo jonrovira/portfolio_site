@@ -45,7 +45,8 @@ html {
       width: 100%; }
       html body main section div.section-content {
         margin: 0 auto 80px auto;
-        width: 80%; }
+        width: 80%;
+        max-width: 1200px; }
         html body main section div.section-content h1.section-header {
           margin: 20px 0;
           font-size: 45px;
@@ -88,21 +89,119 @@ html {
               html body main section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
                 font-size: 13px;
                 color: #888; }
+    html body main section#skills div.section-content h2 {
+      margin-bottom: 20px;
+      text-align: right; }
     html body main section#skills div.section-content ul#skills-graph {
+      margin-bottom: 60px;
+      width: 100%;
+      height: 450px;
       list-style: none;
-      height: 450px; }
+      border-bottom: 1px solid #ccc; }
       html body main section#skills div.section-content ul#skills-graph li {
         display: inline-block;
-        vertical-align: top; }
-      html body main section#skills div.section-content ul#skills-graph li#y-axis span {
-        display: block; }
-      html body main section#skills div.section-content ul#skills-graph li#y-axis span:not(:last-child) {
-        margin-bottom: 50px; }
+        vertical-align: bottom; }
+      html body main section#skills div.section-content ul#skills-graph li#y-axis {
+        padding-right: 20px;
+        border-right: 1px solid #ccc; }
+        html body main section#skills div.section-content ul#skills-graph li#y-axis span {
+          display: block;
+          margin-bottom: calc(450px / 6); }
+        html body main section#skills div.section-content ul#skills-graph li#y-axis span:last-child {
+          margin-bottom: 110px; }
       html body main section#skills div.section-content ul#skills-graph li.skill {
-        margin-left: 20px;
-        width: 90px;
+        position: relative;
+        margin-bottom: 40px;
+        margin-left: 30px;
+        width: calc((100% - 134px - (5 * 30px)) / 5);
         height: 100%;
-        background-color: blue; }
+        border-radius: 3px 3px 0 0;
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6); }
+        html body main section#skills div.section-content ul#skills-graph li.skill span {
+          position: absolute;
+          left: 10%;
+          color: #fff;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+        html body main section#skills div.section-content ul#skills-graph li.skill span.skill-level {
+          bottom: 40px;
+          font-size: 43px;
+          opacity: 0.3;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+        html body main section#skills div.section-content ul#skills-graph li.skill span.skill-name {
+          font-size: 20px;
+          bottom: 15px; }
+      html body main section#skills div.section-content ul#skills-graph li.skill#skill-html {
+        height: 95%;
+        background-color: #032F40;
+        background: -webkit-linear-gradient(#054b66, #032f40);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#054b66, #032f40);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#054b66, #032f40);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#054b66, #032f40);
+        /* Standard syntax */
+        border: 1px solid #032938; }
+      html body main section#skills div.section-content ul#skills-graph li.skill#skill-css {
+        height: 90%;
+        background-color: #0396A6;
+        background: -webkit-linear-gradient(#03a1b2, #0396a6);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#03a1b2, #0396a6);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#03a1b2, #0396a6);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#03a1b2, #0396a6);
+        /* Standard syntax */
+        border: 1px solid #038391; }
+      html body main section#skills div.section-content ul#skills-graph li.skill#skill-javascript {
+        height: 75%;
+        background-color: #03A688;
+        background: -webkit-linear-gradient(#03b292, #03a688);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#03b292, #03a688);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#03b292, #03a688);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#03b292, #03a688);
+        /* Standard syntax */
+        border: 1px solid #03967B; }
+      html body main section#skills div.section-content ul#skills-graph li.skill#skill-python {
+        height: 90%;
+        background-color: #F2D8A7;
+        background: -webkit-linear-gradient(#ffe4b4, #f2d8a7);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#ffe4b4, #f2d8a7);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#ffe4b4, #f2d8a7);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#ffe4b4, #f2d8a7);
+        /* Standard syntax */
+        border: 1px solid #D6BF94; }
+      html body main section#skills div.section-content ul#skills-graph li.skill#skill-cpp {
+        height: 80%;
+        background-color: #F2AB91;
+        background: -webkit-linear-gradient(#fab196, #f2ab91);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#fab196, #f2ab91);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#fab196, #f2ab91);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#fab196, #f2ab91);
+        /* Standard syntax */
+        border: 1px solid #DE9D85; }
+    html body main section#skills div.section-content ul#frameworks-tools-libraries {
+      margin: 0 auto; }
+      html body main section#skills div.section-content ul#frameworks-tools-libraries li {
+        display: inline-block;
+        margin-left: 40px;
+        font-size: 16px;
+        line-height: 30px; }
+      html body main section#skills div.section-content ul#frameworks-tools-libraries li.list-square {
+        font-size: 11px;
+        color: #0396A6;
+        line-height: 10px;
+        vertical-align: middle; }
     html body main section#about div.section-content {
       overflow: auto; }
       html body main section#about div.section-content div#about-left {

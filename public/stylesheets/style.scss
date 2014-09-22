@@ -7,14 +7,19 @@
 
 $font-stack: "ProximaNova-light", Arial, Helvetica, sans-serif;
 $desktop-inner-width: 80%;
+$p-font-size: 14px;
+$p-line-height: 20px;
+
 $portfolio-item-width: 400px;
 $portfolio-section-content-margin-left: 10%; // 100% - $portfolio-section-content-width
 $portfolio-section-content-width: 90%; // (100% - $desktop-inner-width) / 2
 $portfolio-item-spacing: 40px;
+
+$skills-graph-height: 450px;
+$skills-skill-width: calc((100% - 134px - (5 * 30px)) / 5);
+
 $about-face-width: 250px;
 $about-face-height: 380px;
-$p-font-size: 14px;
-$p-line-height: 20px;
 
 /* Globals */
 html, body, div, span, h1, h2, h3, h4,
@@ -79,6 +84,7 @@ html {
 				div.section-content {
 					margin: 0 auto 80px auto;
 					width: $desktop-inner-width;
+					max-width: 1200px;
 
 					h1.section-header {
 						margin: 20px 0;
@@ -160,28 +166,120 @@ html {
 
 				div.section-content {
 
+					h2 {
+						margin-bottom: 20px;
+						text-align: right;
+					}
 					ul#skills-graph {
+						margin-bottom: 60px;
+						width: 100%;
+						height: $skills-graph-height;
 						list-style: none;
-						height: 450px;
+						border-bottom: 1px solid #ccc;
 
 						li {
 							display: inline-block;
-							vertical-align: top;
+							vertical-align: bottom;
 						}
 						li#y-axis {
+							padding-right: 20px;
+							border-right: 1px solid #ccc;
 
 							span {
 								display: block;
+								margin-bottom: calc(#{$skills-graph-height} / 6);
 							}
-							span:not(:last-child) {
-								margin-bottom: 50px;
+							span:last-child {
+								margin-bottom: 110px;
 							}
 						}
 						li.skill {
-							margin-left: 20px;
-							width: 90px;
+							position: relative;
+							margin-bottom: 40px;
+							margin-left: 30px;
+							width: $skills-skill-width;
 							height: 100%;
-							background-color: blue;
+							border-radius: 3px 3px 0 0;
+							box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+
+							span {
+								position: absolute;
+								left: 10%;
+								color: #fff;
+								text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+							}
+							span.skill-level {
+								bottom: 40px;
+								font-size: 43px;
+								opacity: 0.3;
+								text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+							}
+							span.skill-name {
+								font-size: 20px;
+								bottom: 15px;
+							}
+						}
+						// https://kuler.adobe.com/Theme-3-color-theme-4407117/
+						li.skill#skill-html {
+							height: 95%;
+							background-color: #032F40; // dark blue
+							background: -webkit-linear-gradient(#054B66, #032F40); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#054B66, #032F40); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#054B66, #032F40); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#054B66, #032F40); /* Standard syntax */
+							border: 1px solid #032938;
+						}
+						li.skill#skill-css {
+							height: 90%;
+							background-color: #0396A6; // turquoise
+							background: -webkit-linear-gradient(#03A1B2, #0396A6); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#03A1B2, #0396A6); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#03A1B2, #0396A6); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#03A1B2, #0396A6); /* Standard syntax */
+							border: 1px solid #038391;
+						}
+						li.skill#skill-javascript {
+							height: 75%;
+							background-color: #03A688; // green
+							background: -webkit-linear-gradient(#03B292, #03A688); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#03B292, #03A688); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#03B292, #03A688); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#03B292, #03A688); /* Standard syntax */
+							border: 1px solid #03967B;
+						}
+						li.skill#skill-python {
+							height: 90%;
+							background-color: #F2D8A7; // yellow
+							background: -webkit-linear-gradient(#FFE4B4, #F2D8A7); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#FFE4B4, #F2D8A7); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#FFE4B4, #F2D8A7); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#FFE4B4, #F2D8A7); /* Standard syntax */
+							border: 1px solid #D6BF94;
+						}
+						li.skill#skill-cpp {
+							height: 80%;
+							background-color: #F2AB91; // orangeish
+							background: -webkit-linear-gradient(#FAB196, #F2AB91); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#FAB196, #F2AB91); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#FAB196, #F2AB91); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#FAB196, #F2AB91); /* Standard syntax */
+							border: 1px solid #DE9D85;
+						}
+					}
+					ul#frameworks-tools-libraries {
+						margin: 0 auto;
+
+						li {
+							display: inline-block;
+							margin-left: 40px;
+							font-size: 16px;
+							line-height: 30px;
+						}
+						li.list-square {
+							font-size: 11px;
+							color: #0396A6;
+							line-height: 10px;
+							vertical-align: middle;
 						}
 					}
 				}
