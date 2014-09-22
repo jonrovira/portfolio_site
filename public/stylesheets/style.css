@@ -58,6 +58,29 @@ html {
         font-size: 60px; }
       html body main section#welcome div.section-content h2 {
         font-size: 30px; }
+      html body main section#welcome div.section-content div#welcome-circle {
+        position: relative;
+        margin: 11px auto 0;
+        width: 31px;
+        height: 31px;
+        background-color: #000;
+        border: 1px solid #000;
+        border-radius: 31px;
+        cursor: pointer; }
+        html body main section#welcome div.section-content div#welcome-circle div#welcome-triangle {
+          position: absolute;
+          left: 0.46em;
+          top: 13px;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid #fff; }
+      html body main section#welcome div.section-content div#welcome-circle:hover {
+        background-color: #fff;
+        border: 1px solid #000; }
+        html body main section#welcome div.section-content div#welcome-circle:hover div#welcome-triangle {
+          border-top-color: #000; }
     html body main section#portfolio div.section-content {
       margin-right: auto;
       margin-left: auto; }
@@ -221,7 +244,7 @@ html {
             margin-bottom: 5px; }
       html body main section#about div.section-content div#about-right {
         float: right;
-        width: 40%;
+        width: 35%;
         height: 420px; }
         html body main section#about div.section-content div#about-right div#face {
           position: relative;
@@ -525,14 +548,14 @@ html {
             position: absolute;
             width: 250px;
             height: 380px;
-            background-color: #E1B899;
+            background-color: #D6AF92;
             border-radius: 45% 45% 55% 55%; }
             html body main section#about div.section-content div#about-right div#face div#head div#eyebrows div.eyebrow {
               position: absolute;
               top: 135px;
               width: 35px;
               height: 60px;
-              box-shadow: inset -10px 0 0 0 #000, 0 2px 0 0 #C7A387; }
+              box-shadow: inset -10px 0 0 0 #000; }
             html body main section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-left {
               left: 52px;
               transform: rotate(-83deg);
@@ -588,9 +611,9 @@ html {
                 box-shadow: 0px 6px 4px -2px rgba(196, 136, 89, 0.68); }
               html body main section#about div.section-content div#about-right div#face div#head div#nose div.nostril {
                 position: absolute;
-                top: 55px;
-                width: 20px;
-                height: 20px;
+                top: 52px;
+                width: 17px;
+                height: 17px;
                 border-radius: 0 0 20px 20px; }
               html body main section#about div.section-content div#about-right div#face div#head div#nose div#nose-left {
                 left: -10px;
@@ -603,28 +626,84 @@ html {
                 -webkit-transform: rotate(-33deg);
                 transform: rotate(-45deg); }
             html body main section#about div.section-content div#about-right div#face div#head div#mouth {
-              display: none;
               position: relative;
               top: 285px;
-              left: 80px; }
+              left: 70px; }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-left-dimple {
+                position: absolute;
+                top: -40px;
+                left: -40px;
+                width: 8px;
+                height: 30px;
+                border-radius: 70%;
+                box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                transform: rotate(170deg); }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-crease-1 {
+                position: absolute;
+                top: -29px;
+                left: -13px;
+                width: 35px;
+                height: 45px;
+                border-radius: 85%;
+                box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                transform: rotate(209deg); }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-crease-2 {
+                position: absolute;
+                top: -7px;
+                left: -7px;
+                width: 15px;
+                height: 25px;
+                border-radius: 85%;
+                box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                transform: rotate(150deg); }
               html body main section#about div.section-content div#about-right div#face div#head div#mouth div.lip {
+                position: absolute;
                 background-color: #DE8877; }
               html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-upper-lip {
-                position: absolute;
                 top: 0;
-                width: 100px;
-                height: 10px;
+                width: 90px;
+                height: 5px;
                 border-radius: 50% / 100%;
                 border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0; }
-              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-lower-lip {
+                border-bottom-right-radius: 0;
+                transform: rotate(8deg); }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-middle-smile {
                 position: absolute;
-                top: 12px;
-                width: 100px;
-                height: 10px;
+                top: -52px;
+                left: 38px;
+                z-index: 1;
+                width: 20px;
+                height: 103px;
+                border-radius: 30%;
+                box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.2);
+                transform: rotate(98deg); }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-lower-lip {
+                top: 5px;
+                left: 2px;
+                width: 90px;
+                height: 14px;
                 border-radius: 50% / 100%;
                 border-top-left-radius: 0;
-                border-top-right-radius: 0; }
+                border-top-right-radius: 0;
+                transform: rotate(8deg); }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-crease-3 {
+                position: absolute;
+                top: 10px;
+                left: 92px;
+                width: 15px;
+                height: 20px;
+                border-radius: 85%;
+                box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                transform: rotate(350deg); }
+              html body main section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-right-dimple {
+                position: absolute;
+                top: -30px;
+                left: 140px;
+                width: 8px;
+                height: 37px;
+                border-radius: 70%;
+                box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                transform: rotate(7deg); }
     html body main section#contact div.section-content form {
       margin-top: 40px; }
       html body main section#contact div.section-content form input {

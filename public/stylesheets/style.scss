@@ -104,6 +104,35 @@ html {
 					h2 {
 						font-size: 30px;
 					}
+					div#welcome-circle {
+						position: relative;
+						margin: 11px auto 0;
+						width: 31px;
+						height: 31px;
+						background-color: #000;
+						border: 1px solid #000;
+						border-radius: 31px;
+						cursor: pointer;
+
+						div#welcome-triangle {
+							position: absolute;
+							left: 0.46em;
+							top: 13px;
+							width: 0;
+							height: 0;
+							border-left: 8px solid transparent;
+							border-right: 8px solid transparent;
+							border-top: 8px solid #fff;
+						}
+					}
+					div#welcome-circle:hover {
+						background-color: #fff;
+						border: 1px solid #000;
+
+						div#welcome-triangle {
+							border-top-color: #000;
+						}
+					}
 				}
 			}
 			/* Portfolio */
@@ -312,7 +341,7 @@ html {
 					}
 					div#about-right {
 						float: right;
-						width: 40%;
+						width: 35%;
 						height: 420px;
 
 						div#face {
@@ -491,7 +520,7 @@ html {
 								position: absolute;
 								width: $about-face-width;
 								height: $about-face-height;
-								background-color: #E1B899;
+								background-color: #D6AF92; // #E1B899;
 								border-radius: 45% 45% 55% 55%;
 
 								div#eyebrows {
@@ -501,7 +530,7 @@ html {
 										top: 135px;
 										width: 35px;
 										height: 60px;
-										box-shadow: inset -10px 0 0 0 #000, 0 2px 0 0 #C7A387;
+										box-shadow: inset -10px 0 0 0 #000;
 									}
 									div#eyebrow-left {
 										left: 52px;
@@ -572,9 +601,9 @@ html {
 									}
 									div.nostril {
 										position: absolute;
-										top: 55px;
-										width: 20px;
-										height: 20px;
+										top: 52px;
+										width: 17px;
+										height: 17px;
 										border-radius: 0 0 20px 20px;
 									}
 									div#nose-left {
@@ -591,32 +620,94 @@ html {
 									}
 								}
 								div#mouth {
-									display: none;
 									position: relative;
 									top: 285px;
-									left: 80px;
+									left: 70px;
 
+									div#mouth-left-dimple {
+										position: absolute;
+										top: -40px;
+										left: -40px;
+										width: 8px;
+										height: 30px;
+										border-radius: 70%;
+										box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+										transform: rotate(170deg);
+									}
+									div#mouth-crease-1 {
+										position: absolute;
+										top: -29px;
+										left: -13px;
+										width: 35px;
+										height: 45px;
+										border-radius: 85%;
+										box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+										transform: rotate(209deg);
+									}
+									div#mouth-crease-2 {
+										position: absolute;
+										top: -7px;
+										left: -7px;
+										width: 15px;
+										height: 25px;
+										border-radius: 85%;
+										box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+										transform: rotate(150deg);
+									}
 									div.lip {
+										position: absolute;
 										background-color: #DE8877;
 									}
 									div#mouth-upper-lip {
-										position: absolute;
 										top: 0;
-										width: 100px;
-										height: 10px;
+										width: 90px;
+										height: 5px;
 										border-radius: 50% / 100%;
 										border-bottom-left-radius: 0;
 										border-bottom-right-radius: 0;
+										transform: rotate(8deg);
 
 									}
-									div#mouth-lower-lip {
+									div#mouth-middle-smile {
 										position: absolute;
-										top: 12px;
-										width: 100px;
-										height: 10px;
+										top: -52px;
+										left: 38px;
+										z-index: 1;
+										width: 20px;
+										height: 103px;
+										border-radius: 30%;
+										box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.2);
+										transform: rotate(98deg);
+									}
+									div#mouth-lower-lip {
+										top: 5px;
+										left: 2px;
+										width: 90px;
+										height: 14px;
 										border-radius: 50% / 100%;
 										border-top-left-radius: 0;
 										border-top-right-radius: 0;
+										transform: rotate(8deg);
+									}
+									div#mouth-crease-3 {
+										position: absolute;
+										top: 10px;
+										left: 92px;
+										width: 15px;
+										height: 20px;
+										border-radius: 85%;
+										box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+										transform: rotate(350deg);
+									}
+									div#mouth-right-dimple {
+										position: absolute;
+										top: -30px;
+										left: 140px;
+										width: 8px;
+										height: 37px;
+										border-radius: 70%;
+										box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+										transform: rotate(7deg);
 									}
 								}
 							}

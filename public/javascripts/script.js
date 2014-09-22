@@ -46,6 +46,85 @@ $(document).ready(function() {
 			}
 		});
 	}
+	// Follow the mouse with eyes in about section
+	var followMouseWithEyes = function(e) {
+
+		var $eye = $('div.eye-color-1');
+		var eyeTop = $eye.offset().top;
+		var eyeLeft = $eye.offset().left;
+
+		var mouseTop = e.pageY;
+		var mouseLeft = e.pageX;
+
+		// goes with normal x, y conventions
+		dTop = eyeTop - mouseTop;
+		dLeft = mouseLeft - eyeLeft;
+
+		// Pixel positions for eye center
+		var eyeCenter = [12, -2];
+
+		// get requested eye position
+		var eyePositionRequest = getEyePosition(dLeft, dTop);
+
+		var eyePositionX = eyeCenter[0] + eyePositionRequest[0];
+		var eyePositionY = eyeCenter[1] - eyePositionRequest[1];
+
+		$('div.eye-color-1').css('left', eyePositionX);
+		$('div.eye-color-1').css('top', eyePositionY);
+	}
+	// Returns quadrant of x, y coordinates
+	var getQuadrant = function(x, y) {
+		if( x >= 0 && y >= 0 ) {
+			return 1;
+		}
+		else if( x < 0 && y >= 0 ) {
+			return 2;
+		}
+		else if( x < 0 && y < 0 ) {
+			return 3;
+		}
+		else {
+			return 4;
+		}
+	}
+	// Gets 0-2pi radians angle of x, y coordinates
+	var getAngle = function(x, y) {
+		// get quadrant
+		var quadrant = getQuadrant(x, y);
+		var theta;
+
+		// Calculate angle based on quadrant
+		switch( quadrant ) {
+			case 1:
+				theta = Math.atan(y/x);
+				break;
+			case 2:
+				theta = Math.PI - Math.atan(y/(-1 * x));
+				break;
+			case 3:
+				theta = Math.PI + Math.atan((-1 * y)/(-1 * x));
+				break;
+			case 4:
+				theta = (2 * Math.PI) - Math.atan((-1 * y)/x);
+				break;
+		}
+
+		return theta;
+	}
+	// Mimic mouse angle to eye with pupil to center of eye
+	var getEyePosition = function(x, y) {
+		var position = [];
+
+		// get mouse angle
+		var thetaMouse = getAngle(x, y);
+
+		// calculate pixel position with hypotenuse of 5px
+		var xEye = 8 * Math.cos(thetaMouse);
+		var yEye = 8 * Math.sin(thetaMouse);
+		position = [xEye, yEye];
+
+		return position;
+	}
 
 
 
@@ -62,7 +141,12 @@ $(document).ready(function() {
 	 */
 
 	$('section#portfolio div.section-content div#portfolio-items-wrapper').scroll(function() {
+		// placeholder for minimize
 		blurPortfolioItems();
+	});
+	$(document).mousemove(function(e) {
+		// placeholder for minimize
+		followMouseWithEyes(e);
 	});
 
 });
