@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	
+	{{> head }}
+
+	<body>
+
+		{{> header }}
+
+		<main class="portfolio-item">
+
+			<section class="item-header">
+				<img class="item-image" src={{ image }}>
+				<h1 class="item-title">{{ title }}</h1>
+				<h3 class="item-date">{{ date }}</h3>
+				<h2 class="item-role">{{ role }}</h2>
+				<a class="item-github" href={{ github }}>Github Repository</a>
+			</section>
+
+			{{{ body }}}
+
+		</main>
+
+	</body>
+</html>

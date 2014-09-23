@@ -64,12 +64,12 @@ $(document).ready(function() {
 		var rightEyeLeft = $rightEye.offset().left;
 
 		// left eye difference in position (normal x, y coordinate conventions)
-		leftDTop = leftEyeTop - mouseTop;
-		leftDLeft = mouseLeft - leftEyeLeft;
+		var leftDTop = leftEyeTop - mouseTop;
+		var leftDLeft = mouseLeft - leftEyeLeft;
 
 		// right eye difference in position
-		rightDTop = rightEyeTop - mouseTop;
-		rightDLeft = mouseLeft - rightEyeLeft;
+		var rightDTop = rightEyeTop - mouseTop;
+		var rightDLeft = mouseLeft - rightEyeLeft;
 
 		// Pixel positions for eye center
 		var eyeCenter = [12, -2];
@@ -78,11 +78,13 @@ $(document).ready(function() {
 		var leftEyePositionRequest = getEyePosition(leftDLeft, leftDTop);
 		var rightEyePositionRequest = getEyePosition(rightDLeft, rightDTop);
 
+		// get eye positions accounting for eye offsets
 		var leftEyePositionX = eyeCenter[0] + leftEyePositionRequest[0];
 		var leftEyePositionY = eyeCenter[1] - leftEyePositionRequest[1];
 		var rightEyePositionX = eyeCenter[0] + rightEyePositionRequest[0];
 		var rightEyePositionY = eyeCenter[1] - rightEyePositionRequest[1];
 
+		// move eyes to positions
 		$leftEye.css('left', leftEyePositionX);
 		$leftEye.css('top', leftEyePositionY);
 		$rightEye.css('left', rightEyePositionX);

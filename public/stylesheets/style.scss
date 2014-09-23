@@ -8,7 +8,7 @@
 $font-stack: "ProximaNova-light", Arial, Helvetica, sans-serif;
 $desktop-inner-width: 80%;
 $p-font-size: 14px;
-$p-line-height: 20px;
+$p-line-height: 24px;
 
 $portfolio-item-width: 400px;
 $portfolio-item-spacing: 40px;
@@ -91,6 +91,9 @@ html {
 					}
 				}
 			}
+		}
+		main#splash {
+
 			/* Welcome */
 			section#welcome {
 
@@ -194,11 +197,11 @@ html {
 				div.section-content {
 
 					h2 {
-						margin-bottom: 20px;
+						margin: 30px 0 20px;
 						text-align: right;
 					}
 					ul#skills-graph {
-						margin-bottom: 60px;
+						margin: 30px 0 80px;
 						width: 100%;
 						height: $skills-graph-height;
 						list-style: none;
@@ -322,7 +325,7 @@ html {
 						width: 50%;
 
 						p {
-							margin-bottom: 10px;
+							margin-bottom: 16px;
 						}
 						h3 {
 							margin: 20px 0 10px 0;
@@ -336,6 +339,14 @@ html {
 
 							li {
 								margin-bottom: 5px;
+							}
+							li.list-square {
+								float: left;
+								margin-right: 10px;
+								font-size: 11px;
+								color: #0396A6;
+								line-height: 13px;
+								vertical-align: middle;
 							}
 						}
 					}
@@ -759,8 +770,8 @@ html {
 							padding: 6px 10px;
 							width: auto;
 							color: #fff;
-							background-color: #09c;
-							border: 1px solid #09c;
+							background-color: #0396A6;
+							border: 1px solid #0396A6;
 							border-radius: 3px;
 						}
 					}
@@ -771,6 +782,9 @@ html {
 				border: 1px solid #eee;
 				border-style: solid none none none;
 			}
+		}
+		main.portfolio-item {
+			
 		}
 		h1, h2, h3, h4, h5, h6 {
 			font-weight: 500;
