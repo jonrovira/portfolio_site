@@ -9,12 +9,38 @@
 
 		<main class="portfolio-item">
 
-			<section class="item-header">
-				<img class="item-image" src={{ image }}>
-				<h1 class="item-title">{{ title }}</h1>
-				<h3 class="item-date">{{ date }}</h3>
-				<h2 class="item-role">{{ role }}</h2>
-				<a class="item-github" href={{ github }}>Github Repository</a>
+			<section id="item-header">
+				<div class="section-content">
+					<div id="item-header-left">
+						<img id="item-image" src={{ image }}>
+					</div>
+					<div id="item-header-right">
+						<h1 id="item-title">{{ title }}</h1>
+						{{#if showGithub}}
+							<a id="item-github" href={{ github }}>Github Repository <i class="fa fa-github"></i></a>
+						{{/if}}
+						<h3 id="item-date">{{ date }}</h3>
+						{{#printRolesList roles}} {{/printRolesList}}
+					</div>
+				</div>
+			</section>
+
+			<hr>
+
+			<section id="item-summary">
+				<div class="section-content">
+					<h2 class="section-header">Summary</h2>
+					<p>{{ summary }}</p>
+				</div>
+			</section>
+
+			<hr>
+
+			<section id="item-technology">
+				<div class="section-content">
+					<h2 class="section-header">Technology</h2>
+					{{#printTechnologyList technologies}} {{/printTechnologyList}}
+				</div>
 			</section>
 
 			{{{ body }}}

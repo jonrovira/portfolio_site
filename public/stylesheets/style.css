@@ -45,6 +45,10 @@ html {
         margin: 20px 0;
         font-size: 45px;
         text-align: left; }
+  html body main hr {
+    width: 80%;
+    border: 1px solid #eee;
+    border-style: solid none none none; }
   html body main#splash {
     /* Welcome */
     /* Portfolio */
@@ -99,19 +103,21 @@ html {
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
             border-radius: 3px;
             cursor: pointer; }
-            html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a img.portfolio-item-image {
-              width: 100%;
-              border-radius: 3px 3px 0 0; }
-            html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
-              padding: 10px;
-              text-align: left;
-              border-radius: 0 0 3px 3px; }
-              html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
-                font-size: 19px;
-                color: #555; }
-              html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
-                font-size: 13px;
-                color: #888; }
+            html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a {
+              text-decoration: none; }
+              html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a img.portfolio-item-image {
+                width: 100%;
+                border-radius: 3px 3px 0 0; }
+              html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
+                padding: 10px;
+                text-align: left;
+                border-radius: 0 0 3px 3px; }
+                html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
+                  font-size: 19px;
+                  color: #555; }
+                html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
+                  font-size: 13px;
+                  color: #888; }
     html body main#splash section#skills div.section-content h2 {
       margin: 30px 0 20px;
       text-align: right; }
@@ -746,10 +752,72 @@ html {
         background-color: #0396A6;
         border: 1px solid #0396A6;
         border-radius: 3px; }
-    html body main#splash hr {
-      width: 80%;
-      border: 1px solid #eee;
-      border-style: solid none none none; }
+  html body main.portfolio-item {
+    /* General section */
+    /* Item header */
+    /* Item summary */
+    /* Item technology */ }
+    html body main.portfolio-item section div.section-content {
+      margin-bottom: 30px; }
+      html body main.portfolio-item section div.section-content > h2.section-header {
+        margin: 20px 0 10px;
+        font-size: 30px; }
+    html body main.portfolio-item section#item-header {
+      margin-top: 30px; }
+      html body main.portfolio-item section#item-header div.section-content {
+        overflow: auto; }
+        html body main.portfolio-item section#item-header div.section-content div#item-header-left {
+          float: left;
+          margin-right: 30px; }
+          html body main.portfolio-item section#item-header div.section-content div#item-header-left img#item-image {
+            width: 300px; }
+        html body main.portfolio-item section#item-header div.section-content div#item-header-right {
+          float: left; }
+          html body main.portfolio-item section#item-header div.section-content div#item-header-right h1#item-title {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 45px; }
+          html body main.portfolio-item section#item-header div.section-content div#item-header-right a#item-github {
+            display: inline-block;
+            margin-top: 4px;
+            padding: 7px;
+            vertical-align: top;
+            line-height: 20px;
+            text-decoration: none;
+            background-color: #60b044;
+            background-image: mox-linear-gradient(#8add6d, #60b044);
+            background-image: linear-gradient(#8add6d, #60b044);
+            background-repeat: repeat-x;
+            border: 1px solid #5ca941;
+            border-radius: 3px;
+            color: #ffffff; }
+            html body main.portfolio-item section#item-header div.section-content div#item-header-right a#item-github i {
+              margin-left: 5px;
+              font-size: 20px; }
+          html body main.portfolio-item section#item-header div.section-content div#item-header-right h3#item-date {
+            margin-top: 8px; }
+          html body main.portfolio-item section#item-header div.section-content div#item-header-right ul#item-roles {
+            margin-top: 10px;
+            list-style: none; }
+            html body main.portfolio-item section#item-header div.section-content div#item-header-right ul#item-roles li {
+              display: inline-block;
+              padding: 8px 10px;
+              border: 1px dotted #555;
+              border-radius: 12px; }
+            html body main.portfolio-item section#item-header div.section-content div#item-header-right ul#item-roles li:not(:last-child) {
+              margin-right: 10px; }
+    html body main.portfolio-item section#item-technology div.section-content ul#item-technologies {
+      padding-left: 40px;
+      list-style: none; }
+      html body main.portfolio-item section#item-technology div.section-content ul#item-technologies li {
+        margin-bottom: 5px; }
+      html body main.portfolio-item section#item-technology div.section-content ul#item-technologies li.list-square {
+        float: left;
+        margin-right: 10px;
+        font-size: 11px;
+        color: #0396A6;
+        line-height: 13px;
+        vertical-align: middle; }
   html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
     font-weight: 500;
     line-height: 1.1;

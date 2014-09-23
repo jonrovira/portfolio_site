@@ -24,7 +24,30 @@ var app = express();
 
 // View engine setup
 app.set('views', path.join(__dirname, '/views'));
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.engine('handlebars', exphbs({ 
+    defaultLayout: 'main',
+    helpers: {
+        printRolesList: function(items) {
+            var out = "<ul id='item-roles'>";
+
+            for( var i=0, l=items.length; i<l; i++ ) {
+                out = out + "<li>" + items[i] + "</li>";
+            }
+
+            return out + "</ul>";
+        },
+        printTechnologyList: function(items) {
+            var out = "<ul id='item-technologies'>";
+
+            for( var i=0, l=items.length; i<l; i++ ) {
+                out = out + "<li class='list-square'>&#x25A0;</li>"
+                out = out + "<li>" + items[i] + "</li>";
+            }
+
+            return out + "</ul>";
+        }
+    }
+}));
 app.set('view engine', 'handlebars');
 
 
