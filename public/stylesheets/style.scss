@@ -300,63 +300,61 @@ html {
 						li.skill#skill-html {
 							height: 95%;
 							background-color: #032F40; // dark blue
-							background: -webkit-linear-gradient(#054B66, #032F40); /* For Safari 5.1 to 6.0 */
-							  background: -o-linear-gradient(#054B66, #032F40); /* For Opera 11.1 to 12.0 */
-							  background: -moz-linear-gradient(#054B66, #032F40); /* For Firefox 3.6 to 15 */
-							  background: linear-gradient(#054B66, #032F40); /* Standard syntax */
+							background: -webkit-linear-gradient(#065E7F, #032F40); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#065E7F, #032F40); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#065E7F, #032F40); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#065E7F, #032F40); /* Standard syntax */
 							border: 1px solid #032938;
 						}
 						li.skill#skill-css {
 							height: 90%;
 							background-color: #0396A6; // turquoise
-							background: -webkit-linear-gradient(#03A1B2, #0396A6); /* For Safari 5.1 to 6.0 */
-							  background: -o-linear-gradient(#03A1B2, #0396A6); /* For Opera 11.1 to 12.0 */
-							  background: -moz-linear-gradient(#03A1B2, #0396A6); /* For Firefox 3.6 to 15 */
-							  background: linear-gradient(#03A1B2, #0396A6); /* Standard syntax */
+							background: -webkit-linear-gradient(#03A8BA, #0396A6); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#03A8BA, #0396A6); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#03A8BA, #0396A6); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#03A8BA, #0396A6); /* Standard syntax */
 							border: 1px solid #038391;
 						}
 						li.skill#skill-javascript {
 							height: 75%;
 							background-color: #03A688; // green
-							background: -webkit-linear-gradient(#03B292, #03A688); /* For Safari 5.1 to 6.0 */
-							  background: -o-linear-gradient(#03B292, #03A688); /* For Opera 11.1 to 12.0 */
-							  background: -moz-linear-gradient(#03B292, #03A688); /* For Firefox 3.6 to 15 */
-							  background: linear-gradient(#03B292, #03A688); /* Standard syntax */
+							background: -webkit-linear-gradient(#04C29F, #03A688); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#04C29F, #03A688); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#04C29F, #03A688); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#04C29F, #03A688); /* Standard syntax */
 							border: 1px solid #03967B;
 						}
 						li.skill#skill-python {
-							height: 90%;
+							height: 85%;
 							background-color: #F2D8A7; // yellow
-							background: -webkit-linear-gradient(#FFE4B4, #F2D8A7); /* For Safari 5.1 to 6.0 */
-							  background: -o-linear-gradient(#FFE4B4, #F2D8A7); /* For Opera 11.1 to 12.0 */
-							  background: -moz-linear-gradient(#FFE4B4, #F2D8A7); /* For Firefox 3.6 to 15 */
-							  background: linear-gradient(#FFE4B4, #F2D8A7); /* Standard syntax */
+							background: -webkit-linear-gradient(#FFE4C6, #F2D8A7); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#FFE4C6, #F2D8A7); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#FFE4C6, #F2D8A7); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#FFE4C6, #F2D8A7); /* Standard syntax */
 							border: 1px solid #D6BF94;
 						}
 						li.skill#skill-cpp {
 							height: 80%;
 							background-color: #F2AB91; // orangeish
-							background: -webkit-linear-gradient(#FAB196, #F2AB91); /* For Safari 5.1 to 6.0 */
-							  background: -o-linear-gradient(#FAB196, #F2AB91); /* For Opera 11.1 to 12.0 */
-							  background: -moz-linear-gradient(#FAB196, #F2AB91); /* For Firefox 3.6 to 15 */
-							  background: linear-gradient(#FAB196, #F2AB91); /* Standard syntax */
+							background: -webkit-linear-gradient(#FFB4A0, #F2AB91); /* For Safari 5.1 to 6.0 */
+							  background: -o-linear-gradient(#FFB4A0, #F2AB91); /* For Opera 11.1 to 12.0 */
+							  background: -moz-linear-gradient(#FFB4A0, #F2AB91); /* For Firefox 3.6 to 15 */
+							  background: linear-gradient(#FFB4A0, #F2AB91); /* Standard syntax */
 							border: 1px solid #DE9D85;
 						}
 					}
 					ul#frameworks-tools-libraries {
 						margin: 0 auto;
+						padding: 20px 10px;
+						border: 1px dotted #555;
+						border-radius: 12px;
 
 						li {
 							display: inline-block;
 							margin-left: 40px;
 							font-size: 16px;
 							line-height: 30px;
-						}
-						li.list-square {
-							font-size: 11px;
 							color: #0396A6;
-							line-height: 10px;
-							vertical-align: middle;
 						}
 					}
 				}

@@ -185,75 +185,74 @@ html {
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-html {
         height: 95%;
         background-color: #032F40;
-        background: -webkit-linear-gradient(#054b66, #032f40);
+        background: -webkit-linear-gradient(#065e7f, #032f40);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#054b66, #032f40);
+        background: -o-linear-gradient(#065e7f, #032f40);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#054b66, #032f40);
+        background: -moz-linear-gradient(#065e7f, #032f40);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#054b66, #032f40);
+        background: linear-gradient(#065e7f, #032f40);
         /* Standard syntax */
         border: 1px solid #032938; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-css {
         height: 90%;
         background-color: #0396A6;
-        background: -webkit-linear-gradient(#03a1b2, #0396a6);
+        background: -webkit-linear-gradient(#03a8ba, #0396a6);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#03a1b2, #0396a6);
+        background: -o-linear-gradient(#03a8ba, #0396a6);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#03a1b2, #0396a6);
+        background: -moz-linear-gradient(#03a8ba, #0396a6);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#03a1b2, #0396a6);
+        background: linear-gradient(#03a8ba, #0396a6);
         /* Standard syntax */
         border: 1px solid #038391; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-javascript {
         height: 75%;
         background-color: #03A688;
-        background: -webkit-linear-gradient(#03b292, #03a688);
+        background: -webkit-linear-gradient(#04c29f, #03a688);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#03b292, #03a688);
+        background: -o-linear-gradient(#04c29f, #03a688);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#03b292, #03a688);
+        background: -moz-linear-gradient(#04c29f, #03a688);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#03b292, #03a688);
+        background: linear-gradient(#04c29f, #03a688);
         /* Standard syntax */
         border: 1px solid #03967B; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-python {
-        height: 90%;
+        height: 85%;
         background-color: #F2D8A7;
-        background: -webkit-linear-gradient(#ffe4b4, #f2d8a7);
+        background: -webkit-linear-gradient(#ffe4c6, #f2d8a7);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#ffe4b4, #f2d8a7);
+        background: -o-linear-gradient(#ffe4c6, #f2d8a7);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#ffe4b4, #f2d8a7);
+        background: -moz-linear-gradient(#ffe4c6, #f2d8a7);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#ffe4b4, #f2d8a7);
+        background: linear-gradient(#ffe4c6, #f2d8a7);
         /* Standard syntax */
         border: 1px solid #D6BF94; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-cpp {
         height: 80%;
         background-color: #F2AB91;
-        background: -webkit-linear-gradient(#fab196, #f2ab91);
+        background: -webkit-linear-gradient(#ffb4a0, #f2ab91);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#fab196, #f2ab91);
+        background: -o-linear-gradient(#ffb4a0, #f2ab91);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#fab196, #f2ab91);
+        background: -moz-linear-gradient(#ffb4a0, #f2ab91);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#fab196, #f2ab91);
+        background: linear-gradient(#ffb4a0, #f2ab91);
         /* Standard syntax */
         border: 1px solid #DE9D85; }
     html body main#splash section#skills div.section-content ul#frameworks-tools-libraries {
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 20px 10px;
+      border: 1px dotted #555;
+      border-radius: 12px; }
       html body main#splash section#skills div.section-content ul#frameworks-tools-libraries li {
         display: inline-block;
         margin-left: 40px;
         font-size: 16px;
-        line-height: 30px; }
-      html body main#splash section#skills div.section-content ul#frameworks-tools-libraries li.list-square {
-        font-size: 11px;
-        color: #0396A6;
-        line-height: 10px;
-        vertical-align: middle; }
+        line-height: 30px;
+        color: #0396A6; }
     html body main#splash section#about div.section-content {
       overflow: auto; }
       html body main#splash section#about div.section-content div#about-left {
