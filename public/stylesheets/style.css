@@ -31,12 +31,12 @@ html {
           text-decoration: none; }
       html body header > nav nav ul li:hover a {
         opacity: 0.7; }
-      html body header > nav nav.header-social {
+      html body header > nav nav#header-social {
         float: right;
         padding: 20px 0; }
-        html body header > nav nav.header-social i {
+        html body header > nav nav#header-social i {
           font-size: 19px; }
-      html body header > nav nav.header-menu {
+      html body header > nav nav#header-menu {
         display: inline-block;
         padding: 22px 0; }
   html body main section {

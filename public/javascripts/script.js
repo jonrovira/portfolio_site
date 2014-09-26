@@ -15,10 +15,10 @@ $(document).ready(function() {
 		});
 		$('section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery').width(totalWidth + 29);
 
-		blurPortfolioItems();
+		animatePortfolio();
 	};
 	// Blur items outside visible scope
-	var blurPortfolioItems = function() {
+	var animatePortfolio = function() {
 		
 		// Get width of visilble region
 		var visibleWidth = $('div#portfolio-items-wrapper').width();
@@ -165,38 +165,48 @@ $(document).ready(function() {
 		var page = $('main').attr('id');
 		return page;
 	}
-	var scrollOnWelcomeButtonPress = function() {
+	var scrollToSection = function(section) {
 		$('html, body').animate({
-			scrollTop: $('section#portfolio').offset().top
+			scrollTop: $(section).offset().top
 		}, 600);
+		return false;
 	};
 
-
-
-	/*
-	 * Initializations, global declarations
-	 */
-
-	setupPortfolio();
 
 
 
 	/*
 	 * Events
 	 */
+
+	// On any page
+	$('nav#header-menu ul li').click(function(e) {
+		e.preventDefault();
+		var section = 'section#' + $(this).children('a').attr('href').replace('/#', '');
+		// If on splash page, animate to section
+		if( getPage() == 'splash' ) {
+			scrollToSection(section);
+		}
+		else {
+			window.location.href = '/#' + section;
+		}
+	});
+
+	// Conditional on page
 	var page = getPage();
 	switch( page ) {
 		// Run on splash page
 		case 'splash':
+			setupPortfolio();
 			// Scroll to portfolio on welcome circle button click
 			$('div#welcome-circle').click(function() {
 				// placeholder for minimize
-				scrollOnWelcomeButtonPress();
+				scrollToSection('section#portfolio');
 			});
 			// Blur next item in portfolio on scroll within portfolio
 			$('section#portfolio div.section-content div#portfolio-items-wrapper').scroll(function() {
 				// placeholder for minimize
-				blurPortfolioItems();
+				animatePortfolio();
 			});
 			// Follow mouse with eyes whenever mouse moves
 			$(document).mousemove(function(e) {
