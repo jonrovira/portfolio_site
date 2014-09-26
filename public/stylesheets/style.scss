@@ -41,8 +41,17 @@ html {
 				width: $desktop-inner-width;
 				text-align: center;
 
-				img.header-img {
-					float: left;
+				> a {
+
+					img.header-img {
+						float: left;
+					}
+				}
+				> a:hover {
+
+					img.header-img {
+						opacity: 0.7;
+					}
 				}
 				nav {
 
@@ -58,11 +67,13 @@ html {
 								text-decoration: none;
 							}
 						}
+						li:hover {
+
+							a {
+								opacity: 0.7;
+							}
+						}
 					}
-				}
-				nav.header-menu {
-					display: inline-block;
-					padding: 22px 0;
 				}
 				nav.header-social {
 					float: right;
@@ -71,6 +82,10 @@ html {
 					i {
 						font-size: 19px;
 					}
+				}
+				nav.header-menu {
+					display: inline-block;
+					padding: 22px 0;
 				}
 			}
 		}
@@ -147,6 +162,7 @@ html {
 			section#portfolio {
 
 				div.section-content {
+					position: relative;
 					margin-right: auto;
 					margin-left: auto;
 
@@ -156,15 +172,15 @@ html {
 
 
 						ul#portfolio-gallery {
-							list-style: none;
 							position: relative;
+							list-style: none;
 
 							li.portfolio-item {
 								display: inline-block;
 								margin-right: $portfolio-item-spacing;
 								margin-bottom: 20px;
-								margin-left: 5px;
 								width: $portfolio-item-width;
+								vertical-align: top;
 								box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
 								border-radius: 3px;
 								cursor: pointer;
@@ -179,6 +195,7 @@ html {
 									}
 									div.portfolio-item-info {
 										padding: 10px;
+										height: 52px;
 										text-align: left;
 										border-radius: 0 0 3px 3px;
 
@@ -187,13 +204,37 @@ html {
 											color: #555;
 										}
 										span {
-											font-size: 13px;
+											font-size: 14px;
 											color: #888;
 										}
 									}
 								}
 							}
+							li.portfolio-item:first-child {
+								margin-left: 5px;
+							}
+							li.portfolio-item:last-child {
+								margin-right: 0;
+							}
 						}
+					}
+					div#portfolio-items-wrapper::-webkit-scrollbar {
+						display: none;
+					}
+					i.portfolio-scroll-indicator {
+						position: absolute;
+						top: 37%;
+						font-size: 110px;
+						color: rgba(0, 0, 0, 0.4);
+					}
+					i.portfolio-scroll-indicator.active {
+						color: rgba(0, 0, 0, 0.8);
+					}
+					i#portfolio-scroll-backward-indicator {
+						left: 10px;
+					}
+					i#portfolio-scroll-forward-indicator {
+						right: 10px;
 					}
 				}
 			}

@@ -20,17 +20,18 @@ $(document).ready(function() {
 	// Blur items outside visible scope
 	var blurPortfolioItems = function() {
 		
-		// Get dimensions of visilble region
-		var leftMargin = parseFloat($('section#portfolio div.section-content').css('margin-left').replace('px', ''));
-		var visibleWidth = $('section#portfolio div.section-content').width() - leftMargin;
-		var itemWidth = $('section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a img').width();
+		// Get width of visilble region
+		var visibleWidth = $('div#portfolio-items-wrapper').width();
 
 		// Get coordinates of visible region
-		var leftBoundary = $('section#portfolio div.section-content div#portfolio-items-wrapper').scrollLeft();
+		var leftBoundary = $('section#portfolio div.section-content div#portfolio-items-wrapper').scrollLeft(); // this is changing on scroll
 		var rightBoundary = leftBoundary + visibleWidth;
 
+		// Get width of portfolio item
+		var itemWidth = $('li.portfolio-item').width();
+
 		// Determine which should be blurred, blur those
-		$('section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li').each(function() {
+		$('li.portfolio-item').each(function() {
 			var rightPosition = $(this).position().left + itemWidth;
 			if( rightPosition <= rightBoundary ) {
 				if( $(this).hasClass('portfolio-item-blurred') ) {
@@ -45,6 +46,22 @@ $(document).ready(function() {
 				}
 			}
 		});
+
+		// Bold appropriate scroll indicators
+		var leftOfFirst = $('ul#portfolio-gallery li:first-child').position().left;
+		var rightOfLast = $('ul#portfolio-gallery li:last-child').position().left + itemWidth;
+		if( leftOfFirst < leftBoundary ) {
+			$('i#portfolio-scroll-backward-indicator').addClass('active');
+		}
+		else {
+			$('i#portfolio-scroll-backward-indicator').removeClass('active');	
+		}
+		if( rightOfLast > rightBoundary ) {
+			$('i#portfolio-scroll-forward-indicator').addClass('active');	
+		}
+		else {
+			$('i#portfolio-scroll-forward-indicator').removeClass('active');		
+		}
 	}
 	// Follow the mouse with eyes in about section
 	var followMouseWithEyes = function(e) {
@@ -143,6 +160,16 @@ $(document).ready(function() {
 
 		return position;
 	}
+	// Get current page
+	var getPage = function() {
+		var page = $('main').attr('id');
+		return page;
+	}
+	var scrollOnWelcomeButtonPress = function() {
+		$('html, body').animate({
+			scrollTop: $('section#portfolio').offset().top
+		}, 600);
+	};
 
 
 
@@ -157,14 +184,26 @@ $(document).ready(function() {
 	/*
 	 * Events
 	 */
-
-	$('section#portfolio div.section-content div#portfolio-items-wrapper').scroll(function() {
-		// placeholder for minimize
-		blurPortfolioItems();
-	});
-	$(document).mousemove(function(e) {
-		// placeholder for minimize
-		followMouseWithEyes(e);
-	});
+	var page = getPage();
+	switch( page ) {
+		// Run on splash page
+		case 'splash':
+			// Scroll to portfolio on welcome circle button click
+			$('div#welcome-circle').click(function() {
+				// placeholder for minimize
+				scrollOnWelcomeButtonPress();
+			});
+			// Blur next item in portfolio on scroll within portfolio
+			$('section#portfolio div.section-content div#portfolio-items-wrapper').scroll(function() {
+				// placeholder for minimize
+				blurPortfolioItems();
+			});
+			// Follow mouse with eyes whenever mouse moves
+			$(document).mousemove(function(e) {
+				// placeholder for minimize
+				followMouseWithEyes(e);
+			});
+			break;
+	}
 
 });

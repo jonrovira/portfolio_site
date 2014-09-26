@@ -18,8 +18,10 @@ html {
       padding: 5px 0;
       width: 80%;
       text-align: center; }
-      html body header > nav img.header-img {
+      html body header > nav > a img.header-img {
         float: left; }
+      html body header > nav > a:hover img.header-img {
+        opacity: 0.7; }
       html body header > nav nav ul li {
         display: inline-block; }
         html body header > nav nav ul li a {
@@ -27,14 +29,16 @@ html {
           color: #fff;
           font-size: 14px;
           text-decoration: none; }
-      html body header > nav nav.header-menu {
-        display: inline-block;
-        padding: 22px 0; }
+      html body header > nav nav ul li:hover a {
+        opacity: 0.7; }
       html body header > nav nav.header-social {
         float: right;
         padding: 20px 0; }
         html body header > nav nav.header-social i {
           font-size: 19px; }
+      html body header > nav nav.header-menu {
+        display: inline-block;
+        padding: 22px 0; }
   html body main section {
     width: 100%; }
     html body main section div.section-content {
@@ -86,20 +90,21 @@ html {
         html body main#splash section#welcome div.section-content div#welcome-circle:hover div#welcome-triangle {
           border-top-color: #000; }
     html body main#splash section#portfolio div.section-content {
+      position: relative;
       margin-right: auto;
       margin-left: auto; }
       html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper {
         position: relative;
         overflow-x: scroll; }
         html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery {
-          list-style: none;
-          position: relative; }
+          position: relative;
+          list-style: none; }
           html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item {
             display: inline-block;
             margin-right: 40px;
             margin-bottom: 20px;
-            margin-left: 5px;
             width: 400px;
+            vertical-align: top;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
             border-radius: 3px;
             cursor: pointer; }
@@ -110,14 +115,32 @@ html {
                 border-radius: 3px 3px 0 0; }
               html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
                 padding: 10px;
+                height: 52px;
                 text-align: left;
                 border-radius: 0 0 3px 3px; }
                 html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
                   font-size: 19px;
                   color: #555; }
                 html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
-                  font-size: 13px;
+                  font-size: 14px;
                   color: #888; }
+          html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item:first-child {
+            margin-left: 5px; }
+          html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li.portfolio-item:last-child {
+            margin-right: 0; }
+      html body main#splash section#portfolio div.section-content div#portfolio-items-wrapper::-webkit-scrollbar {
+        display: none; }
+      html body main#splash section#portfolio div.section-content i.portfolio-scroll-indicator {
+        position: absolute;
+        top: 37%;
+        font-size: 110px;
+        color: rgba(0, 0, 0, 0.4); }
+      html body main#splash section#portfolio div.section-content i.portfolio-scroll-indicator.active {
+        color: rgba(0, 0, 0, 0.8); }
+      html body main#splash section#portfolio div.section-content i#portfolio-scroll-backward-indicator {
+        left: 10px; }
+      html body main#splash section#portfolio div.section-content i#portfolio-scroll-forward-indicator {
+        right: 10px; }
     html body main#splash section#skills div.section-content h2 {
       margin: 30px 0 20px;
       text-align: right; }
