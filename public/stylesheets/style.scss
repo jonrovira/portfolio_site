@@ -275,7 +275,7 @@ html {
 							margin-bottom: 40px;
 							margin-left: 30px;
 							width: $skills-skill-width;
-							height: 100%;
+							height: 0;
 							border-radius: 3px 3px 0 0;
 							box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
 
@@ -298,7 +298,7 @@ html {
 						}
 						// https://kuler.adobe.com/Theme-3-color-theme-4407117/
 						li.skill#skill-html {
-							height: 95%;
+							// height: 95%;
 							background-color: #032F40; // dark blue
 							background: -webkit-linear-gradient(#065E7F, #032F40); /* For Safari 5.1 to 6.0 */
 							  background: -o-linear-gradient(#065E7F, #032F40); /* For Opera 11.1 to 12.0 */
@@ -307,7 +307,7 @@ html {
 							border: 1px solid #032938;
 						}
 						li.skill#skill-css {
-							height: 90%;
+							// height: 90%;
 							background-color: #0396A6; // turquoise
 							background: -webkit-linear-gradient(#03A8BA, #0396A6); /* For Safari 5.1 to 6.0 */
 							  background: -o-linear-gradient(#03A8BA, #0396A6); /* For Opera 11.1 to 12.0 */
@@ -316,7 +316,7 @@ html {
 							border: 1px solid #038391;
 						}
 						li.skill#skill-javascript {
-							height: 75%;
+							// height: 75%;
 							background-color: #03A688; // green
 							background: -webkit-linear-gradient(#04C29F, #03A688); /* For Safari 5.1 to 6.0 */
 							  background: -o-linear-gradient(#04C29F, #03A688); /* For Opera 11.1 to 12.0 */
@@ -325,7 +325,7 @@ html {
 							border: 1px solid #03967B;
 						}
 						li.skill#skill-python {
-							height: 85%;
+							// height: 85%;
 							background-color: #F2D8A7; // yellow
 							background: -webkit-linear-gradient(#FFE4C6, #F2D8A7); /* For Safari 5.1 to 6.0 */
 							  background: -o-linear-gradient(#FFE4C6, #F2D8A7); /* For Opera 11.1 to 12.0 */
@@ -334,7 +334,7 @@ html {
 							border: 1px solid #D6BF94;
 						}
 						li.skill#skill-cpp {
-							height: 80%;
+							// height: 80%;
 							background-color: #F2AB91; // orangeish
 							background: -webkit-linear-gradient(#FFB4A0, #F2AB91); /* For Safari 5.1 to 6.0 */
 							  background: -o-linear-gradient(#FFB4A0, #F2AB91); /* For Opera 11.1 to 12.0 */

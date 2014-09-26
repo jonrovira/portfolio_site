@@ -165,11 +165,35 @@ $(document).ready(function() {
 		var page = $('main').attr('id');
 		return page;
 	}
+	// Scroll to a section on page
 	var scrollToSection = function(section) {
 		$('html, body').animate({
 			scrollTop: $(section).offset().top
 		}, 600);
 		return false;
+	};
+	// Animate the skills graph
+	var animateSkillsGraph = function() {
+		var htmlHeight       = '95%',
+		    cssHeight        = '90%',
+		    javascriptHeight = '75%',
+		    pythonHeight     = '85%',
+		    cppHeight        = '80%';
+		$('li#skill-html').animate({
+			height: htmlHeight
+		}, 1000);
+		$('li#skill-css').animate({
+			height: cssHeight
+		}, 1000);
+		$('li#skill-javascript').animate({
+			height: javascriptHeight
+		}, 1000);
+		$('li#skill-python').animate({
+			height: pythonHeight
+		}, 1000);
+		$('li#skill-cpp').animate({
+			height: cppHeight
+		}, 1000);
 	};
 
 
@@ -207,6 +231,12 @@ $(document).ready(function() {
 			$('section#portfolio div.section-content div#portfolio-items-wrapper').scroll(function() {
 				// placeholder for minimize
 				animatePortfolio();
+			});
+			// Animate skill graph on scroll to skills section
+			$(window).scroll(function() {
+				if( $('body').scrollTop() > $('section#welcome + hr').offset().top ) {
+					animateSkillsGraph();
+				}
 			});
 			// Follow mouse with eyes whenever mouse moves
 			$(document).mousemove(function(e) {

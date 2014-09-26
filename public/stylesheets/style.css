@@ -166,7 +166,7 @@ html {
         margin-bottom: 40px;
         margin-left: 30px;
         width: calc((100% - 134px - (5 * 30px)) / 5);
-        height: 100%;
+        height: 0;
         border-radius: 3px 3px 0 0;
         box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6); }
         html body main#splash section#skills div.section-content ul#skills-graph li.skill span {
@@ -183,7 +183,6 @@ html {
           font-size: 20px;
           bottom: 15px; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-html {
-        height: 95%;
         background-color: #032F40;
         background: -webkit-linear-gradient(#065e7f, #032f40);
         /* For Safari 5.1 to 6.0 */
@@ -195,7 +194,6 @@ html {
         /* Standard syntax */
         border: 1px solid #032938; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-css {
-        height: 90%;
         background-color: #0396A6;
         background: -webkit-linear-gradient(#03a8ba, #0396a6);
         /* For Safari 5.1 to 6.0 */
@@ -207,7 +205,6 @@ html {
         /* Standard syntax */
         border: 1px solid #038391; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-javascript {
-        height: 75%;
         background-color: #03A688;
         background: -webkit-linear-gradient(#04c29f, #03a688);
         /* For Safari 5.1 to 6.0 */
@@ -219,7 +216,6 @@ html {
         /* Standard syntax */
         border: 1px solid #03967B; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-python {
-        height: 85%;
         background-color: #F2D8A7;
         background: -webkit-linear-gradient(#ffe4c6, #f2d8a7);
         /* For Safari 5.1 to 6.0 */
@@ -231,7 +227,6 @@ html {
         /* Standard syntax */
         border: 1px solid #D6BF94; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-cpp {
-        height: 80%;
         background-color: #F2AB91;
         background: -webkit-linear-gradient(#ffb4a0, #f2ab91);
         /* For Safari 5.1 to 6.0 */
