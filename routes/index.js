@@ -16,7 +16,7 @@ router.get('/', function(req, res) {
 // GET The Book page
 router.get('/portfolio/the-book/', function(req, res) {
 	res.render('the-book', {
-		image       : 'http://unsplash.it/400?random',
+		image       : '/images/Portfolio-the-book.png',
 		title       : 'The Book',
 		date        : '7/1/14 - 9/30/14',
 		roles       : ['Web Design', 'UI/UX Design', 'Front-end Development'],
@@ -35,7 +35,7 @@ router.get('/portfolio/the-book/', function(req, res) {
 // GET Master of Science in Robotics Site page
 router.get('/portfolio/master-of-science-in-robotics-website/', function(req, res) {
 	res.render('master-of-science-in-robotics-website', {
-		image       : 'http://unsplash.it/400?random',
+		image       : '/images/Portfolio-master-of-science-in-robotics-website.png',
 		title       : 'Master of Science in Robotics Website',
 		date        : '7/15/14 - 9/30/14',
 		roles       : ['Web Design', 'Back-end Development', 'UI/UX Design', 'Front-end Development'],
@@ -54,7 +54,7 @@ router.get('/portfolio/master-of-science-in-robotics-website/', function(req, re
 // GET Census page
 router.get('/portfolio/census/', function(req, res) {
 	res.render('census', {
-		image       : 'http://unsplash.it/400?random',
+		image       : '/images/Portfolio-census.png',
 		title       : 'Census',
 		date        : '4/25/14 - 4/28//14',
 		roles       : ['Web Design', 'UI/UX Design', 'Front-end Development'],
@@ -73,7 +73,7 @@ router.get('/portfolio/census/', function(req, res) {
 // GET RJ page
 router.get('/portfolio/rj/', function(req, res) {
 	res.render('rj', {
-		image       : 'http://unsplash.it/400?random',
+		image       : '/images/Portfolio-rj.jpg',
 		title       : 'RJ',
 		date        : '6/1/13 - 12/1/14',
 		roles       : ['Software Development', 'UI/UX Design'],
@@ -92,7 +92,7 @@ router.get('/portfolio/rj/', function(req, res) {
 // GET JonRovira Dot Com page
 router.get('/portfolio/jonrovira-dot-com/', function(req, res) {
 	res.render('jonrovira-dot-com', {
-		image       : 'http://unsplash.it/400?random',
+		image       : '/images/Portfolio-jonrovira-dot-com.png',
 		title       : 'JonRovira.com',
 		date        : '12/1/13 - 9/30/14',
 		roles       : ['Web Design', 'Back-end Development', 'UI/UX Design', 'Front-end Development'],
@@ -111,7 +111,7 @@ router.get('/portfolio/jonrovira-dot-com/', function(req, res) {
 // GET DJ Raffe page
 router.get('/portfolio/dj-raffe/', function(req, res) {
 	res.render('dj-raffe', {
-		image       : 'http://unsplash.it/400?random',
+		image       : '/images/Portfolio-dj-raffe.png',
 		title       : 'DJ Raffe',
 		date        : '1/1/14 - 6/15/14',
 		roles       : ['Product Research', 'Web Design', 'UI/UX Design', 'Front-end Development'],
@@ -130,7 +130,7 @@ router.get('/portfolio/dj-raffe/', function(req, res) {
 // GET AirHop page
 router.get('/portfolio/airhop-website/', function(req, res) {
 	res.render('airhop-website', {
-		image       : 'http://unsplash.it/400?random',
+		image       : '/images/Portfolio-airhop-website.jpg',
 		title       : 'AirHop Website',
 		date        : '10/1/13 - 11/1/13',
 		roles       : ['Web Design', 'Back-end Development', 'UI/UX Design', 'Front-end Development'],
