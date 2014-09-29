@@ -234,7 +234,7 @@ $(document).ready(function() {
 			});
 			// Animate skill graph on scroll to skills section
 			$(window).scroll(function() {
-				if( $('body').scrollTop() > $('section#welcome + hr').offset().top ) {
+				if( $('body').scrollTop() > $('section#welcome + hr').offset().top + 120) {
 					animateSkillsGraph();
 				}
 			});

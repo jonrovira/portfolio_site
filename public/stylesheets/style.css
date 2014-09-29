@@ -22,13 +22,13 @@ html {
         float: left; }
       html body header > nav > a:hover img.header-img {
         opacity: 0.7; }
-      html body header > nav nav ul li {
-        display: inline-block; }
-        html body header > nav nav ul li a {
-          padding: 15px;
-          color: #fff;
-          font-size: 14px;
-          text-decoration: none; }
+      html body header > nav i#menu-icon {
+        float: right; }
+      html body header > nav nav ul li a {
+        padding: 15px;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none; }
       html body header > nav nav ul li:hover a {
         opacity: 0.7; }
       html body header > nav nav#header-social {
@@ -39,6 +39,13 @@ html {
       html body header > nav nav#header-menu {
         display: inline-block;
         padding: 22px 0; }
+    @media (min-width: 321px) {
+      html body header > nav i#menu-icon {
+        display: none; }
+      html body header > nav nav {
+        display: block; }
+        html body header > nav nav ul li {
+          display: inline-block; } }
   html body main section {
     width: 100%; }
     html body main section div.section-content {
@@ -184,57 +191,57 @@ html {
           bottom: 15px; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-html {
         background-color: #032F40;
-        background: -webkit-linear-gradient(#065e7f, #032f40);
+        background: -webkit-linear-gradient(#065E7F, #032F40);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#065e7f, #032f40);
+        background: -o-linear-gradient(#065E7F, #032F40);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#065e7f, #032f40);
+        background: -moz-linear-gradient(#065E7F, #032F40);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#065e7f, #032f40);
+        background: linear-gradient(#065E7F, #032F40);
         /* Standard syntax */
         border: 1px solid #032938; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-css {
         background-color: #0396A6;
-        background: -webkit-linear-gradient(#03a8ba, #0396a6);
+        background: -webkit-linear-gradient(#03A8BA, #0396A6);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#03a8ba, #0396a6);
+        background: -o-linear-gradient(#03A8BA, #0396A6);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#03a8ba, #0396a6);
+        background: -moz-linear-gradient(#03A8BA, #0396A6);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#03a8ba, #0396a6);
+        background: linear-gradient(#03A8BA, #0396A6);
         /* Standard syntax */
         border: 1px solid #038391; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-javascript {
         background-color: #03A688;
-        background: -webkit-linear-gradient(#04c29f, #03a688);
+        background: -webkit-linear-gradient(#04C29F, #03A688);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#04c29f, #03a688);
+        background: -o-linear-gradient(#04C29F, #03A688);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#04c29f, #03a688);
+        background: -moz-linear-gradient(#04C29F, #03A688);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#04c29f, #03a688);
+        background: linear-gradient(#04C29F, #03A688);
         /* Standard syntax */
         border: 1px solid #03967B; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-python {
         background-color: #F2D8A7;
-        background: -webkit-linear-gradient(#ffe4c6, #f2d8a7);
+        background: -webkit-linear-gradient(#FFE4C6, #F2D8A7);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#ffe4c6, #f2d8a7);
+        background: -o-linear-gradient(#FFE4C6, #F2D8A7);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#ffe4c6, #f2d8a7);
+        background: -moz-linear-gradient(#FFE4C6, #F2D8A7);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#ffe4c6, #f2d8a7);
+        background: linear-gradient(#FFE4C6, #F2D8A7);
         /* Standard syntax */
         border: 1px solid #D6BF94; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill#skill-cpp {
         background-color: #F2AB91;
-        background: -webkit-linear-gradient(#ffb4a0, #f2ab91);
+        background: -webkit-linear-gradient(#FFB4A0, #F2AB91);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#ffb4a0, #f2ab91);
+        background: -o-linear-gradient(#FFB4A0, #F2AB91);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#ffb4a0, #f2ab91);
+        background: -moz-linear-gradient(#FFB4A0, #F2AB91);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#ffb4a0, #f2ab91);
+        background: linear-gradient(#FFB4A0, #F2AB91);
         /* Standard syntax */
         border: 1px solid #DE9D85; }
     html body main#splash section#skills div.section-content ul#frameworks-tools-libraries {
@@ -842,3 +849,5 @@ html {
   html body p {
     font-size: 14px;
     line-height: 24px; }
+
+/*# sourceMappingURL=style.css.map */

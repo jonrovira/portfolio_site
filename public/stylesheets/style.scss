@@ -53,12 +53,14 @@ html {
 						opacity: 0.7;
 					}
 				}
+				i#menu-icon {
+					float: right;
+				}
 				nav {
 
 					ul {
 
 						li {
-							display: inline-block;
 
 							a {
 								padding: 15px;
@@ -86,6 +88,27 @@ html {
 				nav#header-menu {
 					display: inline-block;
 					padding: 22px 0;
+				}
+			}
+			@media(min-width: 321px) {
+				> nav {
+
+					i#menu-icon {
+						display: none;
+					}
+					nav {
+						display: block;
+
+						ul {
+
+							li {
+								display: inline-block;
+
+								a {
+								}
+							}
+						}
+					}
 				}
 			}
 		}
