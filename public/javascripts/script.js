@@ -168,7 +168,7 @@ $(document).ready(function() {
 	// Scroll to a section on page
 	var scrollToSection = function(section) {
 		$('html, body').animate({
-			scrollTop: $(section).offset().top
+			scrollTop: $(section).offset().top - 80
 		}, 600);
 		return false;
 	};
@@ -237,12 +237,13 @@ $(document).ready(function() {
 	// Go to section on menu click
 	$('nav#header-menu ul li').click(function(e) {
 		e.preventDefault();
-		var section = 'section#' + $(this).children('a').attr('href').replace('/#', '');
 		// If on splash page, animate to section
 		if( getPage() == 'splash' ) {
+			var section = 'section#' + $(this).children('a').attr('href').replace('/#', '');
 			scrollToSection(section);
 		}
 		else {
+			var section = $(this).children('a').attr('href').replace('/#', '');
 			window.location.href = '/#' + section;
 		}
 	});
