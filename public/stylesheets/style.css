@@ -325,12 +325,12 @@ html {
         border: 1px solid #DE9D85; }
     html body main#splash section#skills div.section-content ul#frameworks-tools-libraries {
       margin: 0 auto;
-      padding: 20px 10px;
+      padding: 10px 5px;
       border: 1px dotted #555;
       border-radius: 12px; }
       html body main#splash section#skills div.section-content ul#frameworks-tools-libraries li {
         display: inline-block;
-        margin-left: 40px;
+        margin-left: 20px;
         font-size: 16px;
         line-height: 30px;
         color: #0396A6; }
@@ -341,7 +341,11 @@ html {
       html body main#splash section#skills div.section-content ul#skills-graph li.skill span.skill-level {
         font-size: 32px; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill span.skill-name {
-        bottom: 50px; } }
+        bottom: 50px; }
+      html body main#splash section#skills div.section-content ul#frameworks-tools-libraries {
+        padding: 20px 10px; }
+        html body main#splash section#skills div.section-content ul#frameworks-tools-libraries li {
+          margin-left: 40px; } }
     @media (min-width: 800px) {
       html body main#splash section#skills div.section-content ul#skills-graph {
         height: 450px; }
@@ -380,35 +384,32 @@ html {
       html body main#splash section#skills div.section-content ul#skills-graph li.skill:nth-child(3) {
         margin-left: 30px; } }
     html body main#splash section#about div.section-content {
-      overflow: auto; }
-      html body main#splash section#about div.section-content div#about-left {
-        float: left;
-        width: 50%; }
-        html body main#splash section#about div.section-content div#about-left p {
-          margin-bottom: 16px; }
-        html body main#splash section#about div.section-content div#about-left h3 {
-          margin: 20px 0 10px 0;
-          font-size: 15px;
-          font-weight: 700; }
-        html body main#splash section#about div.section-content div#about-left ul#quick-details {
-          padding-left: 15px;
-          font-size: 14px;
-          list-style: none; }
-          html body main#splash section#about div.section-content div#about-left ul#quick-details li {
-            margin-bottom: 5px; }
-          html body main#splash section#about div.section-content div#about-left ul#quick-details li.list-square {
-            float: left;
-            margin-right: 10px;
-            font-size: 11px;
-            color: #0396A6;
-            line-height: 13px;
-            vertical-align: middle; }
+      overflow: hidden; }
+      html body main#splash section#about div.section-content div#about-left p {
+        margin-bottom: 16px; }
+      html body main#splash section#about div.section-content div#about-left h3 {
+        margin: 20px 0 10px 0;
+        font-size: 15px;
+        font-weight: 700; }
+      html body main#splash section#about div.section-content div#about-left ul#quick-details {
+        padding-left: 15px;
+        font-size: 14px;
+        list-style: none; }
+        html body main#splash section#about div.section-content div#about-left ul#quick-details li {
+          margin-bottom: 5px; }
+        html body main#splash section#about div.section-content div#about-left ul#quick-details li.list-square {
+          float: left;
+          margin-right: 10px;
+          font-size: 11px;
+          color: #0396A6;
+          line-height: 13px;
+          vertical-align: middle; }
       html body main#splash section#about div.section-content div#about-right {
-        float: right;
-        width: 35%;
+        margin-top: 70px;
         height: 420px; }
         html body main#splash section#about div.section-content div#about-right div#face {
           position: relative;
+          margin: 0 auto;
           width: 250px;
           height: 380px; }
           html body main#splash section#about div.section-content div#about-right div#face div#hair {
@@ -865,6 +866,15 @@ html {
                 border-radius: 70%;
                 box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
                 transform: rotate(7deg); }
+    @media (min-width: 750px) {
+      html body main#splash section#about div.section-content {
+        overflow: auto; }
+        html body main#splash section#about div.section-content div#about-left {
+          float: left;
+          width: 50%; }
+        html body main#splash section#about div.section-content div#about-right {
+          float: right;
+          margin-top: 0; } }
     html body main#splash section#contact div.section-content form {
       margin-top: 40px; }
       html body main#splash section#contact div.section-content form input {
