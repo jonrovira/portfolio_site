@@ -10,7 +10,8 @@ var express      = require('express'),
     favicon      = require('static-favicon'),
     logger       = require('morgan'),
     cookieParser = require('cookie-parser'),
-    bodyParser   = require('body-parser');
+    bodyParser   = require('body-parser'),
+    nodeMailer = require('nodemailer');
 
 
 // Define router locations
@@ -61,6 +62,49 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+
+
+// Mailer
+app.post('/', function(req, res){
+    // Variable initialization
+    var mailOpts, smtpTrans;
+
+    // Login info
+    smtpTrans = nodeMailer.createTransport('SMTP', {
+        service: 'Gmail',
+        auth: {
+            user: "jonrovira@gmail.com",
+            pass: "Lovelivewin007*"
+        }
+    });
+
+    // Mail options
+    mailOpts = {
+        from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from request body object
+        to: 'jonrovira@gmail.com',
+        subject: 'JonRovira.com Contact Form',
+        text: req.body.message
+    };
+
+    smtpTrans.sendMail(mailOpts, function(error, response) {
+        // Email not sent
+        if( error ) {
+            res.render('home', {
+                msg: 'Error occured, message not sent.',
+                err: true
+            });
+        }
+        // Success
+        else {
+            res.render('home', {
+                msg: 'Message sent! Thank you.',
+                err: false
+            });
+        }
+    });
+
+});
 
 
 
