@@ -885,7 +885,7 @@ html {
       html body main#splash section#contact div.section-content form input {
         display: block;
         margin-bottom: 30px;
-        width: 300px;
+        width: 230px;
         font-family: "ProximaNova-light", Arial, Helvetica, sans-serif;
         color: #333;
         font-size: 14px;
@@ -893,7 +893,7 @@ html {
         border-style: none none solid none; }
       html body main#splash section#contact div.section-content form textarea {
         margin-bottom: 15px;
-        width: 500px;
+        width: 230px;
         min-height: 150px;
         font-family: "ProximaNova-light", Arial, Helvetica, sans-serif;
         color: #333;
@@ -915,6 +915,19 @@ html {
         background-color: #0396A6;
         border: 1px solid #0396A6;
         border-radius: 3px; }
+    @media (min-width: 450px) {
+      html body main#splash section#contact div.section-content form input {
+        width: 270px; }
+      html body main#splash section#contact div.section-content form textarea {
+        width: 270px; } }
+    @media (min-width: 520px) {
+      html body main#splash section#contact div.section-content form input {
+        width: 300px; }
+      html body main#splash section#contact div.section-content form textarea {
+        width: 400px; } }
+    @media (min-width: 600px) {
+      html body main#splash section#contact div.section-content form textarea {
+        width: 500px; } }
   html body main.portfolio-item {
     /* General section */
     /* Item header */

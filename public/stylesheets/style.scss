@@ -1062,7 +1062,7 @@ html {
 						input {
 							display: block;
 							margin-bottom: 30px;
-							width: 300px;
+							width: 230px;
 							font-family: $font-stack;
 							color: #333;
 							font-size: 14px;
@@ -1071,7 +1071,7 @@ html {
 						}
 						textarea {
 							margin-bottom: 15px;
-							width: 500px;
+							width: 230px;
 							min-height: 150px;
 							font-family: $font-stack;
 							color: #333;
@@ -1098,6 +1098,45 @@ html {
 							background-color: #0396A6;
 							border: 1px solid #0396A6;
 							border-radius: 3px;
+						}
+					}
+				}
+				@media(min-width: 450px ) {
+					div.section-content {
+
+						form {
+
+							input {
+								width: 270px;
+							}
+							textarea {
+								width: 270px;
+							}
+						}
+					}
+				}
+				@media(min-width: 520px) {
+					div.section-content {
+
+						form {
+
+							input {
+								width: 300px;
+							}
+							textarea {
+								width: 400px;
+							}
+						}
+					}
+				}
+				@media(min-width: 600px) {
+					div.section-content {
+
+						form {
+
+							textarea {
+								width: 500px;
+							}
 						}
 					}
 				}
