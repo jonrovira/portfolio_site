@@ -258,6 +258,7 @@ html {
 				div.section-content {
 					position: relative;
 					margin-right: auto;
+					margin-bottom: 0;
 					margin-left: auto;
 
 					div#portfolio-items-wrapper {
@@ -271,9 +272,9 @@ html {
 
 							li.portfolio-item {
 								display: inline-block;
-								margin-right: $portfolio-item-spacing;
+								margin-right: 20px;
 								margin-bottom: 20px;
-								width: $portfolio-item-width;
+								width: 234px;
 								vertical-align: top;
 								box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
 								border-radius: 3px;
@@ -289,7 +290,7 @@ html {
 									}
 									div.portfolio-item-info {
 										padding: 10px;
-										height: 52px;
+										height: 90px;
 										text-align: left;
 										border-radius: 0 0 3px 3px;
 
@@ -318,17 +319,51 @@ html {
 					i.portfolio-scroll-indicator {
 						position: absolute;
 						top: 37%;
-						font-size: 110px;
-						color: rgba(0, 0, 0, 0.4);
+						font-size: 80px;
+						color: rgba(0, 0, 0, 0.2);
 					}
 					i.portfolio-scroll-indicator.active {
 						color: rgba(0, 0, 0, 0.8);
 					}
 					i#portfolio-scroll-backward-indicator {
-						left: 10px;
+						left: 7px;
 					}
 					i#portfolio-scroll-forward-indicator {
-						right: 10px;
+						right: 7px;
+					}
+				}
+				@media(min-width: 525px) {
+					div.section-content {
+						margin-bottom: 80px;
+
+						div#portfolio-items-wrapper {
+
+							ul#portfolio-gallery {
+
+								li.portfolio-item {
+									margin-right: $portfolio-item-spacing;
+									width: $portfolio-item-width;
+
+									a {
+
+										div.portfolio-item-info {
+											height: 52px;
+										}
+									}
+								}
+							}
+						}
+
+						i.portfolio-scroll-indicator {
+							font-size: 110px;
+						}
+						i#portfolio-scroll-backward-indicator {
+							left: 10px;
+						}
+						i#portfolio-scroll-forward-indicator {
+							right: 10px;
+						}
+
 					}
 				}
 			}
