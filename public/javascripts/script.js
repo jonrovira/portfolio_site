@@ -195,6 +195,18 @@ $(document).ready(function() {
 			height: cppHeight
 		}, 1000);
 	};
+	// Show the mobile navigation menu
+	var toggleMobileNav = function() {
+		if( $('header > nav > nav').is(':visible') ) {
+			$('nav#header-social').slideUp();
+			$('nav#header-menu').slideUp();
+		}
+		else {
+			$('nav#header-social').before($('nav#header-menu'));
+			$('nav#header-social').slideDown();
+			$('nav#header-menu').slideDown();
+		}
+	};
 
 
 
@@ -204,6 +216,7 @@ $(document).ready(function() {
 	 */
 
 	// On any page
+	// Go to section on menu click
 	$('nav#header-menu ul li').click(function(e) {
 		e.preventDefault();
 		var section = 'section#' + $(this).children('a').attr('href').replace('/#', '');
@@ -214,6 +227,11 @@ $(document).ready(function() {
 		else {
 			window.location.href = '/#' + section;
 		}
+	});
+	// Show the mobile nav menu on menu icon click
+	$('i#menu-icon').click(function() {
+		//placeholder for minimize
+		toggleMobileNav();
 	});
 
 	// Conditional on page
