@@ -7,6 +7,7 @@
 
 $font-stack: "ProximaNova-light", Arial, Helvetica, sans-serif;
 $desktop-inner-width: 80%;
+$desktop-inner-max-width: 1200px;
 $p-font-size: 14px;
 $p-line-height: 24px;
 
@@ -32,14 +33,16 @@ html {
 	body {
 
 		header {
-			position: absolute;
+			position: fixed;
+			z-index: 10;
 			width: 100%;
-			background-color: #222;
+			background-color: rgba(27, 27, 27, 0.98);
 
 			> nav {
 				margin: 0 auto;
 				padding: 5px 0;
 				width: $desktop-inner-width;
+				max-width: $desktop-inner-max-width;
 				text-align: center;
 				overflow: auto;
 
@@ -105,7 +108,7 @@ html {
 					}
 				}
 			}
-			@media(min-width: 321px) {
+			@media(min-width: 715px) {
 				> nav {
 
 					i#menu-icon {
@@ -136,10 +139,18 @@ html {
 						ul {
 
 							li {
-								display: initial;
+								display: inline-block;
+
+								a {
+									padding: 0;
+								}
 							}
 							li:first-child {
 								margin: 0;
+
+								a {
+									padding-right: 30px;
+								}
 							}
 						}
 					}
@@ -158,7 +169,7 @@ html {
 				div.section-content {
 					margin: 0 auto 80px auto;
 					width: $desktop-inner-width;
-					max-width: 1200px;
+					max-width: $desktop-inner-max-width;
 
 					h1.section-header {
 						margin: 20px 0;
@@ -179,14 +190,14 @@ html {
 			section#welcome {
 
 				div.section-content {
-					padding: 300px 0 230px;
+					margin-bottom: 0;
 					text-align: center;
 
 					h1 {
-						font-size: 60px;
+						font-size: 40px;
 					}
 					h2 {
-						font-size: 30px;
+						font-size: 20px;
 					}
 					div#welcome-circle {
 						position: relative;
@@ -215,6 +226,28 @@ html {
 
 						div#welcome-triangle {
 							border-top-color: #000;
+						}
+					}
+				}
+				@media(min-width: 400px) {
+					div.section-content {
+
+						h1 {
+							font-size: 50px;
+						}
+						h2 {
+							font-size: 25px;
+						}
+					}
+				}
+				@media(min-width: 450px) {
+					div.section-content {
+
+						h1 {
+							font-size: 60px;
+						}
+						h2 {
+							font-size: 30px;
 						}
 					}
 				}

@@ -11,13 +11,15 @@ label, table, caption {
 html {
   font-family: "ProximaNova-light", Arial, Helvetica, sans-serif; }
   html body header {
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     width: 100%;
-    background-color: #222; }
+    background-color: rgba(27, 27, 27, 0.98); }
     html body header > nav {
       margin: 0 auto;
       padding: 5px 0;
       width: 80%;
+      max-width: 1200px;
       text-align: center;
       overflow: auto; }
       html body header > nav > a img.header-img {
@@ -51,7 +53,7 @@ html {
           font-size: 19px; }
       html body header > nav nav#header-social ul li:first-child {
         margin-right: 7px; }
-    @media (min-width: 321px) {
+    @media (min-width: 715px) {
       html body header > nav i#menu-icon {
         display: none; }
       html body header > nav nav {
@@ -68,7 +70,13 @@ html {
         float: right;
         padding: 20px 0; }
         html body header > nav nav#header-social ul li {
-          display: initial; }
+          display: inline-block; }
+          html body header > nav nav#header-social ul li a {
+            padding: 0; }
+        html body header > nav nav#header-social ul li:first-child {
+          margin: 0; }
+          html body header > nav nav#header-social ul li:first-child a {
+            padding-right: 30px; }
       html body header > nav nav#header-menu {
         display: inline-block;
         padding: 22px 0; } }
@@ -93,12 +101,12 @@ html {
     /* About */
     /* Contact */ }
     html body main#splash section#welcome div.section-content {
-      padding: 300px 0 230px;
+      margin-bottom: 0;
       text-align: center; }
       html body main#splash section#welcome div.section-content h1 {
-        font-size: 60px; }
+        font-size: 40px; }
       html body main#splash section#welcome div.section-content h2 {
-        font-size: 30px; }
+        font-size: 20px; }
       html body main#splash section#welcome div.section-content div#welcome-circle {
         position: relative;
         margin: 11px auto 0;
@@ -122,6 +130,16 @@ html {
         border: 1px solid #000; }
         html body main#splash section#welcome div.section-content div#welcome-circle:hover div#welcome-triangle {
           border-top-color: #000; }
+    @media (min-width: 400px) {
+      html body main#splash section#welcome div.section-content h1 {
+        font-size: 50px; }
+      html body main#splash section#welcome div.section-content h2 {
+        font-size: 25px; } }
+    @media (min-width: 450px) {
+      html body main#splash section#welcome div.section-content h1 {
+        font-size: 60px; }
+      html body main#splash section#welcome div.section-content h2 {
+        font-size: 30px; } }
     html body main#splash section#portfolio div.section-content {
       position: relative;
       margin-right: auto;

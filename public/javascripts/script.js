@@ -207,6 +207,24 @@ $(document).ready(function() {
 			$('nav#header-menu').slideDown();
 		}
 	};
+	// Set welcome section padding to depend on screen height
+	var setWelcomePadding = function() {
+
+		// get window height
+		var wHeight = $(window).height();
+
+		// subtract header, h1, h2, and button
+		wHeight -= $('header').height();
+		wHeight -= $('section#welcome div.section-content').height();
+
+		// calculate top and bottom paddings
+		var pBottom = Math.round(wHeight * 0.44);
+		var pTop = wHeight - pBottom + $('header').height() - 15; // - 15 to show hr below
+
+		// set padding
+		var padding = pTop + 'px 0 ' + pBottom + 'px';
+		$('section#welcome div.section-content').css('padding', padding);
+	};
 
 
 
@@ -239,6 +257,7 @@ $(document).ready(function() {
 	switch( page ) {
 		// Run on splash page
 		case 'splash':
+			setWelcomePadding();
 			setupPortfolio();
 			// Scroll to portfolio on welcome circle button click
 			$('div#welcome-circle').click(function() {
