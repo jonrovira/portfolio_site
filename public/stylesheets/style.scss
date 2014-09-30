@@ -656,7 +656,6 @@ html {
 					}
 					div#about-right {
 						margin-top: 70px;
-						height: 420px;
 
 						div#face {
 							position: relative;
@@ -1035,13 +1034,18 @@ html {
 
 						div#about-left {
 							float: left;
-							width: 50%;
+							width: calc(100% - 270px);
+							max-width: 50%;
 						}
 						div#about-right {
 							float: right;
-							margin-top: 0;
+							margin: -35px auto 0 auto;
+							overflow: hidden;
 
 							div#face {
+								margin-top: 20px;
+								margin-right: 10px;
+								margin-left: 10px;
 							}
 						}
 					}

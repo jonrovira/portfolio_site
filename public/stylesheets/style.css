@@ -405,8 +405,7 @@ html {
           line-height: 13px;
           vertical-align: middle; }
       html body main#splash section#about div.section-content div#about-right {
-        margin-top: 70px;
-        height: 420px; }
+        margin-top: 70px; }
         html body main#splash section#about div.section-content div#about-right div#face {
           position: relative;
           margin: 0 auto;
@@ -871,10 +870,16 @@ html {
         overflow: auto; }
         html body main#splash section#about div.section-content div#about-left {
           float: left;
-          width: 50%; }
+          width: calc(100% - 270px);
+          max-width: 50%; }
         html body main#splash section#about div.section-content div#about-right {
           float: right;
-          margin-top: 0; } }
+          margin: -35px auto 0 auto;
+          overflow: hidden; }
+          html body main#splash section#about div.section-content div#about-right div#face {
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px; } }
     html body main#splash section#contact div.section-content form {
       margin-top: 40px; }
       html body main#splash section#contact div.section-content form input {
