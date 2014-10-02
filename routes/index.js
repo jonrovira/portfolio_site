@@ -23,9 +23,9 @@ router.get('/portfolio/the-book/', function(req, res) {
 		showGithub  : true,
 		github      : 'https://github.com/Finnja/thebook',
 
-		summary     : 'Lorem ipsum dolor sit amet, aeque percipit percipitur ex vel, an mea vitae contentiones reprehendunt. Sit lorem feugait ex, tantas impetus fabellas cum in. Has decore putent elaboraret ne, velit graecis id has, vero doctus nominati pro ad. Prima saperet adipisci sea ad, vim et nostro delicatissimi. Reque summo saperet ne per. Cum ea iriure molestie, sed eu quodsi appareat imperdiet, et mel saperet deleniti.',
+		summary     : '<p>Along with another brother in my fraternity, I built The Book to serve as a tool dedicated to the Rush process at my university. Essentially, members in our Greek organization are now able to better organize and sort through new prospective members as we learn more about them. More importantly, The Book acts as a platform where we can quantify interest in those prospective members and visually represent the progress of our recruitment process.</p><p>My primary role in the creation of The Book was in conceiving its design and implementing its front-end development. This was actually my first time working on a project built in Ruby on Rails, so my first step was just tackling the slight learning curve that goes along with that: understanding the Rails structure and getting the hang of embedded ruby. Afterwards, in the development of the site, I also utilized Masonry, a grid layout library to display the array of prospective members.</p><p>Approximately 120 people are now actively using The Book.</p>',
 
-		technologies: ['HTML (5)', 'CSS (3)', 'SASS', 'Javascript', 'JQuery', 'Masonry', 'Ruby On Rails'],
+		technologies: ['HTML (5)', 'CSS (3)', 'SASS', 'Javascript', 'JQuery', 'Masonry', 'Ruby On Rails', 'Ruby'],
 
 		layout      : 'portfolio_item',
 

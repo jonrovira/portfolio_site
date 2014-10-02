@@ -1325,7 +1325,11 @@ html {
 			/* Item summary */
 			section#item-summary {
 
-				div.section-content {	
+				div.section-content {
+
+					p {
+						margin-bottom: 15px;
+					}
 				}
 			}
 			/* Item technology */

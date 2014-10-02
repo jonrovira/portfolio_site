@@ -314,7 +314,7 @@ $(document).ready(function() {
 	 * Events
 	 */
 
-	// On any page
+	/* On any page */
 	// Go to section on menu click
 	$('nav#header-menu ul li').click(function(e) {
 		e.preventDefault();
@@ -334,7 +334,7 @@ $(document).ready(function() {
 		toggleMobileNav();
 	});
 
-	// Conditional on browser
+	/* Conditional on browser */
 	var browser = checkWhichBrowser();
 	switch( browser ) {
 		case 'opera':
@@ -350,7 +350,7 @@ $(document).ready(function() {
 			break;
 	}
 
-	// Conditional on page
+	/* Conditional on page */
 	var page = getPage();
 	switch( page ) {
 		// Run on splash page
