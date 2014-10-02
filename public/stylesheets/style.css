@@ -53,6 +53,8 @@ html {
           font-size: 19px; }
       html body header > nav nav#header-social ul li:first-child {
         margin-right: 7px; }
+      html body header > nav nav#header-menu ul li.active a {
+        opacity: 0.7; }
     @media (min-width: 715px) {
       html body header > nav i#menu-icon {
         display: none; }
@@ -957,7 +959,8 @@ html {
         color: #333;
         font-size: 14px;
         border: 1px solid #222;
-        border-style: none none solid none; }
+        border-style: none none solid none;
+        outline: none; }
       html body main#splash section#contact div.section-content form textarea {
         margin-bottom: 15px;
         width: 230px;
@@ -966,7 +969,8 @@ html {
         color: #333;
         font-size: 14px;
         border: 1px solid #222;
-        border-radius: 3px; }
+        border-radius: 3px;
+        outline: none; }
       html body main#splash section#contact div.section-content form input::-webkit-input-placeholder, html body main#splash section#contact div.section-content form textarea::-webkit-input-placeholder {
         color: #333; }
       html body main#splash section#contact div.section-content form input:-moz-placeholder, html body main#splash section#contact div.section-content form textarea:-moz-placeholder {

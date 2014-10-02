@@ -109,6 +109,18 @@ html {
 						}
 					}
 				}
+				nav#header-menu {
+
+					ul {
+
+						li.active {
+
+							a {
+								opacity: 0.7;
+							}
+						}
+					}
+				}
 			}
 			@media(min-width: 715px) {
 				> nav {
@@ -1100,6 +1112,7 @@ html {
 							font-size: 14px;
 							border: 1px solid #222;
 							border-style: none none solid none;
+							outline: none;
 						}
 						textarea {
 							margin-bottom: 15px;
@@ -1110,6 +1123,7 @@ html {
 							font-size: 14px;
 							border: 1px solid #222;
 							border-radius: 3px;
+							outline: none;
 						}
 						input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 						    color:    #333;

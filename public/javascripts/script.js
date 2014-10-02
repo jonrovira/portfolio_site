@@ -277,6 +277,35 @@ $(document).ready(function() {
 		$('ul#frameworks-tools-libraries').css('border-style', 'solid');
 		$('ul#item-roles li').css('border-style', 'solid');
 	};
+	// Shade correct item in navbar
+	var shadeNavbarItem = function() {
+		// current scroll position
+		var scrollPos = $(document).scrollTop();
+
+		// go through each item in navbar
+		$('nav#header-menu ul li').each(function() {
+			var $this = $(this);
+			var $href = $($this.children('a').attr('href').replace('/',''));
+			var frontBuffer = 230;
+			var backBuffer = 0;
+
+			// contact page case
+			if($(window).scrollTop() + $(window).height() > $(document).height() - 140) {
+		       $('nav#header-menu ul li').removeClass('active');
+		       $('nav#header-menu ul li:nth-child(5)').addClass('active');
+			}
+
+			// this section, shade 
+			else if( $href.position().top <= scrollPos + frontBuffer && $href.position().top + $href.height() > scrollPos - backBuffer ) {
+				$('nav#header-menu ul li').removeClass('active');
+				$this.addClass("active");
+			}
+			// not this section, unshade 
+			else {
+				$this.removeClass('active');
+			}
+		});
+	};
 
 
 
@@ -340,9 +369,13 @@ $(document).ready(function() {
 			});
 			// Animate skill graph on scroll to skills section
 			$(window).scroll(function() {
+				// Animate skills graph
 				if( ($('body').scrollTop() > $('hr#hr-after-welcome').offset().top + 120) || ($('html, body').scrollTop() > $('hr#hr-after-welcome').offset().top + 120) ) {
 					animateSkillsGraph();
 				}
+
+				// Shade correct item in navbar
+				shadeNavbarItem();
 			});
 			// Follow mouse with eyes whenever mouse moves
 			$(document).mousemove(function(e) {
