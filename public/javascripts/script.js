@@ -72,7 +72,7 @@ $(document).ready(function() {
 			$('i#portfolio-scroll-backward-indicator').addClass('flashing');
 			var intervalLeft = setInterval(function() {
 				if( $('i#portfolio-scroll-backward-indicator').hasClass('active') ) {
-					$('i#portfolio-scroll-backward-indicator').fadeOut(500).fadeIn(500);
+					$('i#portfolio-scroll-backward-indicator').fadeOut(900).fadeIn(900);
 				}
 			}, 2000);
 		}
@@ -80,7 +80,7 @@ $(document).ready(function() {
 			$('i#portfolio-scroll-forward-indicator').addClass('flashing');
 			var intervalRight = setInterval(function() {
 				if( $('i#portfolio-scroll-forward-indicator').hasClass('active') ) {
-					$('i#portfolio-scroll-forward-indicator').fadeOut(500).fadeIn(500);
+					$('i#portfolio-scroll-forward-indicator').fadeOut(900).fadeIn(900);
 				}
 			}, 2000);
 		}
@@ -340,7 +340,7 @@ $(document).ready(function() {
 			});
 			// Animate skill graph on scroll to skills section
 			$(window).scroll(function() {
-				if( $('body').scrollTop() > $('hr#hr-after-welcome').offset().top + 120) {
+				if( ($('body').scrollTop() > $('hr#hr-after-welcome').offset().top + 120) || ($('html, body').scrollTop() > $('hr#hr-after-welcome').offset().top + 120) ) {
 					animateSkillsGraph();
 				}
 			});
