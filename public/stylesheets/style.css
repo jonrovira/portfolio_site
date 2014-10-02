@@ -429,6 +429,8 @@ html {
                 width: 20px;
                 height: 40px;
                 border-radius: 50%;
+                -ms-transform: rotate(200deg);
+                -webkit-transform: rotate(200deg);
                 transform: rotate(200deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-1 {
                 top: 35px;
@@ -451,18 +453,26 @@ html {
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-7 {
                 top: 95px;
                 left: 0px;
+                -ms-transform: rotate(195deg);
+                -webkit-transform: rotate(195deg);
                 transform: rotate(195deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-8 {
                 top: 105px;
                 left: -2px;
+                -ms-transform: rotate(192deg);
+                -webkit-transform: rotate(192deg);
                 transform: rotate(192deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-9 {
                 top: 112px;
                 left: -2px;
+                -ms-transform: rotate(192deg);
+                -webkit-transform: rotate(192deg);
                 transform: rotate(192deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-left div.hair-10 {
                 top: 120px;
                 left: -2px;
+                -ms-transform: rotate(192deg);
+                -webkit-transform: rotate(192deg);
                 transform: rotate(192deg); }
             html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-right {
               right: 0; }
@@ -471,6 +481,8 @@ html {
                 width: 20px;
                 height: 40px;
                 border-radius: 50%;
+                -ms-transform: rotate(-20deg);
+                -webkit-transform: rotate(-20deg);
                 transform: rotate(-20deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-1 {
                 top: 35px;
@@ -493,10 +505,14 @@ html {
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-7 {
                 top: 95px;
                 left: -17px;
+                -ms-transform: rotate(-15deg);
+                -webkit-transform: rotate(-15deg);
                 transform: rotate(-15deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-right div.hair-8 {
                 top: 105px;
                 left: -15px;
+                -ms-transform: rotate(-12deg);
+                -webkit-transform: rotate(-12deg);
                 transform: rotate(-12deg); }
             html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy {
               top: -36px;
@@ -507,10 +523,16 @@ html {
                 height: 70px;
                 border-radius: 50%; }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t1 {
+                -ms-transform: rotate(60deg);
+                -webkit-transform: rotate(60deg);
                 transform: rotate(60deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t2 {
+                -ms-transform: rotate(70deg);
+                -webkit-transform: rotate(70deg);
                 transform: rotate(70deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.t3 {
+                -ms-transform: rotate(80deg);
+                -webkit-transform: rotate(80deg);
                 transform: rotate(80deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-pointy div.hair-1 {
                 left: 15px; }
@@ -544,10 +566,16 @@ html {
                 height: 40px;
                 border-radius: 50%; }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t1 {
+                -ms-transform: rotate(220deg);
+                -webkit-transform: rotate(220deg);
                 transform: rotate(220deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t2 {
+                -ms-transform: rotate(230deg);
+                -webkit-transform: rotate(230deg);
                 transform: rotate(230deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.t3 {
+                -ms-transform: rotate(240deg);
+                -webkit-transform: rotate(240deg);
                 transform: rotate(240deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-left div.hair-1 {
                 top: 10px;
@@ -605,10 +633,16 @@ html {
                 height: 40px;
                 border-radius: 50%; }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t1 {
+                -ms-transform: rotate(310deg);
+                -webkit-transform: rotate(310deg);
                 transform: rotate(310deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t2 {
+                -ms-transform: rotate(320deg);
+                -webkit-transform: rotate(320deg);
                 transform: rotate(320deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.t3 {
+                -ms-transform: rotate(330deg);
+                -webkit-transform: rotate(330deg);
                 transform: rotate(330deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-right div.hair-1 {
                 top: 10px;
@@ -630,10 +664,16 @@ html {
                 height: 40px;
                 border-radius: 50%; }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t1 {
+                -ms-transform: rotate(270deg);
+                -webkit-transform: rotate(270deg);
                 transform: rotate(270deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t2 {
+                -ms-transform: rotate(280deg);
+                -webkit-transform: rotate(280deg);
                 transform: rotate(280deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.t3 {
+                -ms-transform: rotate(290deg);
+                -webkit-transform: rotate(290deg);
                 transform: rotate(290deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#hair div#clump-top-normal-under div.hair-1 {
                 top: 30px;
@@ -719,10 +759,14 @@ html {
               box-shadow: inset -10px 0 0 0 #000; }
             html body main#splash section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-left {
               left: 52px;
+              -ms-transform: rotate(-83deg);
+              -webkit-transform: rotate(-83deg);
               transform: rotate(-83deg);
               border-radius: 75% 55% 8% 60%; }
             html body main#splash section#about div.section-content div#about-right div#face div#head div#eyebrows div#eyebrow-right {
               right: 52px;
+              -ms-transform: rotate(-96deg);
+              -webkit-transform: rotate(-96deg);
               transform: rotate(-96deg);
               border-radius: 55% 8% 60% 75%; }
             html body main#splash section#about div.section-content div#about-right div#face div#head div#eyes div.eye {
@@ -755,10 +799,14 @@ html {
                   box-shadow: 0 0 10px 0 #a1703f; }
             html body main#splash section#about div.section-content div#about-right div#face div#head div#eyes div#eye-left {
               left: 50px;
+              -ms-transform: rotate(3deg);
+              -webkit-transform: rotate(3deg);
               transform: rotate(3deg);
               border-radius: 50px 50px 10px 10px; }
             html body main#splash section#about div.section-content div#about-right div#face div#head div#eyes div#eye-right {
               right: 50px;
+              -ms-transform: rotate(-3deg);
+              -webkit-transform: rotate(-3deg);
               transform: rotate(-3deg);
               border-radius: 50px 50px 10px 10px; }
             html body main#splash section#about div.section-content div#about-right div#face div#head div#nose {
@@ -779,13 +827,15 @@ html {
               html body main#splash section#about div.section-content div#about-right div#face div#head div#nose div#nose-left {
                 left: -10px;
                 box-shadow: -1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+                -ms-transform: rotate(33deg);
                 -webkit-transform: rotate(33deg);
-                transform: rotate(45deg); }
+                transform: rotate(33deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#head div#nose div#nose-right {
                 right: -10px;
                 box-shadow: 1px 4px 4px -2px #c48859, inset 0px -15px 17px -11px rgba(223, 179, 145, 0.68);
+                -ms-transform: rotate(-33deg);
                 -webkit-transform: rotate(-33deg);
-                transform: rotate(-45deg); }
+                transform: rotate(-33deg); }
             html body main#splash section#about div.section-content div#about-right div#face div#head div#mouth {
               position: relative;
               top: 285px;
@@ -798,6 +848,8 @@ html {
                 height: 30px;
                 border-radius: 70%;
                 box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                -ms-transform: rotate(170deg);
+                -webkit-transform: rotate(170deg);
                 transform: rotate(170deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-crease-1 {
                 position: absolute;
@@ -807,6 +859,8 @@ html {
                 height: 45px;
                 border-radius: 85%;
                 box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                -ms-transform: rotate(209deg);
+                -webkit-transform: rotate(209deg);
                 transform: rotate(209deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-crease-2 {
                 position: absolute;
@@ -816,6 +870,8 @@ html {
                 height: 25px;
                 border-radius: 85%;
                 box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                -ms-transform: rotate(150deg);
+                -webkit-transform: rotate(150deg);
                 transform: rotate(150deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#head div#mouth div.lip {
                 position: absolute;
@@ -827,6 +883,8 @@ html {
                 border-radius: 50% / 100%;
                 border-bottom-left-radius: 0;
                 border-bottom-right-radius: 0;
+                -ms-transform: rotate(8deg);
+                -webkit-transform: rotate(8deg);
                 transform: rotate(8deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-middle-smile {
                 position: absolute;
@@ -837,6 +895,8 @@ html {
                 height: 103px;
                 border-radius: 30%;
                 box-shadow: inset -2px 0 0 0 rgba(0, 0, 0, 0.2);
+                -ms-transform: rotate(98deg);
+                -webkit-transform: rotate(98deg);
                 transform: rotate(98deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-lower-lip {
                 top: 5px;
@@ -846,6 +906,8 @@ html {
                 border-radius: 50% / 100%;
                 border-top-left-radius: 0;
                 border-top-right-radius: 0;
+                -ms-transform: rotate(8deg);
+                -webkit-transform: rotate(8deg);
                 transform: rotate(8deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-crease-3 {
                 position: absolute;
@@ -855,6 +917,8 @@ html {
                 height: 20px;
                 border-radius: 85%;
                 box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                -ms-transform: rotate(350deg);
+                -webkit-transform: rotate(350deg);
                 transform: rotate(350deg); }
               html body main#splash section#about div.section-content div#about-right div#face div#head div#mouth div#mouth-right-dimple {
                 position: absolute;
@@ -864,6 +928,8 @@ html {
                 height: 37px;
                 border-radius: 70%;
                 box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.05);
+                -ms-transform: rotate(7deg);
+                -webkit-transform: rotate(7deg);
                 transform: rotate(7deg); }
     @media (min-width: 750px) {
       html body main#splash section#about div.section-content {
