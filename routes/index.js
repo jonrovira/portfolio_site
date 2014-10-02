@@ -42,7 +42,7 @@ router.get('/portfolio/master-of-science-in-robotics-website/', function(req, re
 		showGithub  : true,
 		github      : 'https://github.com/jonrovira/msr-site',
 
-		summary     : 'Lorem ipsum dolor sit amet, aeque percipit percipitur ex vel, an mea vitae contentiones reprehendunt. Sit lorem feugait ex, tantas impetus fabellas cum in. Has decore putent elaboraret ne, velit graecis id has, vero doctus nominati pro ad. Prima saperet adipisci sea ad, vim et nostro delicatissimi. Reque summo saperet ne per. Cum ea iriure molestie, sed eu quodsi appareat imperdiet, et mel saperet deleniti.',
+		summary     : '<p>After working for a summer to develop projects and curriculum for one of the courses in the new Master of Science in Robotics Program at Northwestern University, my boss asked me to build the new program’s website. His vision was to have a site that adequately displayed everything that the program’s students would be working on in addition to housing a database of resources that students and faculty would contribute to over time. In addition, he wanted a website that could be easily maintained using GitHub and Markdown.</p><p>To meet that last requirement in particular, I chose to develop the website using Jekyll, a “back-end” (not really) static-site generator. Jekyll’s main strengths include its incredibly painless integration into the GitHub Pages hosting service and its feature that allows a site’s content to be optionally maintained in Markdown.</p>',
 
 		technologies: ['HTML (5)', 'CSS (3)', 'SASS', 'Javascript', 'JQuery', 'Jekyll', 'Markdown'],
 
