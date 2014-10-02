@@ -184,10 +184,11 @@ html {
         display: none; }
       html body main#splash section#portfolio div.section-content i.portfolio-scroll-indicator {
         position: absolute;
+        display: none !important;
         top: 37%;
-        font-size: 80px;
-        color: rgba(0, 0, 0, 0.2); }
+        font-size: 80px; }
       html body main#splash section#portfolio div.section-content i.portfolio-scroll-indicator.active {
+        display: block !important;
         color: rgba(0, 0, 0, 0.8); }
       html body main#splash section#portfolio div.section-content i#portfolio-scroll-backward-indicator {
         left: 7px; }

@@ -51,16 +51,38 @@ $(document).ready(function() {
 		var leftOfFirst = $('ul#portfolio-gallery li:first-child').position().left;
 		var rightOfLast = $('ul#portfolio-gallery li:last-child').position().left + itemWidth;
 		if( leftOfFirst < leftBoundary ) {
+			// bold
 			$('i#portfolio-scroll-backward-indicator').addClass('active');
 		}
 		else {
-			$('i#portfolio-scroll-backward-indicator').removeClass('active');	
+			// unbold
+			$('i#portfolio-scroll-backward-indicator').removeClass('active');
 		}
 		if( rightOfLast > rightBoundary ) {
+			// bold
 			$('i#portfolio-scroll-forward-indicator').addClass('active');	
 		}
 		else {
+			// unbold
 			$('i#portfolio-scroll-forward-indicator').removeClass('active');		
+		}
+
+		// Flash
+		if( !$('i#portfolio-scroll-backward-indicator').hasClass('flashing') ) {
+			$('i#portfolio-scroll-backward-indicator').addClass('flashing');
+			var intervalLeft = setInterval(function() {
+				if( $('i#portfolio-scroll-backward-indicator').hasClass('active') ) {
+					$('i#portfolio-scroll-backward-indicator').fadeOut(500).fadeIn(500);
+				}
+			}, 2000);
+		}
+		if( !$('i#portfolio-scroll-forward-indicator').hasClass('flashing') ) {
+			$('i#portfolio-scroll-forward-indicator').addClass('flashing');
+			var intervalRight = setInterval(function() {
+				if( $('i#portfolio-scroll-forward-indicator').hasClass('active') ) {
+					$('i#portfolio-scroll-forward-indicator').fadeOut(500).fadeIn(500);
+				}
+			}, 2000);
 		}
 	}
 	// Follow the mouse with eyes in about section

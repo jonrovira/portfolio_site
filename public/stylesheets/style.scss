@@ -320,11 +320,12 @@ html {
 					}
 					i.portfolio-scroll-indicator {
 						position: absolute;
+						display: none !important;
 						top: 37%;
 						font-size: 80px;
-						color: rgba(0, 0, 0, 0.2);
 					}
 					i.portfolio-scroll-indicator.active {
+						display: block !important;
 						color: rgba(0, 0, 0, 0.8);
 					}
 					i#portfolio-scroll-backward-indicator {
