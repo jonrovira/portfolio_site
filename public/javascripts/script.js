@@ -251,6 +251,7 @@ $(document).ready(function() {
 	};
 	// Corrects elements if site is loaded in Firefox
 	var correctForFirefox = function() {
+		// fixes border radius issue
 		$('ul#frameworks-tools-libraries').css('border-style', 'solid');
 		$('ul#item-roles li').css('border-style', 'solid');
 	};
@@ -317,7 +318,8 @@ $(document).ready(function() {
 			});
 			// Animate skill graph on scroll to skills section
 			$(window).scroll(function() {
-				if( $('body').scrollTop() > $('section#welcome + hr').offset().top + 120) {
+				if( $('html, body').scrollTop() > $('section#welcome + hr').offset().top + 120) {
+					console.log('hi');
 					animateSkillsGraph();
 				}
 			});
