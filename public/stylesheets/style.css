@@ -1,6 +1,6 @@
 @font-face {
   font-family: ProximaNova-light;
-  src: "/fonts/ProximaNova-light.otf"; }
+  src: url("/fonts/proximanovalight/proximanovalight.woff") format("woff"), url("/fonts/proximanovalight/proximanovalight.ttf") format("truetype"); }
 /* Globals */
 html, body, div, span, h1, h2, h3, h4,
 h5, h6, p, a, img, i, ol, ul, li, form,

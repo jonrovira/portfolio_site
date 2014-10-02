@@ -2,7 +2,8 @@
 
 @font-face {
 	font-family: ProximaNova-light;
-	src: "/fonts/ProximaNova-light.otf";
+	src: url('/fonts/proximanovalight/proximanovalight.woff') format('woff'),
+	     url('/fonts/proximanovalight/proximanovalight.ttf') format('truetype');
 }
 
 $font-stack: "ProximaNova-light", Arial, Helvetica, sans-serif;

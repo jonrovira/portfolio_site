@@ -31,21 +31,21 @@ $(document).ready(function() {
 		var itemWidth = $('li.portfolio-item').width();
 
 		// Determine which should be blurred, blur those
-		$('li.portfolio-item').each(function() {
-			var rightPosition = $(this).position().left + itemWidth;
-			if( rightPosition <= rightBoundary ) {
-				if( $(this).hasClass('portfolio-item-blurred') ) {
-					$(this).removeClass('portfolio-item-blurred');
-					$(this).fadeTo(400, 1.0);
-				}
-			}
-			else {
-				if( !$(this).hasClass('portfolio-item-blurred') ) {
-					$(this).addClass('portfolio-item-blurred');
-					$(this).fadeTo(400, 0.5);
-				}
-			}
-		});
+		// $('li.portfolio-item').each(function() {
+		// 	var rightPosition = $(this).position().left + itemWidth;
+		// 	if( rightPosition <= rightBoundary ) {
+		// 		if( $(this).hasClass('portfolio-item-blurred') ) {
+		// 			$(this).removeClass('portfolio-item-blurred');
+		// 			$(this).fadeTo(400, 1.0);
+		// 		}
+		// 	}
+		// 	else {
+		// 		if( !$(this).hasClass('portfolio-item-blurred') ) {
+		// 			$(this).addClass('portfolio-item-blurred');
+		// 			$(this).fadeTo(400, 0.5);
+		// 		}
+		// 	}
+		// });
 
 		// Bold appropriate scroll indicators
 		var leftOfFirst = $('ul#portfolio-gallery li:first-child').position().left;
@@ -225,6 +225,35 @@ $(document).ready(function() {
 		var padding = pTop + 'px 0 ' + pBottom + 'px';
 		$('section#welcome div.section-content').css('padding', padding);
 	};
+	// Checks which browser is holding the site currently
+	var checkWhichBrowser = function() {
+		var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0; // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
+		var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+		var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0; // At least Safari 3+: "[object HTMLElementConstructor]"
+		var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
+		var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
+
+		if( isOpera ) {
+			return 'opera';
+		}
+		else if( isFirefox ) {
+			return 'firefox';
+		}
+		else if( isSafari ) {
+			return 'safari';
+		}
+		else if( isChrome ) {
+			return 'chrome';
+		}
+		else if( isIE ) {
+			return 'ie';
+		}
+	};
+	// Corrects elements if site is loaded in Firefox
+	var correctForFirefox = function() {
+		$('ul#frameworks-tools-libraries').css('border-style', 'solid');
+		$('ul#item-roles li').css('border-style', 'solid');
+	};
 
 
 
@@ -252,6 +281,22 @@ $(document).ready(function() {
 		//placeholder for minimize
 		toggleMobileNav();
 	});
+
+	// Conditional on browser
+	var browser = checkWhichBrowser();
+	switch( browser ) {
+		case 'opera':
+			break;
+		case 'firefox':
+			correctForFirefox();
+			break;
+		case 'safari':
+			break;
+		case 'chrome':
+			break;
+		case 'ie':
+			break;
+	}
 
 	// Conditional on page
 	var page = getPage();
