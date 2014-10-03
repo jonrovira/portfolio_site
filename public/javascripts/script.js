@@ -92,46 +92,49 @@ $(document).ready(function() {
 	// Follow the mouse with eyes in about section
 	var followMouseWithEyes = function(e) {
 
-		// get mouse position
-		var mouseTop = e.pageY;
-		var mouseLeft = e.pageX;
+		// don't do it on mobile devices because it doesn't work
+		if( $(window).width() > 500 ) {
+			// get mouse position
+			var mouseTop = e.pageY;
+			var mouseLeft = e.pageX;
 
-		// get left eye position
-		var $leftEye = $('div#eye-left div.eye-color-1');
-		var leftEyeTop = $leftEye.offset().top;
-		var leftEyeLeft = $leftEye.offset().left;
+			// get left eye position
+			var $leftEye = $('div#eye-left div.eye-color-1');
+			var leftEyeTop = $leftEye.offset().top;
+			var leftEyeLeft = $leftEye.offset().left;
 
-		// get right eye position
-		var $rightEye = $('div#eye-right div.eye-color-1');
-		var rightEyeTop = $rightEye.offset().top;
-		var rightEyeLeft = $rightEye.offset().left;
+			// get right eye position
+			var $rightEye = $('div#eye-right div.eye-color-1');
+			var rightEyeTop = $rightEye.offset().top;
+			var rightEyeLeft = $rightEye.offset().left;
 
-		// left eye difference in position (normal x, y coordinate conventions)
-		var leftDTop = leftEyeTop - mouseTop;
-		var leftDLeft = mouseLeft - leftEyeLeft;
+			// left eye difference in position (normal x, y coordinate conventions)
+			var leftDTop = leftEyeTop - mouseTop;
+			var leftDLeft = mouseLeft - leftEyeLeft;
 
-		// right eye difference in position
-		var rightDTop = rightEyeTop - mouseTop;
-		var rightDLeft = mouseLeft - rightEyeLeft;
+			// right eye difference in position
+			var rightDTop = rightEyeTop - mouseTop;
+			var rightDLeft = mouseLeft - rightEyeLeft;
 
-		// Pixel positions for eye center
-		var eyeCenter = [12, -2];
+			// Pixel positions for eye center
+			var eyeCenter = [12, -2];
 
-		// get requested eye position
-		var leftEyePositionRequest = getEyePosition(leftDLeft, leftDTop);
-		var rightEyePositionRequest = getEyePosition(rightDLeft, rightDTop);
+			// get requested eye position
+			var leftEyePositionRequest = getEyePosition(leftDLeft, leftDTop);
+			var rightEyePositionRequest = getEyePosition(rightDLeft, rightDTop);
 
-		// get eye positions accounting for eye offsets
-		var leftEyePositionX = eyeCenter[0] + leftEyePositionRequest[0];
-		var leftEyePositionY = eyeCenter[1] - leftEyePositionRequest[1];
-		var rightEyePositionX = eyeCenter[0] + rightEyePositionRequest[0];
-		var rightEyePositionY = eyeCenter[1] - rightEyePositionRequest[1];
+			// get eye positions accounting for eye offsets
+			var leftEyePositionX = eyeCenter[0] + leftEyePositionRequest[0];
+			var leftEyePositionY = eyeCenter[1] - leftEyePositionRequest[1];
+			var rightEyePositionX = eyeCenter[0] + rightEyePositionRequest[0];
+			var rightEyePositionY = eyeCenter[1] - rightEyePositionRequest[1];
 
-		// move eyes to positions
-		$leftEye.css('left', leftEyePositionX);
-		$leftEye.css('top', leftEyePositionY);
-		$rightEye.css('left', rightEyePositionX);
-		$rightEye.css('top', rightEyePositionY);
+			// move eyes to positions
+			$leftEye.css('left', leftEyePositionX);
+			$leftEye.css('top', leftEyePositionY);
+			$rightEye.css('left', rightEyePositionX);
+			$rightEye.css('top', rightEyePositionY);
+		}
 	}
 	// Returns quadrant of x, y coordinates
 	var getQuadrant = function(x, y) {
