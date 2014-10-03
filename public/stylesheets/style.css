@@ -23,7 +23,8 @@ html {
       text-align: center;
       overflow: auto; }
       html body header > nav > a img.header-img {
-        float: left; }
+        float: left;
+        width: 60px; }
       html body header > nav > a:hover img.header-img {
         opacity: 0.7; }
       html body header > nav i#menu-icon {

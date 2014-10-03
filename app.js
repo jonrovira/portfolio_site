@@ -11,7 +11,7 @@ var express      = require('express'),
     logger       = require('morgan'),
     cookieParser = require('cookie-parser'),
     bodyParser   = require('body-parser'),
-    nodeMailer = require('nodemailer');
+    nodemailer   = require('nodemailer');
 
 
 // Define router locations
@@ -50,62 +50,82 @@ app.engine('handlebars', exphbs({
     }
 }));
 app.set('view engine', 'handlebars');
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 
-// Other setup stuff, figure it out later
-app.use(favicon());
+// App logger
 app.use(logger('dev'));
+
+
+// Parser shit
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
+
+// Set up routers
 app.use('/', routes);
 app.use('/users', users);
 
 
-
 // Mailer
-app.post('/', function(req, res){
-    // Variable initialization
-    var mailOpts, smtpTrans;
+// app.post('/', function(req, res){
+//     // Variable initialization
+//     var mailOpts, smtpTrans;
 
-    // Login info
-    smtpTrans = nodeMailer.createTransport('SMTP', {
-        service: 'Gmail',
+//     // Login info
+//     smtpTrans = nodeMailer.createTransport('SMTP', {
+//         service: 'Gmail',
+//         auth: {
+//             user: "jonrovira@gmail.com",
+//             pass: "Lovelivewin007*"
+//         }
+//     });
+
+//     // Mail options
+//     mailOpts = {
+//         from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from request body object
+//         to: 'jonrovira@gmail.com',
+//         subject: 'JonRovira.com Contact Form',
+//         text: req.body.message
+//     };
+
+//     smtpTrans.sendMail(mailOpts, function(error, response) {
+//         // Email not sent
+//         if( error ) {
+//             res.render('home', {
+//                 msg: 'Error occured, message not sent.',
+//                 err: true
+//             });
+//         }
+//         // Success
+//         else {
+//             res.render('home', {
+//                 msg: 'Message sent! Thank you.',
+//                 err: false
+//             });
+//         }
+//     });
+
+// });
+
+app.post('/', function(req, res) {
+
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
         auth: {
-            user: "jonrovira@gmail.com",
-            pass: "Lovelivewin007*"
+            user: 'jonrovira@gmail.com',
+            pass: 'Lovelivewin007*'
         }
-    });
-
-    // Mail options
-    mailOpts = {
-        from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from request body object
+    });M
+    transporter.sendMail({
+        from: 'jonrovira591@gmail.com',
         to: 'jonrovira@gmail.com',
-        subject: 'JonRovira.com Contact Form',
-        text: req.body.message
-    };
-
-    smtpTrans.sendMail(mailOpts, function(error, response) {
-        // Email not sent
-        if( error ) {
-            res.render('home', {
-                msg: 'Error occured, message not sent.',
-                err: true
-            });
-        }
-        // Success
-        else {
-            res.render('home', {
-                msg: 'Message sent! Thank you.',
-                err: false
-            });
-        }
-    });
-
+        subject: 'hello',
+        text: 'hello world!'
+    }, res.render('home'));
 });
-
 
 
 /// catch 404 and forward to error handler
@@ -115,10 +135,9 @@ app.use(function(req, res, next) {
     next(err);
 });
 
-/// error handlers
 
-// development error handler
-// will print stacktrace
+/* error handlers*/
+// development error handler - will print stacktrace
 if (app.get('env') === 'development') {
     app.use(function(err, req, res, next) {
         res.status(err.status || 500);
@@ -129,8 +148,7 @@ if (app.get('env') === 'development') {
     });
 }
 
-// production error handler
-// no stacktraces leaked to user
+// production error handler - no stacktrace
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
@@ -140,8 +158,5 @@ app.use(function(err, req, res, next) {
 });
 
 
-
-
-
-
+// Export the app for other modules to use
 module.exports = app;
