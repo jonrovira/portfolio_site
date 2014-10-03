@@ -67,12 +67,14 @@ $(document).ready(function() {
 			$('i#portfolio-scroll-forward-indicator').removeClass('active');		
 		}
 
-		// Flash
+		// Flash every 2 secs at 900ms fade durations
 		if( !$('i#portfolio-scroll-backward-indicator').hasClass('flashing') ) {
 			$('i#portfolio-scroll-backward-indicator').addClass('flashing');
 			var intervalLeft = setInterval(function() {
 				if( $('i#portfolio-scroll-backward-indicator').hasClass('active') ) {
-					$('i#portfolio-scroll-backward-indicator').fadeOut(900).fadeIn(900);
+					$('i#portfolio-scroll-backward-indicator').fadeTo(900, 0, function() {
+						$('i#portfolio-scroll-backward-indicator').fadeTo(900, 1);
+					});
 				}
 			}, 2000);
 		}
@@ -80,7 +82,9 @@ $(document).ready(function() {
 			$('i#portfolio-scroll-forward-indicator').addClass('flashing');
 			var intervalRight = setInterval(function() {
 				if( $('i#portfolio-scroll-forward-indicator').hasClass('active') ) {
-					$('i#portfolio-scroll-forward-indicator').fadeOut(900).fadeIn(900);
+					$('i#portfolio-scroll-forward-indicator').fadeTo(900, 0, function() {
+						$('i#portfolio-scroll-forward-indicator').fadeTo(900, 1);
+					});
 				}
 			}, 2000);
 		}

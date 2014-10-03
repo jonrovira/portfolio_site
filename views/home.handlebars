@@ -39,7 +39,7 @@
 						<img class="portfolio-item-image" src="/images/Portfolio-census.png">
 						<div class="portfolio-item-info">
 							<h2>Census</h2>
-							<span>Web Design, UI/UX Design, Front-end Development,</span>
+							<span>Web Design, UI/UX Design, Front-end Development, Branding</span>
 						</div>
 					</a>
 				</li>
@@ -57,7 +57,7 @@
 						<img class="portfolio-item-image" src="/images/Portfolio-jonrovira-dot-com.png">
 						<div class="portfolio-item-info">
 							<h2>JonRovira.com</h2>
-							<span>Web Design, Back-end Development, UI/UX Design, Front-end Development</span>
+							<span>Web Design, Back-end Development, UI/UX Design, Front-end Development, Branding</span>
 						</div>
 					</a>
 				</li>
@@ -308,10 +308,11 @@
 		<p>
 			Whether it's to answer a question, discuss ideas, or just have a conversation, I'd love to hear from you.
 		</p>
+		{{msg}}
 		<form action="/" method="post">
-			<input id="input-name" name="name" placeholder="Name">
-			<input id="input-email" name="email" placeholder="Email">
-			<textarea id="input-message" name="message" placeholder="Message"></textarea>
+			<input id="input-name" name="name" placeholder="Name" required="required">
+			<input id="input-email" name="email" placeholder="Email" required="required">
+			<textarea id="input-message" name="message" placeholder="Message" required="required"></textarea>
 			<input id="input-submit" type="submit" value="Send">
 		</form>
 	</div>
