@@ -984,6 +984,7 @@ html {
         font-size: 14px;
         border: 1px solid #222;
         border-style: none none solid none;
+        border-radius: 0;
         outline: none;
         -webkit-appearance: none; }
       html body main#splash section#contact div.section-content form textarea {
