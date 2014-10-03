@@ -118,13 +118,23 @@ app.post('/', function(req, res) {
             user: 'jonrovira@gmail.com',
             pass: 'Lovelivewin007*'
         }
-    });M
+    });
     transporter.sendMail({
         from: 'jonrovira591@gmail.com',
         to: 'jonrovira@gmail.com',
         subject: 'hello',
         text: 'hello world!'
-    }, res.render('home'));
+    }, function(err, info) {
+        res.render('home');
+        if( err ) {
+            res.render('home');
+            console.log('NOPE NOPE NOPE NOPE NOPE NOPE');
+        }
+        else {
+            res.render('home');
+            console.log('YAYYYYYY YAYYYYYYYY YAYYYY');
+        }
+    });
 });
 
 
