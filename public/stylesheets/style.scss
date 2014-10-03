@@ -1171,6 +1171,7 @@ html {
 							border: 1px solid #222;
 							border-style: none none solid none;
 							outline: none;
+							-webkit-appearance: none;
 						}
 						textarea {
 							margin-bottom: 15px;
@@ -1182,6 +1183,7 @@ html {
 							border: 1px solid #222;
 							border-radius: 3px;
 							outline: none;
+							-webkit-appearance: none;
 						}
 						input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 						    color:    #333;

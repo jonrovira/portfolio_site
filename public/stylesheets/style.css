@@ -984,7 +984,8 @@ html {
         font-size: 14px;
         border: 1px solid #222;
         border-style: none none solid none;
-        outline: none; }
+        outline: none;
+        -webkit-appearance: none; }
       html body main#splash section#contact div.section-content form textarea {
         margin-bottom: 15px;
         width: 230px;
@@ -994,7 +995,8 @@ html {
         font-size: 14px;
         border: 1px solid #222;
         border-radius: 3px;
-        outline: none; }
+        outline: none;
+        -webkit-appearance: none; }
       html body main#splash section#contact div.section-content form input::-webkit-input-placeholder, html body main#splash section#contact div.section-content form textarea::-webkit-input-placeholder {
         color: #333; }
       html body main#splash section#contact div.section-content form input:-moz-placeholder, html body main#splash section#contact div.section-content form textarea:-moz-placeholder {
