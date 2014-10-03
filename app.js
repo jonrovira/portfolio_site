@@ -82,7 +82,7 @@ app.post('/', function(req, res) {
         service: 'Gmail',
         auth: {
             user: 'jonrovira@gmail.com',
-            pass: 'Lovelivewin007*'
+            pass: System.getenv('GMAIL_PASS')
         }
     });
 

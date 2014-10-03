@@ -361,6 +361,11 @@ $(document).ready(function() {
 		case 'splash':
 			setWelcomePadding();
 			setupPortfolio();
+			// setTimeout(function() {
+			// 	$('section#welcome div.section-content').css('opacity', '0').css('visibility', 'visible');
+			// 	$('section#welcome div.section-content').fadeTo(2000, 1.0, 'easeInQuad');
+			// }, 200);
+
 			// Scroll to portfolio on welcome circle button click
 			$('div#welcome-circle').click(function() {
 				// placeholder for minimize
