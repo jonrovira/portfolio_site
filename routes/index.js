@@ -137,7 +137,7 @@ router.get('/portfolio/airhop-website/', function(req, res) {
 		showGithub  : false,
 		github      : '',
 
-		summary     : 'Lorem ipsum dolor sit amet, aeque percipit percipitur ex vel, an mea vitae contentiones reprehendunt. Sit lorem feugait ex, tantas impetus fabellas cum in. Has decore putent elaboraret ne, velit graecis id has, vero doctus nominati pro ad. Prima saperet adipisci sea ad, vim et nostro delicatissimi. Reque summo saperet ne per. Cum ea iriure molestie, sed eu quodsi appareat imperdiet, et mel saperet deleniti.',
+		summary     : '<p>At the beginning of my sophomore year in college,  a friend and then-CEO of AirHop approached me to ask if I would build the company’s new website. I agreed, but under the time-constraint of creating the back-end heavy site in three weeks, I resorted to using Wordpress. After hustling to learn the CMS’s structure and maintenance process and maneuvering plugin development and modification, I churned out the new site.</p><p>This past year, it had a 3,500 unique-user traffic with over 30,000 page views and served as the $16,000-revenue company’s primary operational tool. After developing the site, I was brought on as the company’s CTO and have since been promoted to the Co-CEO.</p><p>AirHop is a student-run transportation company that provides students with a shuttle service from Northwestern’s campus to both O’Hare and Midway airports during major student breaks.</p>',
 
 		technologies: ['HTML', 'PHP', 'CSS', 'Javascript', 'jQuery', 'Wordpress'],
 
