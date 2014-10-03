@@ -56,6 +56,14 @@ html {
         margin-right: 7px; }
       html body header > nav nav#header-menu ul li.active a {
         opacity: 0.7; }
+    html body header div#contact-form-message {
+      padding: 10px 15px;
+      width: calc(100% - 30px);
+      color: #fff; }
+    html body header div#contact-form-message.error {
+      background-color: rgba(191, 58, 28, 0.7); }
+    html body header div#contact-form-message.success {
+      background-color: rgba(94, 191, 73, 0.7); }
     @media (min-width: 715px) {
       html body header > nav i#menu-icon {
         display: none; }

@@ -18,4 +18,11 @@
 			</ul>
 		</nav>
 	</nav>
+	{{#if contactFormFeedback }}
+		{{#if contactFormError }}
+			<div id="contact-form-message" class="error">{{ contactFormMsg }}</div>
+		{{ else }}
+			<div id="contact-form-message" class="success">{{ contactFormMsg }}</div>
+		{{/if}}
+	{{/if}}
 </header>

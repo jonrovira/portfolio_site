@@ -70,69 +70,47 @@ app.use('/users', users);
 
 
 // Mailer
-// app.post('/', function(req, res){
-//     // Variable initialization
-//     var mailOpts, smtpTrans;
-
-//     // Login info
-//     smtpTrans = nodeMailer.createTransport('SMTP', {
-//         service: 'Gmail',
-//         auth: {
-//             user: "jonrovira@gmail.com",
-//             pass: "Lovelivewin007*"
-//         }
-//     });
-
-//     // Mail options
-//     mailOpts = {
-//         from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from request body object
-//         to: 'jonrovira@gmail.com',
-//         subject: 'JonRovira.com Contact Form',
-//         text: req.body.message
-//     };
-
-//     smtpTrans.sendMail(mailOpts, function(error, response) {
-//         // Email not sent
-//         if( error ) {
-//             res.render('home', {
-//                 msg: 'Error occured, message not sent.',
-//                 err: true
-//             });
-//         }
-//         // Success
-//         else {
-//             res.render('home', {
-//                 msg: 'Message sent! Thank you.',
-//                 err: false
-//             });
-//         }
-//     });
-
-// });
-
 app.post('/', function(req, res) {
 
+    // get contact form data
+    var name = req.body.name;
+    var email = req.body.email;
+    var message = req.body.message;
+
+    // create reusable transporter object using SMTP transport
     var transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'Gmail',
         auth: {
             user: 'jonrovira@gmail.com',
             pass: 'Lovelivewin007*'
         }
     });
-    transporter.sendMail({
-        from: 'jonrovira591@gmail.com',
-        to: 'jonrovira@gmail.com',
-        subject: 'hello',
-        text: 'hello world!'
-    }, function(err, info) {
-        res.render('home');
-        if( err ) {
-            res.render('home');
-            console.log('NOPE NOPE NOPE NOPE NOPE NOPE');
+
+    // setup e-mail data with unicode symbols
+    var mailOptions = {
+        from: email, // sender address
+        to: 'jonrovira@gmail.com', // list of receivers
+        subject: 'JonRovira.com Contact Form Email ✔', // Subject line
+        text: message, // plaintext body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, function(error, info){
+        if( error ) {
+            console.log(error);
+            res.render('home', {
+                contactFormFeedback: true,
+                contactFormError: true,
+                contactFormMsg: 'Error occured, message not sent.',
+            });
         }
         else {
-            res.render('home');
-            console.log('YAYYYYYY YAYYYYYYYY YAYYYY');
+            console.log('Message sent: ' + info.response);
+            res.render('home', {
+                contactFormFeedback: true,
+                contactFormError: false,
+                contactFormMsg: 'Message sent! Thank you.',
+            });
         }
     });
 });

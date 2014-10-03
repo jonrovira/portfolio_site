@@ -123,6 +123,17 @@ html {
 					}
 				}
 			}
+			div#contact-form-message {
+				padding: 10px 15px;
+				width: calc(100% - 30px);
+				color: #fff;
+			}
+			div#contact-form-message.error {
+				background-color: rgba(191, 58, 28, 0.7);
+			}
+			div#contact-form-message.success {
+				background-color: rgba(94, 191, 73, 0.7);
+			}
 			@media(min-width: 715px) {
 				> nav {
 
