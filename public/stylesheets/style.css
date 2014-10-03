@@ -368,6 +368,12 @@ html {
         html body main#splash section#skills div.section-content ul#skills-graph li.skill {
           margin-left: 20px;
           width: calc((100% - 134px - (5 * 20px)) / 5); }
+          html body main#splash section#skills div.section-content ul#skills-graph li.skill span.skill-level {
+            display: none; }
+          html body main#splash section#skills div.section-content ul#skills-graph li.skill span.skill-name {
+            bottom: 10px;
+            opacity: 0.6;
+            font-size: 21px; }
         html body main#splash section#skills div.section-content ul#skills-graph li.skill:nth-child(3) {
           margin-left: 20px; } }
     @media (min-width: 1000px) {
@@ -395,6 +401,15 @@ html {
           margin-bottom: 0; }
       html body main#splash section#skills div.section-content ul#skills-graph li.skill:nth-child(3) {
         margin-left: 30px; } }
+    @media (min-width: 1100px) {
+      html body main#splash section#skills div.section-content ul#skills-graph li.skill span.skill-name {
+        font-size: 23px; } }
+    @media (min-width: 1200px) {
+      html body main#splash section#skills div.section-content ul#skills-graph li.skill span.skill-name {
+        font-size: 25px; } }
+    @media (min-width: 1300px) {
+      html body main#splash section#skills div.section-content ul#skills-graph li.skill span.skill-name {
+        font-size: 27px; } }
     html body main#splash section#about div.section-content {
       overflow: hidden; }
       html body main#splash section#about div.section-content div#about-left p {

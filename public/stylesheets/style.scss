@@ -597,9 +597,12 @@ html {
 								width: calc((100% - 134px - (5 * 20px)) / 5);
 
 								span.skill-level {
+									display: none;
 								}
 								span.skill-name {
-									
+									bottom: 10px;
+									opacity: 0.6;
+									font-size: 21px;
 								}
 							}
 							li.skill:nth-child(3) {
@@ -642,6 +645,48 @@ html {
 							}
 							li.skill:nth-child(3) {
 								margin-left: 30px;
+							}
+						}
+					}
+				}
+				@media(min-width: 1100px) {
+					div.section-content {
+
+						ul#skills-graph {
+
+							li.skill {
+
+								span.skill-name {
+									font-size: 23px;
+								}
+							}
+						}
+					}
+				}
+				@media(min-width: 1200px) {
+					div.section-content {
+
+						ul#skills-graph {
+
+							li.skill {
+
+								span.skill-name {
+									font-size: 25px;
+								}
+							}
+						}
+					}
+				}
+				@media(min-width: 1300px) {
+					div.section-content {
+
+						ul#skills-graph {
+
+							li.skill {
+
+								span.skill-name {
+									font-size: 27px;
+								}
 							}
 						}
 					}
