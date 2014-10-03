@@ -90,7 +90,7 @@ app.post('/', function(req, res) {
     var mailOptions = {
         from:     email, // sender address
         to:      'jonrovira@gmail.com', // list of receivers
-        subject: 'JonRovira.com Contact Form Email from ' + name, // Subject line
+        subject: 'JonRovira.com New Contact Form Submission', // Subject line
         html:    '<span>New contact form submission!</span><br><br><span><strong>Name: </strong>' + name + '</span><br><span><strong>Email: </strong>' + email + '</span><br><br><span><strong>Message: </strong>' + message + '</span><br><br><br><span>That\'s it for now. Killing the game.</span>',
     };
 
