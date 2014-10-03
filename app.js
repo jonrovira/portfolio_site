@@ -88,10 +88,10 @@ app.post('/', function(req, res) {
 
     // setup e-mail data with unicode symbols
     var mailOptions = {
-        from: email, // sender address
-        to: 'jonrovira@gmail.com', // list of receivers
+        from:     email, // sender address
+        to:      'jonrovira@gmail.com', // list of receivers
         subject: 'JonRovira.com Contact Form Email from ' + name, // Subject line
-        text: message, // plaintext body
+        html:    '<span>New contact form submission!</span><br><br><span><strong>Name: </strong>' + name + '</span><br><span><strong>Email: </strong>' + email + '</span><br><br><span><strong>Message: </strong>' + message + '</span><br><br><br><span>That\'s it for now. Killing the game.</span>',
     };
 
     // send mail with defined transport object
