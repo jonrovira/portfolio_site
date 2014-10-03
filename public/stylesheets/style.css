@@ -263,11 +263,11 @@ html {
           text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
         html body main#splash section#skills div.section-content ul#skills-graph li.skill span.skill-name {
           bottom: 40px;
-          -webkit-transform: translate(0, 100%) rotate(90deg);
-          -moz-transform: translate(0, 100%) rotate(90deg);
-          -ms-transform: translate(0, 100%) rotate(90deg);
-          -o-transform: translate(0, 100%) rotate(90deg);
-          transform: translate(0, 100%) rotate(-90deg);
+          -webkit-transform: translate(0%, 100%) rotate(-90deg);
+          -moz-transform: translate(0%, 100%) rotate(-90deg);
+          -ms-transform: translate(0%, 100%) rotate(-90deg);
+          -o-transform: translate(0%, 100%) rotate(-90deg);
+          transform: translate(0%, 100%) rotate(-90deg);
           -webkit-transform-origin: 0% 0%;
           -moz-transform-origin: 0% 0%;
           -ms-transform-origin: 0% 0%;
