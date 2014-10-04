@@ -28,7 +28,6 @@ router.get('/portfolio/the-book/', function(req, res) {
 		technologies: ['HTML (5)', 'CSS (3)', 'SASS', 'Javascript', 'jQuery', 'Masonry', 'Ruby On Rails', 'Ruby'],
 
 		layout      : 'portfolio_item',
-
 	});
 });
 
@@ -47,7 +46,24 @@ router.get('/portfolio/master-of-science-in-robotics-website/', function(req, re
 		technologies: ['HTML (5)', 'CSS (3)', 'SASS', 'Javascript', 'jQuery', 'Jekyll', 'Markdown'],
 
 		layout      : 'portfolio_item',
+	});
+});
 
+// GET For The Philanthropist Site page
+router.get('/portfolio/for-the-philanthropist-website/', function(req, res) {
+	res.render('for-the-philanthropist-website', {
+		image       : '/images/Portfolio-for-the-philanthropist-website.png',
+		title       : 'For The Philanthropist Website',
+		date        : '6/15/14 - 8/15/14',
+		roles       : ['Web Design', 'UI/UX Design', 'Front-end Development'],
+		showGithub  : true,
+		github      : 'https://github.com/jonrovira/For-The-Philanthropist',
+
+		summary     : '<p>For The Philanthropist, a company devoted to engaging and assisting non-profits in meeting their philanthropic goals and enacting social change, approached me at the beginning of the summer of 2014 to ask me to develop its new website. The company primarily wanted an informational site that advertised their work in a clean and intuitive way.</p><p>To complement For The Philanthropist’s noble and morally clean business goals, the interfaced I designed features a simple structure with carefully picked font faces and minimalistic themes.</p>',
+
+		technologies: ['HTML (5)', 'CSS (3)', 'SASS', 'Javascript', 'jQuery', 'PHP'],
+
+		layout      : 'portfolio_item',
 	});
 });
 
@@ -66,7 +82,6 @@ router.get('/portfolio/census/', function(req, res) {
 		technologies: ['HTML (5)', 'CSS (3)', 'Javascript', 'jQuery', 'Meteor.js', 'Adobe Illustrator'],
 
 		layout      : 'portfolio_item',
-
 	});
 });
 
@@ -85,7 +100,6 @@ router.get('/portfolio/rj/', function(req, res) {
 		technologies: ['Python', 'C++', 'Robot Operating System (ROS)', 'Point Cloud Library', 'Asus Xtion Pro'],
 
 		layout      : 'portfolio_item',
-
 	});
 });
 
@@ -104,7 +118,6 @@ router.get('/portfolio/jonrovira-dot-com/', function(req, res) {
 		technologies: ['HTML (5)', 'CSS (3)', 'SASS', 'Javascript', 'jQuery', 'Handlebars', 'NodeJS', 'Express', 'Adobe Illustrator'],
 
 		layout      : 'portfolio_item',
-
 	});
 });
 
@@ -123,7 +136,6 @@ router.get('/portfolio/dj-raffe/', function(req, res) {
 		technologies: ['HTML', 'CSS (3)', 'Javascript', 'jQuery'],
 
 		layout      : 'portfolio_item',
-
 	});
 });
 
@@ -142,7 +154,6 @@ router.get('/portfolio/airhop-website/', function(req, res) {
 		technologies: ['HTML', 'PHP', 'CSS', 'Javascript', 'jQuery', 'Wordpress'],
 
 		layout      : 'portfolio_item',
-
 	});
 });
 
