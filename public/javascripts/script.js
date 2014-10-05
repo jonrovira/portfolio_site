@@ -13,7 +13,7 @@ $(document).ready(function() {
 		$('section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li').each(function() {
 			totalWidth += $(this).outerWidth(true);
 		});
-		$('section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery').width(totalWidth + 29);
+		$('section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery').width(totalWidth + 30);
 
 		animatePortfolio();
 	};
