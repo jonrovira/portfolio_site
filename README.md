@@ -8,5 +8,6 @@ My portfolio built using Node JS for the backend
 
 ####Completed
 * Check out how grid layout looks for portfolio (changed to this)
+* Make text in portfolio items on home page cleaner (can still improve)
 
-### Live site hosted at http://www.jonrovira.com
+### Chcek it out at http://www.jonrovira.com
