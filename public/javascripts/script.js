@@ -4,91 +4,6 @@ $(document).ready(function() {
 	 * Functions
 	 */
 
-	// Setup the portfolio
-	//   * Set width of items wrapper
-	var setupPortfolio = function() {
-
-		// Set width of portfolio items wrapper for slider to stay on one line
-		var totalWidth = 0;
-		$('section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery li').each(function() {
-			totalWidth += $(this).outerWidth(true);
-		});
-		$('section#portfolio div.section-content div#portfolio-items-wrapper ul#portfolio-gallery').width(totalWidth + 30);
-
-		animatePortfolio();
-	};
-	// Blur items outside visible scope
-	var animatePortfolio = function() {
-		
-		// Get width of visilble region
-		var visibleWidth = $('div#portfolio-items-wrapper').width();
-
-		// Get coordinates of visible region
-		var leftBoundary = $('section#portfolio div.section-content div#portfolio-items-wrapper').scrollLeft(); // this is changing on scroll
-		var rightBoundary = leftBoundary + visibleWidth;
-
-		// Get width of portfolio item
-		var itemWidth = $('li.portfolio-item').width();
-
-		// Determine which should be blurred, blur those
-		// $('li.portfolio-item').each(function() {
-		// 	var rightPosition = $(this).position().left + itemWidth;
-		// 	if( rightPosition <= rightBoundary ) {
-		// 		if( $(this).hasClass('portfolio-item-blurred') ) {
-		// 			$(this).removeClass('portfolio-item-blurred');
-		// 			$(this).fadeTo(400, 1.0);
-		// 		}
-		// 	}
-		// 	else {
-		// 		if( !$(this).hasClass('portfolio-item-blurred') ) {
-		// 			$(this).addClass('portfolio-item-blurred');
-		// 			$(this).fadeTo(400, 0.5);
-		// 		}
-		// 	}
-		// });
-
-		// Bold appropriate scroll indicators
-		var leftOfFirst = $('ul#portfolio-gallery li:first-child').position().left;
-		var rightOfLast = $('ul#portfolio-gallery li:last-child').position().left + itemWidth;
-		if( leftOfFirst < leftBoundary ) {
-			// bold
-			$('i#portfolio-scroll-backward-indicator').addClass('active');
-		}
-		else {
-			// unbold
-			$('i#portfolio-scroll-backward-indicator').removeClass('active');
-		}
-		if( rightOfLast > rightBoundary ) {
-			// bold
-			$('i#portfolio-scroll-forward-indicator').addClass('active');	
-		}
-		else {
-			// unbold
-			$('i#portfolio-scroll-forward-indicator').removeClass('active');		
-		}
-
-		// Flash every 2 secs at 900ms fade durations
-		if( !$('i#portfolio-scroll-backward-indicator').hasClass('flashing') ) {
-			$('i#portfolio-scroll-backward-indicator').addClass('flashing');
-			var intervalLeft = setInterval(function() {
-				if( $('i#portfolio-scroll-backward-indicator').hasClass('active') ) {
-					$('i#portfolio-scroll-backward-indicator').fadeTo(900, 0, function() {
-						$('i#portfolio-scroll-backward-indicator').fadeTo(900, 1);
-					});
-				}
-			}, 2000);
-		}
-		if( !$('i#portfolio-scroll-forward-indicator').hasClass('flashing') ) {
-			$('i#portfolio-scroll-forward-indicator').addClass('flashing');
-			var intervalRight = setInterval(function() {
-				if( $('i#portfolio-scroll-forward-indicator').hasClass('active') ) {
-					$('i#portfolio-scroll-forward-indicator').fadeTo(900, 0, function() {
-						$('i#portfolio-scroll-forward-indicator').fadeTo(900, 1);
-					});
-				}
-			}, 2000);
-		}
-	}
 	// Follow the mouse with eyes in about section
 	var followMouseWithEyes = function(e) {
 
@@ -223,6 +138,7 @@ $(document).ready(function() {
 		$('li#skill-cpp').animate({
 			height: cppHeight
 		}, 1000);
+		return;
 	};
 	// Show the mobile navigation menu
 	var toggleMobileNav = function() {
@@ -235,6 +151,7 @@ $(document).ready(function() {
 			$('nav#header-social').slideDown();
 			$('nav#header-menu').slideDown();
 		}
+		return;
 	};
 	// Set welcome section padding to depend on screen height
 	var setWelcomePadding = function() {
@@ -253,6 +170,7 @@ $(document).ready(function() {
 		// set padding
 		var padding = pTop + 'px 0 ' + pBottom + 'px';
 		$('section#welcome div.section-content').css('padding', padding);
+		return;
 	};
 	// Checks which browser is holding the site currently
 	var checkWhichBrowser = function() {
@@ -277,12 +195,14 @@ $(document).ready(function() {
 		else if( isIE ) {
 			return 'ie';
 		}
+		return;
 	};
 	// Corrects elements if site is loaded in Firefox
 	var correctForFirefox = function() {
 		// fixes border radius issue
 		$('ul#frameworks-tools-libraries').css('border-style', 'solid');
 		$('ul#item-roles li').css('border-style', 'solid');
+		return;
 	};
 	// Shade correct item in navbar
 	var shadeNavbarItem = function() {
@@ -312,6 +232,7 @@ $(document).ready(function() {
 				$this.removeClass('active');
 			}
 		});
+		return;
 	};
 
 
@@ -362,12 +283,8 @@ $(document).ready(function() {
 	switch( page ) {
 		// Run on splash page
 		case 'splash':
+			// Size welcome section correctly depending on screen height
 			setWelcomePadding();
-			setupPortfolio();
-			// setTimeout(function() {
-			// 	$('section#welcome div.section-content').css('opacity', '0').css('visibility', 'visible');
-			// 	$('section#welcome div.section-content').fadeTo(2000, 1.0, 'easeInQuad');
-			// }, 200);
 
 			// Scroll to portfolio on welcome circle button click
 			$('div#welcome-circle').click(function() {
@@ -381,9 +298,17 @@ $(document).ready(function() {
 			});
 			// Animate skill graph on scroll to skills section
 			$(window).scroll(function() {
-				// Animate skills graph
-				if( ($('body').scrollTop() > $('hr#hr-after-welcome').offset().top + 120) || ($('html, body').scrollTop() > $('hr#hr-after-welcome').offset().top + 120) ) {
-					animateSkillsGraph();
+				var wWidth = $(window).width();
+
+				if( wWidth > 525) {
+					if( ($('body').scrollTop() > $('section#skills').offset().top - 600) || ($('html, body').scrollTop() > $('section#skills').offset().top - 600) ) {
+						animateSkillsGraph();
+					}	
+				}
+				else {
+					if( ($('body').scrollTop() > $('section#skills').offset().top - 300) || ($('html, body').scrollTop() > $('section#skills').offset().top - 300) ) {
+						animateSkillsGraph();
+					}
 				}
 
 				// Shade correct item in navbar
