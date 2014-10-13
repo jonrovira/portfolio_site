@@ -16,7 +16,6 @@ var express      = require('express'),
 
 // Define router locations
 var routes = require('./routes/index');
-var users  = require('./routes/users');
 
 
 // Instantiate Express
@@ -66,7 +65,6 @@ app.use(cookieParser());
 
 // Set up routers
 app.use('/', routes);
-app.use('/users', users);
 
 
 // Mailer
