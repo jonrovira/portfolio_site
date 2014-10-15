@@ -1,10 +1,18 @@
 # Portfolio Site
 
-My portfolio built using Node JS for the backend
+My project/work portfolio
 
 ####To Do:
 * Migrate to Angular
-* Add more info for each portfolio item
+	* Present portfolio item content with Angular
+* Add more content for each portfolio item
+* Figure out a way to incorporate three.js
+	* http://mrdoob.github.io/three.js/examples/css3d_periodictable.html
+* Make eyes blink
+* Reroute emails to hotmail account and forward them
+	* Reinstate security on Gmail account
+
+
 
 ####Completed
 * Check out how grid layout looks for portfolio (changed to this)
