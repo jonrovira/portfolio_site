@@ -9,10 +9,11 @@ var router = express.Router();
 
 
 // GET home page
-router.get('/', function(req, res) {
-  res.render('home');
+router.get('*', function(req, res) {
+	res.sendfile('../views/home.html'); // load the single view file (angular will handle the page changes on the front-end)
 });
 
+/* 
 // GET The Book page
 router.get('/portfolio/the-book/', function(req, res) {
 	res.render('the-book', {
@@ -156,7 +157,7 @@ router.get('/portfolio/airhop-website/', function(req, res) {
 		layout      : 'portfolio_item',
 	});
 });
-
+*/
 
 
 
