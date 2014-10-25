@@ -5,10 +5,30 @@
 
 // Instantiate packages, dependencies, node functionality
 var express        = require('express'),
-    favicon      = require('static-favicon'),
+    favicon        = require('static-favicon'),
     morgan         = require('morgan'), // logs requests to the console
     bodyParser     = require('body-parser'), // pulls information from HTML POST
     methodOverride = require('method-override'); // simulates DELETE and PUT
+
+
+// Angular setup
+var portfolioSiteApp = angular.module('portfolioSiteApp');
+portfolioSiteApp.config(['$routeProvider',
+    function($routeProvider) {
+        $routeProvider.
+            when('/', {
+                templateUrl: 'partials/phone-list.html',
+                controller: 'PhoneListCtrl'
+            }).
+            when('/phones/:phoneId', {
+                templateUrl: 'partials/phone-detail.html',
+                controller: 'PhoneDetailCtrl'
+            }).
+            otherwise({
+                redirectTo: '/phones'
+            });
+    }
+]);
 
 
 // Instantiate Express
@@ -26,9 +46,10 @@ app.use(methodOverride());
 
 
 // GET home page
-app.get('*', function(req, res) {
+app.get('/', function(req, res) {
     res.sendfile('views/home.html'); // load the single view file (angular will handle the page changes on the front-end)
 });
+
 
 
 // Mailer
