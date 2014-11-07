@@ -173,33 +173,18 @@ html {
               border-radius: 3px 3px 0 0; }
             html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
               padding: 10px;
-              height: 123px;
               text-align: left;
               border-radius: 0 0 3px 3px; }
               html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
-                font-size: 19px;
-                color: #555; }
-              html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info ul.portfolio-item-roles {
-                list-style: none; }
-                html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info ul.portfolio-item-roles li {
-                  float: left;
-                  margin-right: 12px;
-                  color: #0396A6;
-                  font-size: 14px;
-                  line-height: 22px; }
-                html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info ul.portfolio-item-roles li:last-child {
-                  margin-right: 0; }
-              html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info span {
+                text-align: center;
                 font-size: 14px;
-                color: #888; }
+                color: #555; }
     @media (min-width: 525px) {
       html body main#splash section#portfolio div.section-content {
         margin-bottom: 80px; }
         html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item {
           margin-bottom: 40px;
           width: calc((100% - (1 * 40px) - 5px) / 2); }
-          html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
-            height: 147px; }
         html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:hover a img {
           -webkit-transition: opacity 1s;
           -moz-transition: opacity 1s;
@@ -208,14 +193,9 @@ html {
           opacity: 0.7; }
         html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(2n-1) {
           margin-right: 40px; } }
-    @media (min-width: 735px) {
-      html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
-        height: 80px; } }
     @media (min-width: 900px) {
       html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item {
         width: calc((100% - (2 * 40px) - 9px) / 3); }
-        html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
-          height: 125px; }
       html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(2n-1) {
         margin-right: 0; }
       html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(3n-2), html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(3n-1) {
@@ -223,8 +203,6 @@ html {
     @media (min-width: 1200px) {
       html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item {
         width: calc((100% - (3 * 40px) - 13px) / 4); }
-        html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
-          height: 125px; }
       html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(3n-2), html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(3n-1) {
         margin-right: 0; }
       html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(4n-3), html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(4n-2), html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item:nth-child(4n-1) {
@@ -445,7 +423,7 @@ html {
         margin-top: 70px; }
         html body main#splash section#about div.section-content div#about-right div#face {
           position: relative;
-          margin: 0 auto;
+          margin: 0 auto 20px auto;
           width: 250px;
           height: 380px; }
           html body main#splash section#about div.section-content div#about-right div#face div#hair {
@@ -968,6 +946,9 @@ html {
                 -ms-transform: rotate(7deg);
                 -webkit-transform: rotate(7deg);
                 transform: rotate(7deg); }
+        html body main#splash section#about div.section-content div#about-right span#about-face-label {
+          float: right;
+          color: #aaa; }
     @media (min-width: 750px) {
       html body main#splash section#about div.section-content {
         overflow: auto; }

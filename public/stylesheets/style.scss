@@ -313,31 +313,13 @@ html {
 								}
 								div.portfolio-item-info {
 									padding: 10px;
-									height: 123px;
 									text-align: left;
 									border-radius: 0 0 3px 3px;
 
 									h2 {
-										font-size: 19px;
-										color: #555;
-									}
-									ul.portfolio-item-roles {
-										list-style: none;
-
-										li {
-											float: left;
-											margin-right: 12px;
-											color: #0396A6;
-											font-size: 14px;
-											line-height: 22px;
-										}
-										li:last-child {
-											margin-right: 0;
-										}
-									}
-									span {
+										text-align: center;
 										font-size: 14px;
-										color: #888;
+										color: #555;
 									}
 								}
 							}
@@ -353,13 +335,6 @@ html {
 							li.portfolio-item {
 								margin-bottom: $portfolio-item-spacing;
 								width: $portfolio-item-width-525;
-
-								a {
-
-									div.portfolio-item-info {
-										height: 147px;
-									}
-								}
 							}
 							li.portfolio-item:hover {
 								
@@ -387,12 +362,6 @@ html {
 
 							li.portfolio-item {
 
-								a {
-
-									div.portfolio-item-info {
-										height: 80px;
-									}
-								}
 							}
 						}
 					}	
@@ -404,13 +373,6 @@ html {
 
 							li.portfolio-item {
 								width: $portfolio-item-width-900;
-
-								a {
-
-									div.portfolio-item-info {
-										height: 125px;
-									}
-								}
 							}
 							li.portfolio-item:nth-child(2n-1) {
 								margin-right: 0;
@@ -428,13 +390,6 @@ html {
 
 							li.portfolio-item {
 								width: $portfolio-item-width-1200;
-
-								a {
-
-									div.portfolio-item-info {
-										height: 125px;
-									}
-								}
 							}
 							li.portfolio-item:nth-child(3n-2), li.portfolio-item:nth-child(3n-1) {
 								margin-right: 0;
@@ -782,7 +737,7 @@ html {
 
 						div#face {
 							position: relative;
-							margin: 0 auto;
+							margin: 0 auto 20px auto;
 							width: $about-face-width;
 							height: $about-face-height;
 
@@ -1178,6 +1133,10 @@ html {
 									}
 								}
 							}
+						}
+						span#about-face-label {
+							float: right;
+							color: #aaa;
 						}
 					}
 				}
