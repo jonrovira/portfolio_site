@@ -188,13 +188,24 @@ html {
               html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-overlay:hover h2 {
                 visibility: visible; }
             html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info {
-              padding: 10px 15px 10px 15px;
+              padding: 5px 15px 8px 15px;
+              overflow: auto;
               text-align: left;
               border-radius: 0 0 3px 3px; }
-              html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info h2 {
-                text-align: center;
-                font-size: 14px;
-                color: #555; }
+              html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info ul {
+                float: right;
+                list-style: none; }
+                html body main#splash section#portfolio div.section-content ul#portfolio-gallery li.portfolio-item a div.portfolio-item-info ul li {
+                  display: inline-block;
+                  padding: 2px 5px 2px 5px;
+                  width: 20px;
+                  height: 17px;
+                  font-size: 12px;
+                  color: #666;
+                  line-height: 21px;
+                  text-align: center;
+                  border: 1px dotted #aaa;
+                  border-radius: 17px / 20px; }
     @media (min-width: 525px) {
       html body main#splash section#portfolio div.section-content {
         margin-bottom: 80px; }

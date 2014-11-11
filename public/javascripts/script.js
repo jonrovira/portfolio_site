@@ -296,8 +296,10 @@ $(document).ready(function() {
 				// placeholder for minimize
 				scrollToSection('section#portfolio');
 			});
+
 			// Set overlay height on portfolio item overlay
 			setPIOverlayHeight();
+
 			// Animate skill graph on scroll to skills section
 			$(window).scroll(function() {
 				var wWidth = $(window).width();
@@ -316,6 +318,7 @@ $(document).ready(function() {
 				// Shade correct item in navbar
 				shadeNavbarItem();
 			});
+			
 			// Follow mouse with eyes whenever mouse moves
 			$(document).mousemove(function(e) {
 				// placeholder for minimize

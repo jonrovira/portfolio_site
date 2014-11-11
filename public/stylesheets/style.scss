@@ -334,14 +334,27 @@ html {
 									}
 								}
 								div.portfolio-item-info {
-									padding: 10px 15px 10px 15px;
+									padding: 5px 15px 8px 15px;
+									overflow: auto;
 									text-align: left;
 									border-radius: 0 0 3px 3px;
 
-									h2 {
-										text-align: center;
-										font-size: 14px;
-										color: #555;
+									ul {
+										float: right;
+										list-style: none;
+
+										li {
+											display: inline-block;
+											padding: 2px 5px 2px 5px;
+											width: 20px;
+											height: 17px;
+											font-size: 12px;
+											color: #666;
+											line-height: 21px;
+											text-align: center;
+											border: 1px dotted #aaa;
+											border-radius: 17px / 20px;
+										}
 									}
 								}
 							}
