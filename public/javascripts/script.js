@@ -234,6 +234,11 @@ $(document).ready(function() {
 		});
 		return;
 	};
+	// Set portfolio item overlay height
+	var setPIOverlayHeight = function() {
+		var ht = $('img.portfolio-item-image').height();
+		$('div.portfolio-item-overlay').height(ht + 15);
+	};
 
 
 
@@ -291,11 +296,8 @@ $(document).ready(function() {
 				// placeholder for minimize
 				scrollToSection('section#portfolio');
 			});
-			// Blur next item in portfolio on scroll within portfolio
-			$('section#portfolio div.section-content div#portfolio-items-wrapper').scroll(function() {
-				// placeholder for minimize
-				animatePortfolio();
-			});
+			// Set overlay height on portfolio item overlay
+			setPIOverlayHeight();
 			// Animate skill graph on scroll to skills section
 			$(window).scroll(function() {
 				var wWidth = $(window).width();
